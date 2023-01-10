@@ -1,0 +1,21 @@
+{
+  "name": "@substance/webext",
+  "version": "1.0.0",
+  "description": "substance web extension",
+  "scripts": {
+    "dev": "webpack --config webpack/webpack.dev.js --watch",
+    "build": "webpack --config webpack/webpack.prod.js",
+    "clean": "rimraf dist",
+    "test": "npx jest",
+    "style": "prettier --write \"src/**/*.{ts,tsx}\""
+  },
+  "author": "reorx",
+  "license": "MIT",
+  "dependencies": {
+    "@substance/common": "^1.0.0"
+  },
+  "devDependencies": {
+    "@reorx/webpack-ext-reloader": "^1.1.10",
+    "@types/chrome": "^0.0.207"
+  }
+}

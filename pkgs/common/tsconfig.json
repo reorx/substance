@@ -1,0 +1,16 @@
+{
+  "extends": "../tsconfig.settings.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "lib",
+    "declarationDir": "lib",
+    "sourceMap": false,
+    // "noEmit": true,
+    // "noEmitOnError": true,
+    "composite": true,
+    // "typeRoots": ["../node_modules/@types"]
+  },
+  "include": [
+    "./src"
+  ],
+}

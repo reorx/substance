@@ -1,0 +1,13 @@
+{
+  "name": "@substance/common",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "turndown": "^7.1.1"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.31",
+    "@types/turndown": "^5.0.1"
+  }
+}

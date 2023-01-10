@@ -1,0 +1,28 @@
+{
+  "extends": "../tsconfig.settings.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist/js",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@substance/common/*": ["../common/src/*"]
+    },
+    "declarationDir": "lib",
+    "allowJs": true,
+    "sourceMap": false,
+    "noEmitOnError": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": true,
+    // "typeRoots": ["../node_modules/@types"]
+  },
+  "references": [
+    { "path": "../common" }
+  ],
+  "include": [
+    "./src"
+  ],
+  "exclude": [
+	  "**/__tests__",
+  ]
+}
