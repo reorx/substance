@@ -50,6 +50,11 @@ class ExtractorManager {
     if ($content.length === 0) {
       throw 'No content found: ' + selectors[0]
     }
+    // remove comments
+    $content.contents().filter(function() {
+      return this.type === 'comment'
+    }).remove();
+
     if (clean) {
       clean.forEach(selector => {
         $content.find(selector).remove()
@@ -69,7 +74,7 @@ class ExtractorManager {
     }
 
     // get content
-    content = $content.html()
+    content = $content.html().trim()
 
     // get content markdown
     let turndownService
