@@ -1,6 +1,6 @@
 import fs from 'fs/promises';
 import TurndownService from 'turndown';
-import extract from './extract.js';
+import ExtractManager from './extract.js';
 
 const formatHeading = ($node) => {
   const tag = `<${$node[0].name}>${$node.text()}</${$node[0].name}>`
@@ -9,10 +9,20 @@ const formatHeading = ($node) => {
 }
 
 const WikipediaExtractor = {
-  domain: 'zh.wikipedia.org',
-  defaultOptions: {
-    disableLinks: true,
-    getTagsFromCategory: false,
+  matches: {
+    domain: 'zh.wikipedia.org',
+    // url: 'https://zh.wikipedia.org/.+'
+    selector: '#mw-content-text',
+  },
+  options: {
+    removeLinks: {
+      help: "Remove all the links in the output",
+      default: false,
+    },
+    getTagsFromCategory: {
+      help: "Get tags from the category",
+      default: false,
+    }
   },
 
   content: {
@@ -146,10 +156,9 @@ const defaultTurndownOptions =  {
 }
 const inputFile = process.argv[2]
 fs.readFile(inputFile).then(text => {
-  const { content, contentMarkdown, title } = extract(text, null, {
-    customExtractor: WikipediaExtractor,
-    turndownOptions: defaultTurndownOptions,
-  })
+  const manager = new ExtractManager(WikipediaExtractor, defaultTurndownOptions)
+
+  const { content, contentMarkdown, title } = manager.extract(text)
   console.log(title)
 
   // write html and markdown to file
