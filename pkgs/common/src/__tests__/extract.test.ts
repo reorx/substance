@@ -1,15 +1,18 @@
-import ExtractorManager from "../extract"
+import ExtractManager from "../extract"
 import { WikipediaExtractor } from "../extractors/wikipedia"
-import { readHTMLData, readMarkdown, writeMarkdown } from "./utils"
+import { DataManager } from "./utils"
 
-test('zh.wikipedia.org', () => {
-  const fileprefix = 'zh.wikipedia.org'
-  const {html, url} = readHTMLData(fileprefix)
-  const manager = new ExtractorManager(WikipediaExtractor)
+describe('zh.wikipedia.org', () => {
+  const dm = new DataManager('zh.wikipedia.org')
+  const {html, url} = dm.getSource()
+  const em = new ExtractManager(WikipediaExtractor)
 
-  const {content, contentMarkdown, title} = manager.extract(html, url)
-  expect(title).toBe('封建')
+  test('default', () => {
+    const {content, contentMarkdown, title} = em.extract(html, url)
+    expect(title).toBe('封建')
 
-  // writeMarkdown(fileprefix, contentMarkdown)
-  expect(contentMarkdown).toBe(readMarkdown(fileprefix))
+    // dm.saveResult(null, 'md', contentMarkdown)
+    expect(contentMarkdown).toBe(dm.getResult(null, 'md'))
+  })
+
 })
