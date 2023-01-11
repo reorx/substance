@@ -1,5 +1,6 @@
-import {load, CheerioAPI, Cheerio, AnyNode, Element as CheerioElement } from 'cheerio';
+import {load, CheerioAPI, Cheerio, AnyNode, Element } from 'cheerio';
 import TurndownService from 'turndown';
+import { getAbsUrl, getBaseUrl } from './utils';
 
 export interface OptionsDef {
   [key: string]: {
@@ -12,20 +13,20 @@ export interface Options {
 }
 
 // alias to cheerio types
-type Node = Cheerio<AnyNode>
-type Element = Cheerio<CheerioElement>
+type CheerioElement = Cheerio<Element>
 
 export interface State {
   html: string
   url: string
   options: Options
+  baseUrl: string
   $: CheerioAPI
-  $content: Element
+  $content: CheerioElement
   sharedData: any
 }
 export interface PropertyHandler {
   selectors: string[]
-  process?: ($: CheerioAPI, $el: Element, state: State) => string
+  process?: ($: CheerioAPI, $el: CheerioElement, state: State) => string
 }
 export interface ExtractResult {
   title: string
@@ -50,15 +51,15 @@ export interface Extractor {
     selectors: string[]
     clean: string[]
     transforms: {
-      [selector: string]: ($el: Element, state: State) => void
+      [selector: string]: ($el: CheerioElement, state: State) => void
     }
-    processElement?: ($: CheerioAPI, $el: Element, state: State) => void
-    process?: ($: CheerioAPI, $el: Element, state: State) => string
+    processElement?: ($: CheerioAPI, $el: CheerioElement, state: State) => void
+    process?: ($: CheerioAPI, $el: CheerioElement, state: State) => string
     turndown?: {
       options: TurndownService.Options
       customize?: ($: CheerioAPI, turndownService: TurndownService, state: State) => void
     }
-    markdown?: ($: CheerioAPI, $el: Element, turndownService: TurndownService, state: State) => string
+    markdown?: ($: CheerioAPI, $el: CheerioElement, turndownService: TurndownService, state: State) => string
   }
   title: PropertyHandler
   excerpt?: PropertyHandler
@@ -120,7 +121,7 @@ export class ExtractManager {
     if (!process && !processElement) {
       throw 'Either process or processElement should be defined'
     }
-    const $content = $(selectors[0]) as Element
+    const $content = $(selectors[0]) as CheerioElement
     if (!$content || $content.length === 0) {
       throw 'No content found: ' + selectors[0]
     }
@@ -130,25 +131,52 @@ export class ExtractManager {
       html,
       url,
       options,
+      baseUrl: getBaseUrl(url),
       $,
       $content,
       sharedData,
     }
 
-    // remove comments
-    $content.contents().filter(function() {
-      return this.type === 'comment'
+    // Common processings
+    const tagBlacklist = ['script', 'style', 'noscript']
+    // - remove elements
+    $content.contents().filter((i, el) => {
+      // remove comments
+      if (el.type === 'comment') return true
+      // remove blacklisted tags
+      if (tagBlacklist.includes((el as Element).name)) {
+        return true
+      }
+      // remove display:none elements
+      const $el = $(el)
+      if ($el.css('display') === 'none') {
+        return true
+      }
+      return false
     }).remove();
+    // - convert relative urls to absolute urls
+    $content.find('a').each((i, el) => {
+      const $el = $(el)
+      $el.attr('href', getAbsUrl($el.attr('href'), state.baseUrl))
+      // remove title so that it won't be rendered in markdown link
+      $el.removeAttr('title')
+    })
+    $content.find('[src]').each((i, el) => {
+      $(el).attr('src', getAbsUrl($(el).attr('src'), state.baseUrl))
+    })
 
+    // clean $content
     if (clean) {
       clean.forEach(selector => {
         $content.find(selector).remove()
       })
     }
+
+    // transform $content
     if (transforms) {
       Object.keys(transforms).forEach(selector => {
         $content.find(selector).each((i, el) => {
-          transforms[selector]($(el) as Element, state)
+          transforms[selector]($(el) as CheerioElement, state)
         })
       })
     }

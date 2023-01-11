@@ -45,7 +45,15 @@ export const WikipediaExtractor: Extractor = {
 
       '[role=note]': $node => {
         $node.replaceWith(`<blockquote>${$node.html()}</blockquote>`)
-      }
+      },
+
+      // thumbnail images
+      '.thumbinner > a > img': ($node, state) => {
+        $node.unwrap()
+      },
+      '.thumbcaption': $node => {
+        $node.replaceWith(`<blockquote>${$node.html()}</blockquote>`)
+      },
     },
 
     processElement: ($, $content, state) => {
@@ -94,30 +102,14 @@ export const WikipediaExtractor: Extractor = {
       state.sharedData.$footnotes = $footnotes
       // console.log('footnotes', $footnotes.html())
 
-      let processLink: (a: Cheerio<Element>) => void
       if (state.options.removeLinks) {
         // remove links
-        processLink = (a) => {
+        const processLink = (a: Cheerio<Element>) => {
           a.replaceWith(a.text())
         }
-      } else {
-        // update links to be absolute
-        const urlObj = new URL(state.url)
-        urlObj.pathname = "";
-        urlObj.search = "";
-        urlObj.hash = "";
-        const baseurl = urlObj.href.slice(0, -1)
-        processLink = (a) => {
-          const href = a.attr('href')
-          if (href && !href.match(/^https?:\/\//)) {
-            a.attr('href', baseurl + href)
-          }
-          // remove title so that it won't be rendered in markdown link
-          a.removeAttr('title')
-        }
+        $content.find('a').each((i, el) => processLink($(el)))
+        $footnotes.find('a').each((i, el) => processLink($(el)))
       }
-      $content.find('a').each((i, el) => processLink($(el)))
-      $footnotes.find('a').each((i, el) => processLink($(el)))
     },
 
     turndown:{
@@ -165,5 +157,4 @@ export const WikipediaExtractor: Extractor = {
     }
     return extraData
   },
-
 };
