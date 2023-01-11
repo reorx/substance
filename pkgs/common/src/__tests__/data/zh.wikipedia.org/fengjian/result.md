@@ -40,9 +40,9 @@
 
 -   [封邑、封地、领地](https://zh.wikipedia.org/wiki/%E9%A0%98%E5%9C%B0)
 
-[^1]: [封建制度](http://dict.revised.moe.edu.tw/cgi-bin/cbdic/gsweb.cgi?o=dcbdic&searchid=Z00000036857). [中华民国教育部](https://zh.wikipedia.org/wiki/%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E6%95%99%E8%82%B2%E9%83%A8)《重编国语辞典》修订本. \[2020-06-22\]. （原始内容[存档](https://web.archive.org/web/20210210152610/http://dict.revised.moe.edu.tw/cgi-bin/cbdic/gsweb.cgi?o=dcbdic&searchid=Z00000036857)于2021-02-10）. 
+[^1]: [封建制度](http://dict.revised.moe.edu.tw/cgi-bin/cbdic/gsweb.cgi?o=dcbdic&searchid=Z00000036857). [中华民国教育部](https://zh.wikipedia.org/wiki/%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E6%95%99%E8%82%B2%E9%83%A8)《重编国语辞典》修订本. \[2020-06-22\]. （原始内容[存档](https://web.archive.org/web/20210210152610/http://dict.revised.moe.edu.tw/cgi-bin/cbdic/gsweb.cgi?o=dcbdic&searchid=Z00000036857)于2021-02-10）.
 
-[^2]: 封建制度. 《艺术与建筑索引典》. 
+[^2]: 封建制度. 《艺术与建筑索引典》.
 
 [^注1]: 在现代中国尤其因为[马克思主义政治经济学](https://zh.wikipedia.org/wiki/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E6%94%BF%E6%B2%BB%E7%BB%8F%E6%B5%8E%E5%AD%A6)而为人所熟知，并常常狭义地带入其概念，与中国古代政治制度的**封建**相混淆
 

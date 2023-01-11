@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "@types/turndown": "^5.0.1",
+    "domelementtype": "^2.3.0",
     "request": "^2.88.2"
   }
 }

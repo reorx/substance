@@ -1,6 +1,8 @@
 import {load, CheerioAPI, Cheerio, AnyNode, Element } from 'cheerio';
 import TurndownService from 'turndown';
 import { getAbsUrl, getBaseUrl } from './utils';
+import { ElementType } from 'domelementtype'
+
 
 export interface OptionsDef {
   [key: string]: {
@@ -138,25 +140,30 @@ export class ExtractManager {
     }
 
     // Common processings
-    const tagBlacklist = ['script', 'style', 'noscript']
-    // - remove elements
+    // - remove special tags
+    $content.find('style, script, noscript').remove()
+    // - remove comments
     $content.contents().filter((i, el) => {
-      // remove comments
-      if (el.type === 'comment') return true
-      // remove blacklisted tags
-      if (tagBlacklist.includes((el as Element).name)) {
-        return true
-      }
-      // remove display:none elements
+      if (el.type == ElementType.Comment) return true
+      return false
+    }).remove();
+    // remove display: none elements
+    $content.find('[style]').filter((i, el) => {
       const $el = $(el)
       if ($el.css('display') === 'none') {
         return true
       }
       return false
     }).remove();
-    // - convert relative urls to absolute urls
+    // - process links
     $content.find('a').each((i, el) => {
       const $el = $(el)
+      // remove empty links
+      if (!$el.text()?.trim()) {
+        $el.remove()
+        return
+      }
+      // convert relative urls to absolute urls
       $el.attr('href', getAbsUrl($el.attr('href'), state.baseUrl))
       // remove title so that it won't be rendered in markdown link
       $el.removeAttr('title')

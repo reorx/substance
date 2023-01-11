@@ -9,12 +9,16 @@ const formatHeading = ($node: Cheerio<Element>) => {
 
 export const WikipediaExtractor: Extractor = {
   match: {
-    url: /https:\/\/zh\.wikipedia\.org\/wiki\/.+/,
+    url: /https:\/\/\w{2}\.wikipedia\.org\/wiki\/.+/,
     selectors: ['#mw-content-text'],
   },
   options: {
     removeLinks: {
       help: "Remove all the links in the output",
+      default: false,
+    },
+    removeImages: {
+      help: "Remove all the images as well as its captions",
       default: false,
     },
     getTagsFromCategories: {
@@ -35,6 +39,7 @@ export const WikipediaExtractor: Extractor = {
       '.mw-jump-link',
       '.mw-cite-backlink',
       '.citation-comment',
+      '.navbox',
     ],
 
     transforms: {
@@ -58,6 +63,13 @@ export const WikipediaExtractor: Extractor = {
 
     processElement: ($, $content, state) => {
       const refs: {[key: string]: string|null} = {}
+
+      // remove images
+      if (state.options.removeImages) {
+        $content.find('.thumb').remove()
+        $content.find('img').remove()
+      }
+
       // get references
       $content.find('.references').each((i, el) => {
         const ol = $(el)
@@ -126,6 +138,11 @@ export const WikipediaExtractor: Extractor = {
           replacement: (content) => {
             return `[${content}]`
           }
+        })
+
+        // keep all tables
+        turndownService.keep(function (node) {
+          return node.nodeName === 'TABLE'
         })
       }
     },
