@@ -234,7 +234,7 @@ Wikimedia Commons has media related to [Feudalism](https://commons.wikimedia.org
 
 [^9]: Charles West, _[Reframing the Feudal Revolution: Political and Social Transformation Between Marne and Moselle, c. 800–c. 1100](https://en.wikipedia.org/wiki/Reframing_the_Feudal_Revolution:_Political_and_Social_Transformation_Between_Marne_and_Moselle,_c._800%E2%80%93c._1100)_ (Cambridge: Cambridge University Press, 2013).
 
-[^10]: [[\[4\]](#cite_note-ebo-4)][[\[5\]](#cite_note-ebrown-5)][[\[6\]](#cite_note-reynolds-6)][[\[7\]](#cite_note-halsall-7)][[\[8\]](#cite_note-auto-8)][[\[9\]](#cite_note-9)]
+[^10]: [^ebo-4][^ebrown-5][^reynolds-6][^halsall-7][^auto-8][^9]
 
 [^bloch-11]: Bloch, Marc, _Feudal Society._ Tr. L.A. Manyon. Two volume. Chicago: University of Chicago Press, 1961 [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [0-226-05979-0](https://en.wikipedia.org/wiki/Special:BookSources/0-226-05979-0)
 

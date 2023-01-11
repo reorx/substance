@@ -82,7 +82,6 @@ export const WikipediaExtractor: Extractor = {
 
       // get references
       const refsMap: {[key: string]: string|null} = {}
-      const refIds: string[] = []
       const refIdPrefix = 'cite_note-'
       const getRefId = (name: string) => {
         // normally this is true
@@ -91,6 +90,18 @@ export const WikipediaExtractor: Extractor = {
         }
         return name
       }
+      // process inline footnote refs (even in .references!)
+      $('sup.reference a').each((i, el) => {
+        const a = $(el)
+        // url is relative anchor here: #cite_note-1
+        const refId = getRefId(a.attr('href')!.slice(1))
+        if (!refId) return
+
+        a.parent().replaceWith(`<sup>^${refId}</sup>`)
+      })
+      // create a new element to store footnotes
+      const $footnotes = $('<article/>')
+      // travese through each .references block
       $content.find('.references').each((i, el) => {
         const ol = $(el)
         ol.find('li').each((i, el) => {
@@ -99,9 +110,8 @@ export const WikipediaExtractor: Extractor = {
           if (!id) return
 
           const refId = getRefId(id)
-          refsMap[refId] = li.html()
-          // keep ref order
-          refIds.push(refId)
+          refsMap[refId] = li.find('.reference-text').html()
+          $footnotes.append(`<div><sup>^${refId}</sup>: ${refsMap[refId]}</div>`)
         })
         // remove the references and the heading before the references
         let topMost = ol
@@ -114,21 +124,6 @@ export const WikipediaExtractor: Extractor = {
       })
       // console.log('refs', refs)
 
-      // create a new element to store footnotes
-      const $footnotes = $('<article/>')
-      $('sup.reference a').each((i, el) => {
-        const a = $(el)
-        // url is relative anchor here: #cite_note-1
-        const refId = getRefId(new URL(a.attr('href')!.slice(1)).href)
-        if (!refId) return
-
-        a.parent().replaceWith(`<sup>^${refId}</sup>`)
-      })
-
-      // loop refIds to create each footnote
-      for (const refId of refIds) {
-        $footnotes.append(`<div><sup>^${refId}</sup>: ${refsMap[refId]}</div>`)
-      }
       state.sharedData.$footnotes = $footnotes
       // console.log('footnotes', $footnotes.html())
 
