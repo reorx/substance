@@ -1,12 +1,12 @@
+/** @type {import('ts-jest').JestConfigWithTsJest} */
 module.exports = {
-  "roots": [
+  preset: 'ts-jest',
+  roots: [
       "src"
   ],
-  "transform": {
-      "^.+\\.ts$": "ts-jest"
-  },
-  "testPathIgnorePatterns": [
+  testEnvironment: 'node',
+  testPathIgnorePatterns: [
     'utils.ts',
-  ]
-  // moduleDirectories: ['node_modules', 'src'],
+    'dist',
+  ],
 };
