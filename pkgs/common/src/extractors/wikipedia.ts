@@ -1,4 +1,5 @@
 import { Cheerio, Element } from "cheerio";
+import TurndownService from "turndown";
 import { Extractor } from "../extract";
 
 const formatHeading = ($node: Cheerio<Element>) => {
@@ -21,6 +22,10 @@ export const WikipediaExtractor: Extractor = {
       help: "Remove all the images as well as its captions",
       default: false,
     },
+    useFigureForImage: {
+      help: "Use <figure> for images, so that the caption can be rendered correctly. Note that images will be represented in <img> rather than markdown syntax, this may not be suitable for all the markdown renderers",
+      default: false,
+    },
     getTagsFromCategories: {
       help: "Get tags from the categories of the wiki",
       default: false,
@@ -40,6 +45,7 @@ export const WikipediaExtractor: Extractor = {
       '.mw-cite-backlink',
       '.citation-comment',
       '.navbox',
+      '.magnify',  // .thumbcaption > .magnify
     ],
 
     transforms: {
@@ -52,12 +58,18 @@ export const WikipediaExtractor: Extractor = {
         $node.replaceWith(`<blockquote>${$node.html()}</blockquote>`)
       },
 
-      // thumbnail images
-      '.thumbinner > a > img': ($node, state) => {
-        $node.unwrap()
+      // images
+      '.thumbinner': ($node, state) => {
+        if (state.options.useFigureForImage) {
+          $node.replaceWith(`<figure>${$node.html()}</figure>`)
+        }
       },
-      '.thumbcaption': $node => {
-        $node.replaceWith(`<blockquote>${$node.html()}</blockquote>`)
+      '.thumbcaption': ($node, state) => {
+        if (state.options.useFigureForImage) {
+          $node.replaceWith(`<figcaption>${$node.html()}</figcaption>`)
+        } else {
+          $node.replaceWith(`<blockquote>${$node.html()}</blockquote>`)
+        }
       },
     },
 
@@ -147,6 +159,11 @@ export const WikipediaExtractor: Extractor = {
           replacement: (content) => {
             return `[${content}]`
           }
+        })
+
+        // keep figure
+        turndownService.keep(node => {
+          return node.nodeName == 'FIGURE'
         })
 
         // keep all tables

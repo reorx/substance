@@ -18,3 +18,17 @@ npm install @mantine/core @mantine/hooks @mantine/form @mantine/notifications @m
 # types
 npm install -D @types/lodash @types/react @types/react-dom
 ```
+
+## test figure
+
+<!-- Yes -->
+<figure>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/BNF_Fr_4274_8v_knight_detail.jpg/220px-BNF_Fr_4274_8v_knight_detail.jpg">
+  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+</figure>
+
+<!-- No -->
+<figure>
+  [](https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/BNF_Fr_4274_8v_knight_detail.jpg/220px-BNF_Fr_4274_8v_knight_detail.jpg)
+  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+</figure>

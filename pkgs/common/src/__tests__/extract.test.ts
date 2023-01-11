@@ -102,5 +102,16 @@ describe('en.wikipedia.org', () => {
       // dm.saveResult(variant, 'md', contentMarkdown)
       expect(contentMarkdown).toBe(dm.getResult(variant, 'md'))
     })
+
+    test('useFigureForImage', () => {
+      const variant = 'useFigureForImage'
+      const {content, contentMarkdown, title} = em.extract(html, url, {
+        useFigureForImage: true,
+      })
+      expect(title).toBe('Feudalism')
+
+      // dm.saveResult(variant, 'md', contentMarkdown)
+      expect(contentMarkdown).toBe(dm.getResult(variant, 'md'))
+    })
   })
 })

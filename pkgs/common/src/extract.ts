@@ -183,7 +183,11 @@ export class ExtractManager {
       $el.removeAttr('title')
     })
     $content.find('[src]').each((i, el) => {
-      $(el).attr('src', getAbsUrl($(el).attr('src'), state.baseUrl))
+      // replace all elements with src attribute with a new element that only has src attribute
+      const $el = $(el)
+      const newEl = $(`<${el.name}/>`)
+      newEl.attr('src', getAbsUrl($(el).attr('src'), state.baseUrl))
+      $el.replaceWith(newEl)
     })
     // - remove class names in table
     $content.find('table').each((i, el) => {

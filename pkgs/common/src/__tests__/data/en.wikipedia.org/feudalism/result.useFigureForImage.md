@@ -1,12 +1,8 @@
 > This article is about the classic, medieval, Western European form of feudalism. For feudalism in other societies, as well as that of the Europeans, see [Examples of feudalism](https://en.wikipedia.org/wiki/Examples_of_feudalism).
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/BNF_Fr_4274_8v_knight_detail.jpg/220px-BNF_Fr_4274_8v_knight_detail.jpg)
+<figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/BNF_Fr_4274_8v_knight_detail.jpg/220px-BNF_Fr_4274_8v_knight_detail.jpg"><figcaption><a href="https://en.wikipedia.org/wiki/Investiture">Investiture</a> of a knight (miniature from the statutes of the <a href="https://en.wikipedia.org/wiki/Order_of_the_Holy_Spirit#Order_of_the_Knot">Order of the Knot</a>, founded in 1352 by <a href="https://en.wikipedia.org/wiki/Louis_I_of_Naples">Louis I of Naples</a>).</figcaption></figure>
 
-> [Investiture](https://en.wikipedia.org/wiki/Investiture) of a knight (miniature from the statutes of the [Order of the Knot](https://en.wikipedia.org/wiki/Order_of_the_Holy_Spirit#Order_of_the_Knot), founded in 1352 by [Louis I of Naples](https://en.wikipedia.org/wiki/Louis_I_of_Naples)).
-
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Slovakia_Oravsky_Podzamok.jpg/230px-Slovakia_Oravsky_Podzamok.jpg)
-
-> [Orava Castle](https://en.wikipedia.org/wiki/Orava_Castle) in Slovakia. A medieval castle is a traditional symbol of a feudal society.
+<figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Slovakia_Oravsky_Podzamok.jpg/230px-Slovakia_Oravsky_Podzamok.jpg"><figcaption><a href="https://en.wikipedia.org/wiki/Orava_Castle">Orava Castle</a> in Slovakia. A medieval castle is a traditional symbol of a feudal society.</figcaption></figure>
 
 **Feudalism**, also known as the **feudal system**, was the combination of the legal, economic, military, cultural and political customs that flourished in [medieval Europe](https://en.wikipedia.org/wiki/Middle_Ages) between the 9th and 15th centuries. Broadly defined, it was a way of structuring society around relationships that were derived from the holding of land in exchange for service or labour. Although it is derived from the Latin word _feodum_ or _feudum_ (fief),[^1] which was used during the Medieval period, the term _feudalism_ and the system which it describes were not conceived of as a formal [political system](https://en.wikipedia.org/wiki/Political_system) by the people who lived during the Middle Ages.[^2] The classic definition, by [François Louis Ganshof](https://en.wikipedia.org/wiki/Fran%C3%A7ois_Louis_Ganshof) (1944),[^ganshof-3] describes a set of reciprocal legal and [military obligations](https://en.wikipedia.org/wiki/Medieval_warfare) which existed among the warrior [nobility](https://en.wikipedia.org/wiki/Nobility) and revolved around the three key concepts of [lords](https://en.wikipedia.org/wiki/Lord), [vassals](https://en.wikipedia.org/wiki/Vassal), and [fiefs](https://en.wikipedia.org/wiki/Fief).[^ganshof-3]
 
@@ -28,9 +24,7 @@ The applicability of the term feudalism has also been questioned in the context 
 
 ## Etymology
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Codex_Manesse_Reinmar_von_Zweter.jpg/220px-Codex_Manesse_Reinmar_von_Zweter.jpg)
-
-> Herr [Reinmar von Zweter](https://en.wikipedia.org/wiki/Reinmar_von_Zweter), a 13th-century [Minnesinger](https://en.wikipedia.org/wiki/Minnesang), was depicted with his noble arms in [Codex Manesse](https://en.wikipedia.org/wiki/Codex_Manesse).
+<figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Codex_Manesse_Reinmar_von_Zweter.jpg/220px-Codex_Manesse_Reinmar_von_Zweter.jpg"><figcaption>Herr <a href="https://en.wikipedia.org/wiki/Reinmar_von_Zweter">Reinmar von Zweter</a>, a 13th-century <a href="https://en.wikipedia.org/wiki/Minnesang">Minnesinger</a>, was depicted with his noble arms in <a href="https://en.wikipedia.org/wiki/Codex_Manesse">Codex Manesse</a>.</figcaption></figure>
 
 The root of the term "feudal" originates in the [Proto-Indo-European](https://en.wikipedia.org/wiki/Proto-Indo-European_language) word [_\*péḱu_](https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/p%C3%A9%E1%B8%B1u), meaning "cattle", and possesses cognates in many other Indo-European languages: Sanskrit _pacu_, "cattle"; Latin _pecus_ (cf. _pecunia_) "cattle", "money"; Old High German _fehu, fihu_, "cattle", "property", "money"; Old Frisian _fia_; Old Saxon _fehu_; Old English _feoh, fioh, feo, fee_. The term "féodal" was first used in 17th-century French legal treatises (1614)[^20][^21] and translated into English legal treatises as an adjective, such as "feodal government".
 
@@ -58,17 +52,13 @@ The classic [François Louis Ganshof](https://en.wikipedia.org/wiki/Fran%C3%A7oi
 
 ### Vassalage
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Hommage_du_comt%C3%A9_de_Clermont-en-Beauvaisis.png/220px-Hommage_du_comt%C3%A9_de_Clermont-en-Beauvaisis.png)
-
-> [Homage](https://en.wikipedia.org/wiki/Homage_(feudal)) of [Clermont-en-Beauvaisis](https://en.wikipedia.org/wiki/Clermont,_Oise)
+<figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Hommage_du_comt%C3%A9_de_Clermont-en-Beauvaisis.png/220px-Hommage_du_comt%C3%A9_de_Clermont-en-Beauvaisis.png"><figcaption><a href="https://en.wikipedia.org/wiki/Homage_(feudal)">Homage</a> of <a href="https://en.wikipedia.org/wiki/Clermont,_Oise">Clermont-en-Beauvaisis</a></figcaption></figure>
 
 Before a lord could grant land (a [fief](https://en.wikipedia.org/wiki/Fief)) to someone, he had to make that person a vassal. This was done at a formal and symbolic ceremony called a [commendation ceremony](https://en.wikipedia.org/wiki/Commendation_ceremony), which was composed of the two-part act of [homage](https://en.wikipedia.org/wiki/Homage_(feudal)) and oath of [fealty](https://en.wikipedia.org/wiki/Fealty). During homage, the lord and vassal entered into a contract in which the vassal promised to fight for the lord at his command, whilst the lord agreed to protect the vassal from external forces. _Fealty_ comes from the Latin _fidelitas_ and denotes the [fidelity](https://en.wikipedia.org/wiki/Fidelity) owed by a vassal to his feudal lord. "Fealty" also refers to an oath that more explicitly reinforces the commitments of the vassal made during homage. Such an oath follows homage.[^stephenson-35]
 
 Once the commendation ceremony was complete, the lord and vassal were in a feudal relationship with agreed obligations to one another. The vassal's principal obligation to the lord was to "aid", or military service. Using whatever equipment the vassal could obtain by virtue of the revenues from the fief, the vassal was responsible to answer calls to military service on behalf of the lord. This security of military help was the primary reason the lord entered into the feudal relationship. In addition, the vassal could have other obligations to his lord, such as attendance at his court, whether [manorial](https://en.wikipedia.org/wiki/Manorial_court), baronial, both termed [court baron](https://en.wikipedia.org/wiki/Manorial_court#Court_baron), or at the king's court.[^36]
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Map_France_1477-en.svg/220px-Map_France_1477-en.svg.png)
-
-> France in the late 15th century: a mosaic of feudal territories
+<figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Map_France_1477-en.svg/220px-Map_France_1477-en.svg.png"><figcaption>France in the late 15th century: a mosaic of feudal territories</figcaption></figure>
 
 It could also involve the vassal providing "counsel", so that if the lord faced a major decision he would summon all his vassals and hold a council. At the level of the [manor](https://en.wikipedia.org/wiki/Manorialism) this might be a fairly mundane matter of agricultural policy, but also included sentencing by the lord for criminal offences, including capital punishment in some cases. Concerning the king's feudal court, such deliberation could include the question of declaring war. These are [examples of feudalism](https://en.wikipedia.org/wiki/Examples_of_feudalism); depending on the period of time and location in Europe, feudal customs and practices varied.
 
@@ -98,9 +88,7 @@ More recently in Scotland, on November 28, 2004, the [Abolition of Feudal Tenure
 
 > Main article: [Manorialism](https://en.wikipedia.org/wiki/Manorialism)
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Reeve_and_Serfs.jpg/220px-Reeve_and_Serfs.jpg)
-
-> Depiction of [socage](https://en.wikipedia.org/wiki/Socage) on the royal [demesne](https://en.wikipedia.org/wiki/Demesne) in feudal England, c. 1310
+<figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Reeve_and_Serfs.jpg/220px-Reeve_and_Serfs.jpg"><figcaption>Depiction of <a href="https://en.wikipedia.org/wiki/Socage">socage</a> on the royal <a href="https://en.wikipedia.org/wiki/Demesne">demesne</a> in feudal England, c. 1310</figcaption></figure>
 
 The phrase "feudal society" as defined by [Marc Bloch](https://en.wikipedia.org/wiki/Marc_Bloch)[^bloch-11] offers a wider definition than Ganshof's and includes within the feudal structure not only the warrior aristocracy bound by vassalage, but also the [peasantry](https://en.wikipedia.org/wiki/Peasant) bound by manorialism, and the estates of the Church. Thus the feudal order embraces society from top to bottom, though the "powerful and well-differentiated social group of the urban classes" came to occupy a distinct position to some extent outside the classic feudal hierarchy.
 
