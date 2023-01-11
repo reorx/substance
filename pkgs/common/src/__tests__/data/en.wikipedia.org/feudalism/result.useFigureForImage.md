@@ -222,23 +222,21 @@ Wikimedia Commons has media related to [Feudalism](https://commons.wikimedia.org
 
 [^ganshof-3]: [François Louis Ganshof](https://en.wikipedia.org/wiki/Fran%C3%A7ois_Louis_Ganshof) (1944). _Qu'est-ce que la féodalité_. Translated into English by [Philip Grierson](https://en.wikipedia.org/wiki/Philip_Grierson) as _Feudalism_, with a foreword by [F. M. Stenton](https://en.wikipedia.org/wiki/F._M._Stenton), 1st ed.: New York and London, 1952; 2nd ed: 1961; 3rd ed.: 1976.
 
-[^ganshof-3]: [François Louis Ganshof](https://en.wikipedia.org/wiki/Fran%C3%A7ois_Louis_Ganshof) (1944). _Qu'est-ce que la féodalité_. Translated into English by [Philip Grierson](https://en.wikipedia.org/wiki/Philip_Grierson) as _Feudalism_, with a foreword by [F. M. Stenton](https://en.wikipedia.org/wiki/F._M._Stenton), 1st ed.: New York and London, 1952; 2nd ed: 1961; 3rd ed.: 1976.
-
-[^10]: [[\[4\]](#cite_note-ebo-4)][[\[5\]](#cite_note-ebrown-5)][[\[6\]](#cite_note-reynolds-6)][[\[7\]](#cite_note-halsall-7)][[\[8\]](#cite_note-auto-8)][[\[9\]](#cite_note-9)]
-
 [^ebo-4]: ["Feudalism"](https://www.britannica.com/eb/article-9034150/feudalism), by [Elizabeth A. R. Brown](https://en.wikipedia.org/wiki/Elizabeth_A._R._Brown). _[Encyclopædia Britannica Online](https://en.wikipedia.org/wiki/Encyclop%C3%A6dia_Britannica_Online)_.
+
+[^ebrown-5]: Brown, Elizabeth A. R. (October 1974). "The Tyranny of a Construct: Feudalism and Historians of Medieval Europe". _The American Historical Review_. **79** (4): 1063–1088. [doi](https://en.wikipedia.org/wiki/Doi_(identifier)):[10.2307/1869563](https://doi.org/10.2307%2F1869563). [JSTOR](https://en.wikipedia.org/wiki/JSTOR_(identifier)) [1869563](https://www.jstor.org/stable/1869563).
+
+[^reynolds-6]: Reynolds, Susan, _Fiefs and Vassals: The Medieval Evidence Reinterpreted._ Oxford: Oxford University Press, 1994 [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [0-19-820648-8](https://en.wikipedia.org/wiki/Special:BookSources/0-19-820648-8)
 
 [^halsall-7]: ["Feudalism?"](http://www.fordham.edu/halsall/sbook1i.html#Feudalism), by [Paul Halsall](https://en.wikipedia.org/w/index.php?title=Paul_Halsall&action=edit&redlink=1). [Internet Medieval Sourcebook](https://en.wikipedia.org/wiki/Internet_Medieval_Sourcebook).
 
-[^ebo-4]: ["Feudalism"](https://www.britannica.com/eb/article-9034150/feudalism), by [Elizabeth A. R. Brown](https://en.wikipedia.org/wiki/Elizabeth_A._R._Brown). _[Encyclopædia Britannica Online](https://en.wikipedia.org/wiki/Encyclop%C3%A6dia_Britannica_Online)_.
+[^auto-8]: ["The Problem of Feudalism: An Historiographical Essay"](https://web.archive.org/web/20080229034347/http://www.wku.edu/~rob.harbison/projects/Gfeudal.html), by Robert Harbison, 1996, [Western Kentucky University](https://en.wikipedia.org/wiki/Western_Kentucky_University).
 
-[^ganshof-3]: [François Louis Ganshof](https://en.wikipedia.org/wiki/Fran%C3%A7ois_Louis_Ganshof) (1944). _Qu'est-ce que la féodalité_. Translated into English by [Philip Grierson](https://en.wikipedia.org/wiki/Philip_Grierson) as _Feudalism_, with a foreword by [F. M. Stenton](https://en.wikipedia.org/wiki/F._M._Stenton), 1st ed.: New York and London, 1952; 2nd ed: 1961; 3rd ed.: 1976.
+[^9]: Charles West, _[Reframing the Feudal Revolution: Political and Social Transformation Between Marne and Moselle, c. 800–c. 1100](https://en.wikipedia.org/wiki/Reframing_the_Feudal_Revolution:_Political_and_Social_Transformation_Between_Marne_and_Moselle,_c._800%E2%80%93c._1100)_ (Cambridge: Cambridge University Press, 2013).
 
-[^ganshof-3]: [François Louis Ganshof](https://en.wikipedia.org/wiki/Fran%C3%A7ois_Louis_Ganshof) (1944). _Qu'est-ce que la féodalité_. Translated into English by [Philip Grierson](https://en.wikipedia.org/wiki/Philip_Grierson) as _Feudalism_, with a foreword by [F. M. Stenton](https://en.wikipedia.org/wiki/F._M._Stenton), 1st ed.: New York and London, 1952; 2nd ed: 1961; 3rd ed.: 1976.
+[^10]: [[\[4\]](#cite_note-ebo-4)][[\[5\]](#cite_note-ebrown-5)][[\[6\]](#cite_note-reynolds-6)][[\[7\]](#cite_note-halsall-7)][[\[8\]](#cite_note-auto-8)][[\[9\]](#cite_note-9)]
 
 [^bloch-11]: Bloch, Marc, _Feudal Society._ Tr. L.A. Manyon. Two volume. Chicago: University of Chicago Press, 1961 [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [0-226-05979-0](https://en.wikipedia.org/wiki/Special:BookSources/0-226-05979-0)
-
-[^ebo-4]: ["Feudalism"](https://www.britannica.com/eb/article-9034150/feudalism), by [Elizabeth A. R. Brown](https://en.wikipedia.org/wiki/Elizabeth_A._R._Brown). _[Encyclopædia Britannica Online](https://en.wikipedia.org/wiki/Encyclop%C3%A6dia_Britannica_Online)_.
 
 [^jessee1996-12]: Jessee, W. Scott (1996). Cowley, Robert; Parker, Geoffrey (eds.). ["Feudalism"](https://web.archive.org/web/20041112062036/http://college.hmco.com/history/readerscomp/mil/html/mh_017900_feudalism.htm). _Reader's Companion to Military History_. New York: Houghton Mifflin Company. Archived from [the original](http://college.hmco.com/history/readerscomp/mil/html/mh_017900_feudalism.htm) on November 12, 2004.
 
@@ -246,13 +244,7 @@ Wikimedia Commons has media related to [Feudalism](https://commons.wikimedia.org
 
 [^14]: L. SHelton Woods (2002). [_Vietnam: A Global Studies Handbook_](https://books.google.com/books?id=3mWv1Xgn9poC&q=semifeudal+japan&pg=PT71). _ABC-CLIO_. [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [9781576074169](https://en.wikipedia.org/wiki/Special:BookSources/9781576074169). Retrieved October 9, 2019.
 
-[^jessee1996-12]: Jessee, W. Scott (1996). Cowley, Robert; Parker, Geoffrey (eds.). ["Feudalism"](https://web.archive.org/web/20041112062036/http://college.hmco.com/history/readerscomp/mil/html/mh_017900_feudalism.htm). _Reader's Companion to Military History_. New York: Houghton Mifflin Company. Archived from [the original](http://college.hmco.com/history/readerscomp/mil/html/mh_017900_feudalism.htm) on November 12, 2004.
-
 [^15]: Cf. for example: McDonald, Hamish (October 17, 2007). ["Feudal Government Alive and Well in Tonga"](http://www.smh.com.au/news/world/feudal-government-alive-and-well-in-tonga/2007/10/16/1192300767418.html). _Sydney Morning Herald_. [ISSN](https://en.wikipedia.org/wiki/ISSN_(identifier)) [0312-6315](https://www.worldcat.org/issn/0312-6315). Retrieved September 7, 2008.
-
-[^ebo-4]: ["Feudalism"](https://www.britannica.com/eb/article-9034150/feudalism), by [Elizabeth A. R. Brown](https://en.wikipedia.org/wiki/Elizabeth_A._R._Brown). _[Encyclopædia Britannica Online](https://en.wikipedia.org/wiki/Encyclop%C3%A6dia_Britannica_Online)_.
-
-[^ebrown-5]: Brown, Elizabeth A. R. (October 1974). "The Tyranny of a Construct: Feudalism and Historians of Medieval Europe". _The American Historical Review_. **79** (4): 1063–1088. [doi](https://en.wikipedia.org/wiki/Doi_(identifier)):[10.2307/1869563](https://doi.org/10.2307%2F1869563). [JSTOR](https://en.wikipedia.org/wiki/JSTOR_(identifier)) [1869563](https://www.jstor.org/stable/1869563).
 
 [^16]: Dygo, Marian (2013). ["Czy istniał feudalizm w Europie Środkowo-Wschodniej w średniowieczu?"](http://yadda.icm.edu.pl/yadda/element/bwmeta1.element.ojs-doi-10_12775_KH_2013_120_4_01). _Kwartalnik Historyczny_ (in Polish). **120** (4): 667. [doi](https://en.wikipedia.org/wiki/Doi_(identifier)):[10.12775/KH.2013.120.4.01](https://doi.org/10.12775%2FKH.2013.120.4.01). [ISSN](https://en.wikipedia.org/wiki/ISSN_(identifier)) [0023-5903](https://www.worldcat.org/issn/0023-5903).
 
@@ -274,29 +266,11 @@ Wikimedia Commons has media related to [Feudalism](https://commons.wikimedia.org
 
 [^lubetski-25]: Meir Lubetski (ed.). _Boundaries of the ancient Near Eastern world: a tribute to Cyrus H. Gordon_. "Notices on Pe'ah, Fay' and Feudum" by Alauddin Samarrai. [Pg. 248–250](https://books.google.com/books?id=dO4rbfA_WVIC&pg=PA248), Continuum International Publishing Group, 1998.
 
-[^lubetski-25]: Meir Lubetski (ed.). _Boundaries of the ancient Near Eastern world: a tribute to Cyrus H. Gordon_. "Notices on Pe'ah, Fay' and Feudum" by Alauddin Samarrai. [Pg. 248–250](https://books.google.com/books?id=dO4rbfA_WVIC&pg=PA248), Continuum International Publishing Group, 1998.
-
-[^lubetski-25]: Meir Lubetski (ed.). _Boundaries of the ancient Near Eastern world: a tribute to Cyrus H. Gordon_. "Notices on Pe'ah, Fay' and Feudum" by Alauddin Samarrai. [Pg. 248–250](https://books.google.com/books?id=dO4rbfA_WVIC&pg=PA248), Continuum International Publishing Group, 1998.
-
-[^lubetski-25]: Meir Lubetski (ed.). _Boundaries of the ancient Near Eastern world: a tribute to Cyrus H. Gordon_. "Notices on Pe'ah, Fay' and Feudum" by Alauddin Samarrai. [Pg. 248–250](https://books.google.com/books?id=dO4rbfA_WVIC&pg=PA248), Continuum International Publishing Group, 1998.
-
 [^26]: "fee, n.2." OED Online. Oxford University Press, June 2017. Web. August 18, 2017.
 
 [^27]: H. Kern, '[Feodum](http://www.dbnl.org/tekst/_taa005187001_01/_taa005187001_01_0032.php)', _De taal- en letterbode_, 1( 1870), pp. 189-201.
 
-[^lubetski-25]: Meir Lubetski (ed.). _Boundaries of the ancient Near Eastern world: a tribute to Cyrus H. Gordon_. "Notices on Pe'ah, Fay' and Feudum" by Alauddin Samarrai. [Pg. 248–250](https://books.google.com/books?id=dO4rbfA_WVIC&pg=PA248), Continuum International Publishing Group, 1998.
-
 [^28]: [William Stubbs](https://en.wikipedia.org/wiki/William_Stubbs). _The Constitutional History of England_ (3 volumes), 2nd edition 1875–78, Vol. 1, pg. 251, n. 1
-
-[^lubetski-25]: Meir Lubetski (ed.). _Boundaries of the ancient Near Eastern world: a tribute to Cyrus H. Gordon_. "Notices on Pe'ah, Fay' and Feudum" by Alauddin Samarrai. [Pg. 248–250](https://books.google.com/books?id=dO4rbfA_WVIC&pg=PA248), Continuum International Publishing Group, 1998.
-
-[^bloch-ety1-29]: Marc Bloch. _Feudal Society_, Vol. 1, 1964. pp.165–66.
-
-[^bloch-ety2-30]: Marc Bloch. _Feudalism_, 1961, pg. 106.
-
-[^bloch-ety1-29]: Marc Bloch. _Feudal Society_, Vol. 1, 1964. pp.165–66.
-
-[^bloch-ety2-30]: Marc Bloch. _Feudalism_, 1961, pg. 106.
 
 [^bloch-ety1-29]: Marc Bloch. _Feudal Society_, Vol. 1, 1964. pp.165–66.
 
@@ -304,35 +278,17 @@ Wikimedia Commons has media related to [Feudalism](https://commons.wikimedia.org
 
 [^31]: Encyclopædia Britannica, 9th.ed. vol. 9, p.119.
 
-[^lubetski-25]: Meir Lubetski (ed.). _Boundaries of the ancient Near Eastern world: a tribute to Cyrus H. Gordon_. "Notices on Pe'ah, Fay' and Feudum" by Alauddin Samarrai. [Pg. 248–250](https://books.google.com/books?id=dO4rbfA_WVIC&pg=PA248), Continuum International Publishing Group, 1998.
-
 [^arlewis-32]: [Archibald R. Lewis](https://en.wikipedia.org/wiki/Archibald_R._Lewis). _The Development of Southern French and Catalan Society 718–1050_, 1965, pp. 76–77.
 
-[^lubetski-25]: Meir Lubetski (ed.). _Boundaries of the ancient Near Eastern world: a tribute to Cyrus H. Gordon_. "Notices on Pe'ah, Fay' and Feudum" by Alauddin Samarrai. [Pg. 248–250](https://books.google.com/books?id=dO4rbfA_WVIC&pg=PA248), Continuum International Publishing Group, 1998.
-
-[^lubetski-25]: Meir Lubetski (ed.). _Boundaries of the ancient Near Eastern world: a tribute to Cyrus H. Gordon_. "Notices on Pe'ah, Fay' and Feudum" by Alauddin Samarrai. [Pg. 248–250](https://books.google.com/books?id=dO4rbfA_WVIC&pg=PA248), Continuum International Publishing Group, 1998.
-
-[^samarrai-33]: [Alauddin Samarrai](https://en.wikipedia.org/w/index.php?title=Alauddin_Samarrai&action=edit&redlink=1). "The term 'fief': A possible Arabic origin", _Studies in Medieval Culture_, 4.1 (1973), pp. 78–82.
-
 [^samarrai-33]: [Alauddin Samarrai](https://en.wikipedia.org/w/index.php?title=Alauddin_Samarrai&action=edit&redlink=1). "The term 'fief': A possible Arabic origin", _Studies in Medieval Culture_, 4.1 (1973), pp. 78–82.
 
 [^Gat,\_Azar\_2006.\_pp.\_332-34]: Gat, Azar. _War in Human Civilization_, New York: Oxford University Press, 2006. pp. 332–343
-
-[^Gat,\_Azar\_2006.\_pp.\_332-34]: Gat, Azar. _War in Human Civilization_, New York: Oxford University Press, 2006. pp. 332–343
-
-[^ebo-4]: ["Feudalism"](https://www.britannica.com/eb/article-9034150/feudalism), by [Elizabeth A. R. Brown](https://en.wikipedia.org/wiki/Elizabeth_A._R._Brown). _[Encyclopædia Britannica Online](https://en.wikipedia.org/wiki/Encyclop%C3%A6dia_Britannica_Online)_.
-
-[^ganshof-3]: [François Louis Ganshof](https://en.wikipedia.org/wiki/Fran%C3%A7ois_Louis_Ganshof) (1944). _Qu'est-ce que la féodalité_. Translated into English by [Philip Grierson](https://en.wikipedia.org/wiki/Philip_Grierson) as _Feudalism_, with a foreword by [F. M. Stenton](https://en.wikipedia.org/wiki/F._M._Stenton), 1st ed.: New York and London, 1952; 2nd ed: 1961; 3rd ed.: 1976.
-
-[^ganshof-3]: [François Louis Ganshof](https://en.wikipedia.org/wiki/Fran%C3%A7ois_Louis_Ganshof) (1944). _Qu'est-ce que la féodalité_. Translated into English by [Philip Grierson](https://en.wikipedia.org/wiki/Philip_Grierson) as _Feudalism_, with a foreword by [F. M. Stenton](https://en.wikipedia.org/wiki/F._M._Stenton), 1st ed.: New York and London, 1952; 2nd ed: 1961; 3rd ed.: 1976.
 
 [^stephenson-35]: [_Medieval Feudalism_](https://www.scribd.com/doc/28860952/Mediavel-Feudalism) [Archived](https://web.archive.org/web/20120209083705/http://www.scribd.com/doc/28860952/Mediavel-Feudalism) 2012-02-09 at the [Wayback Machine](https://en.wikipedia.org/wiki/Wayback_Machine), by [Carl Stephenson](https://en.wikipedia.org/wiki/Carl_Stephenson_(historian)). Cornell University Press, 1942. Classic introduction to Feudalism.
 
 [^36]: Encyc. Brit. op.cit. It was a standard part of the feudal contract (fief \[land\], fealty \[oath of allegiance\], faith \[belief in God\]) that every tenant was under an obligation to attend his overlord's court to advise and support him; [Sir Harris Nicolas](https://en.wikipedia.org/wiki/Sir_Harris_Nicolas), in _Historic Peerage of England_, ed. [Courthope](https://en.wikipedia.org/wiki/William_Courthope_(officer_of_arms)), p.18, quoted by Encyc. Brit, op.cit., p. 388: "It was the principle of the feudal system that every tenant should attend the court of his immediate superior".
 
 [^37]: Chris Wickham, _The Inheritance of Rome_, p. 522-3.
-
-[^auto1-38]: Wickham, _The Inheritance of Rome_, p. 518.
 
 [^auto1-38]: Wickham, _The Inheritance of Rome_, p. 518.
 
@@ -354,10 +310,6 @@ Wikimedia Commons has media related to [Feudalism](https://commons.wikimedia.org
 
 [^47]: Jerzy Topolski, Continuity and discontinuity in the development of the feudal system in Eastern Europe (Xth to XVIIth centuries)" _Journal of European Economic History_ (1981) 10#2 pp: 373–400.
 
-[^bloch-11]: Bloch, Marc, _Feudal Society._ Tr. L.A. Manyon. Two volume. Chicago: University of Chicago Press, 1961 [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [0-226-05979-0](https://en.wikipedia.org/wiki/Special:BookSources/0-226-05979-0)
-
-[^cheyette-22]: Fredric L. Cheyette. "FEUDALISM, EUROPEAN." in _New Dictionary of the History Of Ideas_, Vol. 2, ed. Maryanne Cline Horowitz, Thomas Gale 2005, [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [0-684-31379-0](https://en.wikipedia.org/wiki/Special:BookSources/0-684-31379-0). pp. 828–831
-
 [^bartlett-48]: [Robert Bartlett](https://en.wikipedia.org/wiki/Robert_Bartlett_(historian)). "Perspectives on the Medieval World" in _Medieval Panorama_, 2001, [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [0-89236-642-7](https://en.wikipedia.org/wiki/Special:BookSources/0-89236-642-7)
 
 [^49]: Richard Abels. ["Feudalism"](https://web.archive.org/web/20170705064653/https://www.usna.edu/Users/history/abels/hh315/Feudal.htm). usna.edu. Archived from [the original](http://www.usna.edu/Users/history/abels/hh315/Feudal.htm) on July 5, 2017. Retrieved August 30, 2010.
@@ -368,32 +320,16 @@ Wikimedia Commons has media related to [Feudalism](https://commons.wikimedia.org
 
 [^52]: Wolf, Eric Robert (2010). [_Europe and the people without history_](http://worldcat.org/oclc/905625305). University of California Press. [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [978-0-520-26818-0](https://en.wikipedia.org/wiki/Special:BookSources/978-0-520-26818-0). [OCLC](https://en.wikipedia.org/wiki/OCLC_(identifier)) [905625305](https://www.worldcat.org/oclc/905625305).
 
-[^daileader-50]: [Philip Daileader](https://en.wikipedia.org/wiki/Philip_Daileader), "Feudalism", _The High Middle Ages_, Course No. 869, [The Teaching Company](https://en.wikipedia.org/wiki/The_Teaching_Company), [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [1-56585-827-1](https://en.wikipedia.org/wiki/Special:BookSources/1-56585-827-1)
-
-[^daileader-50]: [Philip Daileader](https://en.wikipedia.org/wiki/Philip_Daileader), "Feudalism", _The High Middle Ages_, Course No. 869, [The Teaching Company](https://en.wikipedia.org/wiki/The_Teaching_Company), [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [1-56585-827-1](https://en.wikipedia.org/wiki/Special:BookSources/1-56585-827-1)
-
-[^daileader-50]: [Philip Daileader](https://en.wikipedia.org/wiki/Philip_Daileader), "Feudalism", _The High Middle Ages_, Course No. 869, [The Teaching Company](https://en.wikipedia.org/wiki/The_Teaching_Company), [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [1-56585-827-1](https://en.wikipedia.org/wiki/Special:BookSources/1-56585-827-1)
-
 [^53]: Bentley, Michael (2006). [_Companion to Historiography_](https://books.google.com/books?id=JWqIAgAAQBAJ&q=personenverbandsstaat&pg=PA126). Routledge. p. 126. [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [9781134970247](https://en.wikipedia.org/wiki/Special:BookSources/9781134970247). Retrieved November 17, 2019.
 
 [^54]: Elazar, Daniel Judah (1996). [_Covenant and commonwealth : from Christian separation through the Protestant Reformation_](https://books.google.com/books?id=yKOIqPsf7acC&q=personenverbandsstaat&pg=PA381). Vol. 2. Transaction Publishers. p. 76. [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [9781412820523](https://en.wikipedia.org/wiki/Special:BookSources/9781412820523). Retrieved November 17, 2019.
 
 [^55]: Raynolds, Susan (1996). [_Fiefs and Vassals: The Medieval Evidence Reinterpreted_](https://books.google.com/books?id=vkQ8z7S2cIIC&q=personenverbandsstaat&pg=PA397). Oxford University Press. p. 397. [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [9780198206484](https://en.wikipedia.org/wiki/Special:BookSources/9780198206484). Retrieved November 17, 2019.
 
-[^ebrown-5]: Brown, Elizabeth A. R. (October 1974). "The Tyranny of a Construct: Feudalism and Historians of Medieval Europe". _The American Historical Review_. **79** (4): 1063–1088. [doi](https://en.wikipedia.org/wiki/Doi_(identifier)):[10.2307/1869563](https://doi.org/10.2307%2F1869563). [JSTOR](https://en.wikipedia.org/wiki/JSTOR_(identifier)) [1869563](https://www.jstor.org/stable/1869563).
-
-[^daileader-50]: [Philip Daileader](https://en.wikipedia.org/wiki/Philip_Daileader), "Feudalism", _The High Middle Ages_, Course No. 869, [The Teaching Company](https://en.wikipedia.org/wiki/The_Teaching_Company), [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [1-56585-827-1](https://en.wikipedia.org/wiki/Special:BookSources/1-56585-827-1)
-
-[^reynolds-6]: Reynolds, Susan, _Fiefs and Vassals: The Medieval Evidence Reinterpreted._ Oxford: Oxford University Press, 1994 [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [0-19-820648-8](https://en.wikipedia.org/wiki/Special:BookSources/0-19-820648-8)
-
-[^daileader-50]: [Philip Daileader](https://en.wikipedia.org/wiki/Philip_Daileader), "Feudalism", _The High Middle Ages_, Course No. 869, [The Teaching Company](https://en.wikipedia.org/wiki/The_Teaching_Company), [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [1-56585-827-1](https://en.wikipedia.org/wiki/Special:BookSources/1-56585-827-1)
-
 [^56]: Reynolds, p 11
 
 [^57]: Hall, John Whitney (1962). "Feudalism in Japan-A Reassessment". _Comparative Studies in Society and History_. **5** (1): 15–51. [doi](https://en.wikipedia.org/wiki/Doi_(identifier)):[10.1017/S001041750000150X](https://doi.org/10.1017%2FS001041750000150X). [JSTOR](https://en.wikipedia.org/wiki/JSTOR_(identifier)) [177767](https://www.jstor.org/stable/177767). [S2CID](https://en.wikipedia.org/wiki/S2CID_(identifier)) [145750386](https://api.semanticscholar.org/CorpusID:145750386).
 
 [^58]: [Karl Friday](https://en.wikipedia.org/wiki/Karl_Friday), ["The Futile Paradigm: In Quest of Feudalism in Early Medieval Japan,"](https://www.academia.edu/download/71051487/j.1478-0542.2009.00664.x20211002-26720-9g3rf8.pdf)[\[_[dead link](https://en.wikipedia.org/wiki/Wikipedia:Link_rot)_\]] _History Compass_ 8.2 (2010): 179–196.
-
-[^daileader-50]: [Philip Daileader](https://en.wikipedia.org/wiki/Philip_Daileader), "Feudalism", _The High Middle Ages_, Course No. 869, [The Teaching Company](https://en.wikipedia.org/wiki/The_Teaching_Company), [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [1-56585-827-1](https://en.wikipedia.org/wiki/Special:BookSources/1-56585-827-1)
 
 [^59]: Richard Abels, "The Historiography of a Construct: 'Feudalism' and the Medieval Historian." _History Compass_ (2009) 7#3 pp: 1008–1031.

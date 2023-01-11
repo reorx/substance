@@ -74,8 +74,6 @@ export const WikipediaExtractor: Extractor = {
     },
 
     processElement: ($, $content, state) => {
-      const refs: {[key: string]: string|null} = {}
-
       // remove images
       if (state.options.removeImages) {
         $content.find('.thumb').remove()
@@ -83,19 +81,27 @@ export const WikipediaExtractor: Extractor = {
       }
 
       // get references
+      const refsMap: {[key: string]: string|null} = {}
+      const refIds: string[] = []
       const refIdPrefix = 'cite_note-'
+      const getRefId = (name: string) => {
+        // normally this is true
+        if (name.startsWith(refIdPrefix)) {
+          return name.slice(refIdPrefix.length)
+        }
+        return name
+      }
       $content.find('.references').each((i, el) => {
         const ol = $(el)
         ol.find('li').each((i, el) => {
           const li = $(el)
           let id = li.attr('id')
-          if (id) {
-            // normally this is true
-            if (id.startsWith(refIdPrefix)) {
-              id = id.slice(refIdPrefix.length)
-            }
-            refs[id] = li.html()
-          }
+          if (!id) return
+
+          const refId = getRefId(id)
+          refsMap[refId] = li.html()
+          // keep ref order
+          refIds.push(refId)
         })
         // remove the references and the heading before the references
         let topMost = ol
@@ -112,26 +118,17 @@ export const WikipediaExtractor: Extractor = {
       const $footnotes = $('<article/>')
       $('sup.reference a').each((i, el) => {
         const a = $(el)
-        // should be '#cite_note-1' but instead get 'https://...#cite_note-1
-        const sp = a.attr('href')!.split('#')
-        let refId = sp[sp.length - 1]
-        refId = refId.slice(refIdPrefix.length)
+        // url is relative anchor here: #cite_note-1
+        const refId = getRefId(new URL(a.attr('href')!.slice(1)).href)
         if (!refId) return
-        // console.log('refId', refId)
-        /* no need for this since we don't use text as before
-        // regex get '1a' from '[1a]'
-        const refNameMatch = a.text().match(/\[(.+)\]/)
-        if (!refNameMatch) {
-          return
-        }
-        // remove whitespace in refName
-        const refName = refNameMatch[1].replace(/\s/g, '')
-        */
 
         a.parent().replaceWith(`<sup>^${refId}</sup>`)
-
-        $footnotes.append(`<div><sup>^${refId}</sup>: ${refs[refId]}</div>`)
       })
+
+      // loop refIds to create each footnote
+      for (const refId of refIds) {
+        $footnotes.append(`<div><sup>^${refId}</sup>: ${refsMap[refId]}</div>`)
+      }
       state.sharedData.$footnotes = $footnotes
       // console.log('footnotes', $footnotes.html())
 
