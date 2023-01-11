@@ -165,6 +165,13 @@ export class ExtractManager {
     // - process links
     $content.find('a').each((i, el) => {
       const $el = $(el)
+      // unwrap imgs in links
+      const imgs = $el.find('>img')
+      if (imgs.length) {
+        imgs.eq(0).unwrap()
+        // after unwrap, link is deleted so no further processing is needed
+        return
+      }
       // remove empty links
       if (!$el.text()?.trim()) {
         $el.remove()

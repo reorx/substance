@@ -71,8 +71,8 @@ describe('zh.wikipedia.org', () => {
       const {content, contentMarkdown, title} = em.extract(html, url)
       expect(title).toBe('阿诗玛')
 
-      // dm.saveResult(null, 'md', contentMarkdown)
-      expect(contentMarkdown).toBe(dm.getResult(null, 'md'))
+      dm.saveResult(null, 'md', contentMarkdown)
+      // expect(contentMarkdown).toBe(dm.getResult(null, 'md'))
     })
   })
 
@@ -88,8 +88,19 @@ describe('en.wikipedia.org', () => {
       const {content, contentMarkdown, title} = em.extract(html, url)
       expect(title).toBe('Feudalism')
 
-      dm.saveResult(null, 'md', contentMarkdown)
-      // expect(contentMarkdown).toBe(dm.getResult(null, 'md'))
+      // dm.saveResult(null, 'md', contentMarkdown)
+      expect(contentMarkdown).toBe(dm.getResult(null, 'md'))
+    })
+
+    test('removeImages', () => {
+      const variant = 'removeImages'
+      const {content, contentMarkdown, title} = em.extract(html, url, {
+        removeImages: true,
+      })
+      expect(title).toBe('Feudalism')
+
+      // dm.saveResult(variant, 'md', contentMarkdown)
+      expect(contentMarkdown).toBe(dm.getResult(variant, 'md'))
     })
   })
 })
