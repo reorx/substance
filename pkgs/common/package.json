@@ -7,7 +7,6 @@
     "turndown": "^7.1.1"
   },
   "devDependencies": {
-    "@types/cheerio": "^0.22.31",
     "@types/turndown": "^5.0.1"
   }
 }

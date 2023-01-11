@@ -1,18 +1,17 @@
-import fs from 'fs/promises';
-import TurndownService from 'turndown';
-import ExtractManager from './extract.js';
+import { Cheerio, Element } from "cheerio";
+import { Extractor } from "../extract";
 
-const formatHeading = ($node) => {
+const formatHeading = ($node: Cheerio<Element>) => {
   const tag = `<${$node[0].name}>${$node.text()}</${$node[0].name}>`
   // console.log('replaceWith', tag)
   $node.replaceWith(tag)
 }
 
-const WikipediaExtractor = {
+export const WikipediaExtractor: Extractor = {
   matches: {
     domain: 'zh.wikipedia.org',
     // url: 'https://zh.wikipedia.org/.+'
-    selector: '#mw-content-text',
+    selectors: ['#mw-content-text'],
   },
   options: {
     removeLinks: {
@@ -51,15 +50,17 @@ const WikipediaExtractor = {
       }
     },
 
-    postTransforms: ($, $content, sharedData) => {
-      const refs = {}
+    processElement: ($, $content, state) => {
+      const refs: {[key: string]: string|null} = {}
       // get references
       $content.find('.references').each((i, el) => {
         const ol = $(el)
-        console.log('ol', ol.html())
         ol.find('li').each((i, el) => {
           const li = $(el)
-          refs[li.attr('id')] = li.html()
+          const id = li.attr('id')
+          if (id) {
+            refs[id] = li.html()
+          }
         })
         // remove the references and the heading before the references
         let topMost = ol
@@ -77,13 +78,16 @@ const WikipediaExtractor = {
       $('sup.reference a').each((i, el) => {
         const a = $(el)
         // should be '#cite_note-1' but instead get 'https://...#cite_note-1
-        const sp = a.attr('href').split('#')
+        const sp = a.attr('href')!.split('#')
         const refId = sp[sp.length - 1]
         // console.log('refId', refId)
         // regex get '1a' from '[1a]'
-        let refName = a.text().match(/\[(.+)\]/)[1]
+        const refNameMatch = a.text().match(/\[(.+)\]/)
+        if (!refNameMatch) {
+          return
+        }
         // remove whitespace in refName
-        refName = refName.replace(/\s/g, '')
+        const refName = refNameMatch[1].replace(/\s/g, '')
 
         a.parent().replaceWith(`<sup>^${refName}</sup>`)
 
@@ -101,16 +105,33 @@ const WikipediaExtractor = {
         a.replaceWith(a.text())
       });
 
-      sharedData.$footnotes = $footnotes
+      state.sharedData.$footnotes = $footnotes
     },
 
-    markdown: ($, $content, turndownService, sharedData) => {
-      const markdown = turndownService.turndown($content.html())
-      // console.log(markdown)
+    turndown:{
+      options: {
+        headingStyle: 'atx',
+        hr: '---',
+        bulletListMarker: '-',
+        codeBlockStyle: 'fenced',
+        emDelimiter: '_',
+      },
+      customize: ($, turndownService, state) => {
+        turndownService.addRule('footnote', {
+          filter: ['sup'],
+          replacement: (content) => {
+            return `[${content}]`
+          }
+        })
+      }
+    },
 
-      const footnotesMarkdown = turndownService.turndown(sharedData.$footnotes.html())
+    markdown: ($, $content, turndownService, state) => {
+      const markdown = turndownService.turndown($content.html() || '')
+
+      const footnotesMarkdown = turndownService.turndown(state.sharedData.$footnotes.html() || '')
       return markdown + '\n\n' + footnotesMarkdown
-    }
+    },
   },
 
   title: {
@@ -119,53 +140,7 @@ const WikipediaExtractor = {
     ],
   },
 
-  excerpt: null,
-  author: null,
-  publishedDate: null,
-
-  extraData: ($, $content, sharedData) => {
+  extraData: ($, state) => {
     // convert category to tags
   },
-
-  turndown: ($) => {
-    const turndownService = TurndownService({
-      headingStyle: 'atx',
-      hr: '---',
-      bulletListMarker: '-',
-      codeBlockStyle: 'fenced',
-      emDelimiter: '_',
-    })
-    turndownService.addRule('footnote', {
-      filter: ['sup'],
-      replacement: (content) => {
-        return `[${content}]`
-      }
-    })
-    return turndownService
-  }
 };
-
-
-// main
-const defaultTurndownOptions =  {
-  headingStyle: 'atx',
-  hr: '---',
-  bulletListMarker: '-',
-  codeBlockStyle: 'fenced',
-  emDelimiter: '_',
-}
-const inputFile = process.argv[2]
-fs.readFile(inputFile).then(text => {
-  const manager = new ExtractManager(WikipediaExtractor, defaultTurndownOptions)
-
-  const { content, contentMarkdown, title } = manager.extract(text)
-  console.log(title)
-
-  // write html and markdown to file
-  fs.writeFile(`output/${title}.html`, content)
-    .then(() => console.log(`${title}.html saved to file`))
-    .catch((err) => console.error(err));
-  fs.writeFile(`output/${title}.md`, contentMarkdown)
-    .then(() => console.log(`${title}.md saved to file`))
-    .catch((err) => console.error(err));
-})
