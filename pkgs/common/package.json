@@ -2,11 +2,15 @@
   "name": "@substance/common",
   "version": "1.0.0",
   "main": "src/index.ts",
+  "scripts": {
+    "build": "webpack --mode production"
+  },
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
     "turndown": "^7.1.1"
   },
   "devDependencies": {
-    "@types/turndown": "^5.0.1"
+    "@types/turndown": "^5.0.1",
+    "request": "^2.88.2"
   }
 }

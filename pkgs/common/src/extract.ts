@@ -69,7 +69,7 @@ export interface Extractor {
 
 
 // create a class called ExtractManager, the constructor takes a extractor object
-class ExtractManager {
+export class ExtractManager {
   extractor: Extractor
   turndownOptions?: TurndownService.Options
 
