@@ -139,6 +139,13 @@ export class ExtractManager {
       sharedData,
     }
 
+    // clean $content
+    if (clean) {
+      clean.forEach(selector => {
+        $content.find(selector).remove()
+      })
+    }
+
     // Common processings
     // - remove special tags
     $content.find('style, script, noscript').remove()
@@ -171,13 +178,14 @@ export class ExtractManager {
     $content.find('[src]').each((i, el) => {
       $(el).attr('src', getAbsUrl($(el).attr('src'), state.baseUrl))
     })
-
-    // clean $content
-    if (clean) {
-      clean.forEach(selector => {
-        $content.find(selector).remove()
+    // - remove class names in table
+    $content.find('table').each((i, el) => {
+      const $el = $(el)
+      $el.removeAttr('class')
+      $el.find('*').each((i, el) => {
+        $(el).removeAttr('class')
       })
-    }
+    })
 
     // transform $content
     if (transforms) {

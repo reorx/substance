@@ -8,6 +8,8 @@ export function getBaseUrl(url: string) {
 
 export function getAbsUrl(url: string|undefined, baseUrl: string) {
   if (!url) return ''
+  // do not convert anchors
+  if (url.startsWith('#')) return url
   if (url.match(/^https?:\/\//)) {
     // is absolute url already
     return url

@@ -71,8 +71,8 @@ describe('zh.wikipedia.org', () => {
       const {content, contentMarkdown, title} = em.extract(html, url)
       expect(title).toBe('阿诗玛')
 
-      dm.saveResult(null, 'md', contentMarkdown)
-      // expect(contentMarkdown).toBe(dm.getResult(null, 'md'))
+      // dm.saveResult(null, 'md', contentMarkdown)
+      expect(contentMarkdown).toBe(dm.getResult(null, 'md'))
     })
   })
 

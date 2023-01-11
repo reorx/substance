@@ -71,12 +71,17 @@ export const WikipediaExtractor: Extractor = {
       }
 
       // get references
+      const refIdPrefix = 'cite_note-'
       $content.find('.references').each((i, el) => {
         const ol = $(el)
         ol.find('li').each((i, el) => {
           const li = $(el)
-          const id = li.attr('id')
+          let id = li.attr('id')
           if (id) {
+            // normally this is true
+            if (id.startsWith(refIdPrefix)) {
+              id = id.slice(refIdPrefix.length)
+            }
             refs[id] = li.html()
           }
         })
@@ -97,8 +102,11 @@ export const WikipediaExtractor: Extractor = {
         const a = $(el)
         // should be '#cite_note-1' but instead get 'https://...#cite_note-1
         const sp = a.attr('href')!.split('#')
-        const refId = sp[sp.length - 1]
+        let refId = sp[sp.length - 1]
+        refId = refId.slice(refIdPrefix.length)
+        if (!refId) return
         // console.log('refId', refId)
+        /* no need for this since we don't use text as before
         // regex get '1a' from '[1a]'
         const refNameMatch = a.text().match(/\[(.+)\]/)
         if (!refNameMatch) {
@@ -106,10 +114,11 @@ export const WikipediaExtractor: Extractor = {
         }
         // remove whitespace in refName
         const refName = refNameMatch[1].replace(/\s/g, '')
+        */
 
-        a.parent().replaceWith(`<sup>^${refName}</sup>`)
+        a.parent().replaceWith(`<sup>^${refId}</sup>`)
 
-        $footnotes.append(`<div><sup id="${refId}">^${refName}</sup>: ${refs[refId]}</div>`)
+        $footnotes.append(`<div><sup>^${refId}</sup>: ${refs[refId]}</div>`)
       })
       state.sharedData.$footnotes = $footnotes
       // console.log('footnotes', $footnotes.html())
