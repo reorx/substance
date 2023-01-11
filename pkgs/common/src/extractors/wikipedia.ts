@@ -8,9 +8,8 @@ const formatHeading = ($node: Cheerio<Element>) => {
 }
 
 export const WikipediaExtractor: Extractor = {
-  matches: {
-    domain: 'zh.wikipedia.org',
-    // url: 'https://zh.wikipedia.org/.+'
+  match: {
+    url: /https:\/\/zh\.wikipedia\.org\/wiki\/.+/,
     selectors: ['#mw-content-text'],
   },
   options: {

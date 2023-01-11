@@ -35,9 +35,11 @@ export interface ExtractResult {
 }
 
 export interface Extractor {
-  matches: {
+  // match all the conditions
+  match: {
     domain?: string|RegExp
-    url?: string|RegExp
+    url?: RegExp
+    // match any selector in the array
     selectors?: string[]
   }
   options: OptionsDef
@@ -198,6 +200,39 @@ class ExtractManager {
       extraData,
     }
   }
+}
+
+export function matchExtractor(extractor: Extractor, html: string, url: string): boolean {
+  const match = extractor.match
+  const matches: boolean[] = []
+
+  // get domain from parsing url
+  const domain = new URL(url).hostname
+
+  if (match.domain) {
+    if (typeof match.domain === 'string') {
+      matches.push(match.domain === domain)
+    } else {
+      matches.push(match.domain.test(domain))
+    }
+  }
+
+  if (match.url) {
+    matches.push(match.url.test(url))
+  }
+
+  if (match.selectors) {
+    let isSelectorsMatch = false
+    const $ = load(html, null, false)
+    match.selectors.forEach(selector => {
+      if ($(selector).length) {
+        isSelectorsMatch = true
+      }
+    })
+    matches.push(isSelectorsMatch)
+  }
+
+  return matches.every(match => match)
 }
 
 export default ExtractManager
