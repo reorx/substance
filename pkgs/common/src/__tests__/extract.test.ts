@@ -46,8 +46,17 @@ describe('zh.wikipedia.org', () => {
       removeLinks: true
     })
 
-    dm.saveResult(variant, 'md', contentMarkdown)
-    // expect(contentMarkdown).toBe(dm.getResult(variant, 'md'))
+    // dm.saveResult(variant, 'md', contentMarkdown)
+    expect(contentMarkdown).toBe(dm.getResult(variant, 'md'))
+  })
+
+  test('getTagsFromCategories', () => {
+    const {content, contentMarkdown, extraData} = em.extract(html, url, {
+      getTagsFromCategories: true
+    })
+
+    expect(contentMarkdown).toBe(dm.getResult(null, 'md'))
+    expect(extraData.tags).toStrictEqual(["历史学", "封建制度"])
   })
 
 })

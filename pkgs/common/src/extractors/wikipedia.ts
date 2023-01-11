@@ -17,8 +17,8 @@ export const WikipediaExtractor: Extractor = {
       help: "Remove all the links in the output",
       default: false,
     },
-    getTagsFromCategory: {
-      help: "Get tags from the category",
+    getTagsFromCategories: {
+      help: "Get tags from the categories of the wiki",
       default: false,
     }
   },
@@ -35,7 +35,6 @@ export const WikipediaExtractor: Extractor = {
       '.mw-jump-link',
       '.mw-cite-backlink',
       '.citation-comment',
-      '#catlinks',
     ],
 
     transforms: {
@@ -92,6 +91,7 @@ export const WikipediaExtractor: Extractor = {
 
         $footnotes.append(`<div><sup id="${refId}">^${refName}</sup>: ${refs[refId]}</div>`)
       })
+      state.sharedData.$footnotes = $footnotes
       // console.log('footnotes', $footnotes.html())
 
       let processLink: (a: Cheerio<Element>) => void
@@ -118,8 +118,6 @@ export const WikipediaExtractor: Extractor = {
       }
       $content.find('a').each((i, el) => processLink($(el)))
       $footnotes.find('a').each((i, el) => processLink($(el)))
-
-      state.sharedData.$footnotes = $footnotes
     },
 
     turndown:{
@@ -156,5 +154,16 @@ export const WikipediaExtractor: Extractor = {
 
   extraData: ($, state) => {
     // convert category to tags
+    const extraData: {[key: string]: any} = {}
+    let tags: string[] = []
+    if (state.options.getTagsFromCategories) {
+      $('#mw-normal-catlinks li a').each((i, el) => {
+        const tag = $(el).text()?.trim()
+        if (tag) tags.push(tag)
+      })
+      extraData.tags = tags
+    }
+    return extraData
   },
+
 };

@@ -19,7 +19,7 @@ const WikipediaExtractor = {
       help: "Remove all the links in the output",
       default: false,
     },
-    getTagsFromCategory: {
+    getTagsFromCategories: {
       help: "Get tags from the category",
       default: false,
     }
