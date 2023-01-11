@@ -72,7 +72,7 @@ export const WikipediaExtractor: Extractor = {
       })
       // console.log('refs', refs)
 
-      // create a new Cheerio element to store footnotes
+      // create a new element to store footnotes
       const $footnotes = $('<article/>')
       $('sup.reference a').each((i, el) => {
         const a = $(el)
@@ -94,15 +94,30 @@ export const WikipediaExtractor: Extractor = {
       })
       // console.log('footnotes', $footnotes.html())
 
-      // remove links in paragraphs
-      $content.find('a').each((i, el) => {
-        const a = $(el)
-        a.replaceWith(a.text())
-      });
-      $footnotes.find('a').each((i, el) => {
-        const a = $(el)
-        a.replaceWith(a.text())
-      });
+      let processLink: (a: Cheerio<Element>) => void
+      if (state.options.removeLinks) {
+        // remove links
+        processLink = (a) => {
+          a.replaceWith(a.text())
+        }
+      } else {
+        // update links to be absolute
+        const urlObj = new URL(state.url)
+        urlObj.pathname = "";
+        urlObj.search = "";
+        urlObj.hash = "";
+        const baseurl = urlObj.href.slice(0, -1)
+        processLink = (a) => {
+          const href = a.attr('href')
+          if (href && !href.match(/^https?:\/\//)) {
+            a.attr('href', baseurl + href)
+          }
+          // remove title so that it won't be rendered in markdown link
+          a.removeAttr('title')
+        }
+      }
+      $content.find('a').each((i, el) => processLink($(el)))
+      $footnotes.find('a').each((i, el) => processLink($(el)))
 
       state.sharedData.$footnotes = $footnotes
     },

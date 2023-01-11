@@ -10,8 +10,11 @@ export interface OptionsDef {
 export interface Options {
   [key: string]: any
 }
+
+// alias to cheerio types
 type Node = Cheerio<AnyNode>
 type Element = Cheerio<CheerioElement>
+
 export interface State {
   html: string
   url: string
@@ -98,7 +101,7 @@ class ExtractManager {
       }
     })
 
-    return Object.assign({}, inputOptions, this.getDefaultOptions())
+    return Object.assign({}, this.getDefaultOptions(), inputOptions)
   }
 
   extract(html: string, url: string, inputOptions?: Options) {

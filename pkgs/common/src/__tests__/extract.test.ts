@@ -40,4 +40,14 @@ describe('zh.wikipedia.org', () => {
     expect(contentMarkdown).toBe(dm.getResult(null, 'md'))
   })
 
+  test('removeLinks', () => {
+    const variant = 'removeLinks'
+    const {content, contentMarkdown, title} = em.extract(html, url, {
+      removeLinks: true
+    })
+
+    dm.saveResult(variant, 'md', contentMarkdown)
+    // expect(contentMarkdown).toBe(dm.getResult(variant, 'md'))
+  })
+
 })
