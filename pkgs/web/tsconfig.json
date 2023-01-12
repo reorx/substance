@@ -1,0 +1,24 @@
+{
+  "extends": "../tsconfig.settings.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@substance/common/*": ["../common/src/*"]
+    },
+    "declarationDir": "dist/types",
+    "allowJs": true,
+    "sourceMap": false,
+    // "noEmit": true,
+    // "noEmitOnError": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": true,
+  },
+  "references": [
+    { "path": "../common" }
+  ],
+  "include": [
+    "./src"
+  ]
+}

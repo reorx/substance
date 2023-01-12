@@ -1,0 +1,21 @@
+{
+  "name": "@substance/web",
+  "version": "0.1.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "webpack serve",
+    "build": "NODE_ENV=production webpack",
+    "build:analyze": "WEBPACK_USE_ANALYZE=1 webpack",
+    "build:dev": "APP_ENV=dev NODE_ENV=production webpack",
+    "build:prod": "APP_ENV=prod NODE_ENV=production webpack",
+    "serve-build": "python3 -m http.server --directory build 3001",
+    "clean": "rm -rf dist build lib"
+  },
+  "author": "Reorx <novoreorx@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
