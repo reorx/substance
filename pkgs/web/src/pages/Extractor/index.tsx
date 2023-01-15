@@ -78,28 +78,29 @@ function ExtractorPageMain() {
   const queryClient = useQueryClient()
   const [editorHeight, setEditorHeight] = useState(() => getEditorHeight() )
   const [contentMarkdown, setContentMarkdown] = useState('')
+  const [title, setTitle] = useState('')
   const contentRef = useRef<HTMLDivElement>(null)
 
-  const { data, isLoading, isError, isLoadingError, isSuccess, error } = useQuery({
+  const { data, isLoading, isError, isLoadingError, isSuccess } = useQuery({
     queryKey: ['extract', url],
     queryFn: async () => {
       return await getExtractedData(url, extractorOptions)
     },
     onSuccess: (data) => {
       setContentMarkdown(data.contentMarkdown)
+      setTitle(data.title)
+    },
+    onError: (error) => {
+      showNotification({
+        title: 'Extraction failed',
+        message: getErrorMessage(error),
+        color: 'pink',
+      })
     },
     enabled: !!url,
     retry: false,
   })
   console.log('query', isLoading, isError, isLoadingError, isSuccess)
-
-  if (isError) {
-    showNotification({
-      title: 'Extraction failed',
-      message: getErrorMessage(error),
-      color: 'pink',
-    })
-  }
 
   useEffect(() => {
     listenWindowResize(() => {
@@ -193,6 +194,28 @@ function ExtractorPageMain() {
           <Grid.Col span={6} p={gutter} className={classes.flexItemGrow} sx={{
             position: 'relative',
           }}>
+            <Flex sx={{
+              position: 'absolute',
+              top: 0, left: 0, right: 0,
+              padding: gutter,
+              height: 46,
+              background: '#ffffff',
+              zIndex: 1,
+            }}>
+              <TextInput variant="filled" placeholder="Title" value={title}
+                onChange={(e) => setTitle(e.currentTarget.value)}
+                size="xs"
+                sx={{
+                  flexGrow: 1,
+                  marginRight: gutter,
+                }}
+              />
+              <Button size="xs"
+                rightIcon={<Icon icon="fa-brands:markdown" css={{
+                  fontSize: '18px',
+                }}/>}
+              >Download</Button>
+            </Flex>
             <div
               ref={contentRef}
               dangerouslySetInnerHTML={{ __html: renderMarkdown(contentMarkdown) }}

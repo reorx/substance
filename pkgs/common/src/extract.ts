@@ -115,7 +115,8 @@ export class ExtractManager {
     const extractor = this.extractor
 
     const $ = load(html, null, false)
-    let title, content, contentMarkdown, excerpt, author, publishedDate, extraData = null
+    let title = '', content = '', contentMarkdown = ''
+    let excerpt, author, publishedDate, extraData
     const sharedData = {}
 
     // process $content
