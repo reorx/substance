@@ -9,6 +9,7 @@ const destDir = path.join(rootDir, 'build')
 
 const isDevelopment = process.env.NODE_ENV !== 'production'
 const useAnalyze = !!process.env.WEBPACK_USE_ANALYZE
+console.log('isDevelopment', isDevelopment)
 
 
 let config = {
@@ -97,6 +98,16 @@ if (useAnalyze) {
       hot: true,
       historyApiFallback: true,
       // allowedHosts: [],  // add hosts here if you visite the site by a domain (e.g. from /etc/hosts)
+
+      // add a proxy to
+      proxy: {
+        '/api': {
+          target: 'http://127.0.0.1:8787/',
+          pathRewrite: {
+            '^/api': '',
+          }
+        }
+      }
     },
   })
   config.plugins.push(
