@@ -1,4 +1,4 @@
-import { Box, Global, Flex, Grid, Stack, createStyles, useMantineTheme, TextInput, Button, Switch, Tooltip, Text, Code, Overlay, LoadingOverlay } from '@mantine/core';
+import { Box, Global, Flex, Grid, Stack, createStyles, useMantineTheme, TextInput, Button, Switch, Tooltip, Text, Code, Overlay, LoadingOverlay, Notification } from '@mantine/core';
 import { Icon } from '@iconify/react';
 import { WikipediaExtractor } from '@substance/common/extractors/wikipedia'
 import { Form, useSearchParams } from 'react-router-dom';
@@ -11,6 +11,8 @@ import {
 } from '@tanstack/react-query'
 import { getExtractedData } from './api';
 import { Options } from '@substance/common/extract';
+import { NotificationsProvider, showNotification } from '@mantine/notifications';
+import {AxiosError} from 'axios'
 
 const useStyles = createStyles((theme) => ({
   flexItemGrow: {
@@ -28,9 +30,25 @@ const queryClient = new QueryClient()
 export function ExtractorPage() {
   return (
     <QueryClientProvider client={queryClient}>
-      <ExtractorPageMain />
+      <NotificationsProvider>
+        <ExtractorPageMain />
+      </NotificationsProvider>
     </QueryClientProvider>
   )
+}
+
+function getErrorMessage(error: any) {
+  let msg = ''
+  if (error instanceof AxiosError) {
+    const data = error.response?.data
+    if (data) {
+      msg = JSON.parse(data).error
+    }
+  }
+  if (!msg) {
+    msg = new String(error).toString()
+  }
+  return msg
 }
 
 function ExtractorPageMain() {
@@ -42,15 +60,26 @@ function ExtractorPageMain() {
   const extractorOptions: Options = {}
   const queryClient = useQueryClient()
 
-  const { data, isLoading, isError, isLoadingError, isSuccess } = useQuery({ queryKey: ['extract', url], queryFn: async () => {
-    return getExtractedData(url, extractorOptions)
-  }, enabled: !!url})
+  const { data, isLoading, isError, isLoadingError, isSuccess, error } = useQuery({
+    queryKey: ['extract', url],
+    queryFn: async () => {
+      return await getExtractedData(url, extractorOptions)
+    },
+    enabled: !!url,
+    retry: false,
+  })
   console.log('query', isLoading, isError, isLoadingError, isSuccess)
 
+  if (isError) {
+    showNotification({
+      title: 'Extraction failed',
+      message: getErrorMessage(error),
+      color: 'pink',
+    })
+  }
+
   return (
-    <Stack spacing={0} sx={{
-      height: '100%',
-    }}>
+    <>
       <Global
         styles={(theme) => ({
           'html, body, #root': {
@@ -60,58 +89,63 @@ function ExtractorPageMain() {
       />
       <LoadingOverlay visible={isLoading && !isError} />
 
-      <Box p={gutter}>
-        <Form method="get" action="/extractor">
-        <Flex className={classes.flexItemGrow}>
-          <TextInput
-            name="url"
-            defaultValue={url}
-            icon={<Icon icon="tabler:link" />}
-            radius="sm"
-            size="xs"
-            w={600}
-            maw="50%"
-            placeholder="URL"
-            mr={12}
-          />
-          <Button type="submit" color="yellow" size="xs">
-            Extract
-          </Button>
-        </Flex>
-        <Flex mt={8}>
-          <Text fz="sm" lh="1.3" mr={16} fw={700}>Options:</Text>
-          {Object.keys(WikipediaExtractor.options).map((key) => (
-            <Switch mr={32} name={key} key={key} label={
-              <Tooltip
-                withArrow
-                multiline
-                width={300}
-                position="bottom"
-                label={WikipediaExtractor.options[key].help}>
-                <span className={classes.innerLabel}>{key}</span>
-              </Tooltip>
-            } />
-          ))}
-        </Flex>
-        </Form>
-      </Box>
-      <Grid gutter={0} className={classes.flexItemGrow}>
-        <Grid.Col span={6} p={gutter} className={classes.flexItemGrow}>
-          {data?.content ? (
-            <Code block>{data.content}</Code>
-          ) : (
-            <Text>Nothing to show</Text>
-          )}
-        </Grid.Col>
-        <Grid.Col span={6} p={gutter} className={classes.flexItemGrow}>
-          {data?.contentMarkdown ? (
-            <Code block>{data.contentMarkdown}</Code>
-          ) : (
-            <Text>Nothing to show</Text>
-          )}
-        </Grid.Col>
-      </Grid>
+      <Stack spacing={0} sx={{
+        height: '100%',
+      }}>
+
+        <Box p={gutter}>
+          <Form method="get" action="/extractor">
+          <Flex className={classes.flexItemGrow}>
+            <TextInput
+              name="url"
+              defaultValue={url}
+              icon={<Icon icon="tabler:link" />}
+              radius="sm"
+              size="xs"
+              w={600}
+              maw="50%"
+              placeholder="URL"
+              mr={12}
+            />
+            <Button type="submit" color="yellow" size="xs">
+              Extract
+            </Button>
+          </Flex>
+          <Flex mt={8}>
+            <Text fz="sm" lh="1.3" mr={16} fw={700}>Options:</Text>
+            {Object.keys(WikipediaExtractor.options).map((key) => (
+              <Switch mr={32} name={key} key={key} label={
+                <Tooltip
+                  withArrow
+                  multiline
+                  width={300}
+                  position="bottom"
+                  label={WikipediaExtractor.options[key].help}>
+                  <span className={classes.innerLabel}>{key}</span>
+                </Tooltip>
+              } />
+            ))}
+          </Flex>
+          </Form>
+        </Box>
+        <Grid gutter={0} className={classes.flexItemGrow}>
+          <Grid.Col span={6} p={gutter} className={classes.flexItemGrow}>
+            {data?.contentMarkdown ? (
+              <Code block>{data.contentMarkdown}</Code>
+            ) : (
+              <Text>Nothing to show</Text>
+            )}
+          </Grid.Col>
+          <Grid.Col span={6} p={gutter} className={classes.flexItemGrow}>
+            {data?.contentMarkdown ? (
+              <Code block>{data.contentMarkdown}</Code>
+            ) : (
+              <Text>Nothing to show</Text>
+            )}
+          </Grid.Col>
+        </Grid>
     </Stack>
+    </>
   )
 }
 

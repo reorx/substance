@@ -1,14 +1,20 @@
 import axios from 'axios'
-import { Options } from '@substance/common/extract'
+import ExtractManager, { Options } from '@substance/common/extract'
+import { WikipediaExtractor } from '@substance/common/extractors/wikipedia'
 
-export const getExtractedData = async (url: string, options: Options) => {
-  const { data } = await axios.post('https://httpbin.org/post', {
+export async function getExtractedData(url: string, options: Options) {
+  const { data } = await axios.get('/api/wikipedia', {
+    params: {
+      url,
+    },
+    responseType: 'text',
   })
-  console.log('httpbin res', data)
+
+  const em = new ExtractManager(WikipediaExtractor)
+  const result = em.extract(data, url, options)
 
   return {
-    title: data.origin,
-    content: data.url,
-    contentMarkdown: data.headers['User-Agent'],
+    title: result.title,
+    contentMarkdown: result.contentMarkdown,
   }
 }
