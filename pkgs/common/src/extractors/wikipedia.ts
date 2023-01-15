@@ -46,6 +46,8 @@ export const WikipediaExtractor: Extractor = {
       '.citation-comment',
       '.navbox',
       '.magnify',  // .thumbcaption > .magnify
+      '.side-box', '.sister-box',
+      '.ambox',  // article message box
     ],
 
     transforms: {
