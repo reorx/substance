@@ -76,7 +76,7 @@ export function HeroText() {
 
         <Container p={0} size={700}>
           <Text size="md" color="dimmed" className={classes.description}>
-            Try it, the result will be substantial, but there's no magic. Unlike other content extraction tools like the famous <a href="https://github.com/mozilla/readability">Readability.js</a>, which implements an algorithm to find the main content, Substance provides a framework to locate and purify the actual content in HTML, giving full control over the extracting process. This allows for carefully crafting the extractor for every website. Currently, it is being used as a proof-of-concept for extracting Wikipedia.
+            Try it, the result will be substantial, but there's no magic. Unlike other content extraction tools like the famous <a href="https://github.com/mozilla/readability">Readability.js</a>, which implements an algorithm to find the main content, Substance provides a framework to locate and purify the actual content in HTML, giving full control over the extracting process. This allows for carefully tuning the extractor for every website. Currently, it is being used as a proof-of-concept for extracting Wikipedia.
           </Text>
         </Container>
       </div>

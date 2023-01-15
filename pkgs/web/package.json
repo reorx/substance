@@ -2,7 +2,6 @@
   "name": "@substance/web",
   "version": "0.1.0",
   "description": "",
-  "main": "src/index.ts",
   "scripts": {
     "start": "webpack serve",
     "build": "NODE_ENV=production webpack",
@@ -15,6 +14,7 @@
   "author": "Reorx <novoreorx@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "@substance/common": "^1.0.0"
   },
   "devDependencies": {
   }

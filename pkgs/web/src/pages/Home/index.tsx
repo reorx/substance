@@ -23,8 +23,9 @@ export function HomePage() {
       />
       <HomeHeader links={[
         {
-          link: '/app',
-          label: 'App'
+          link: '/extractor',
+          label: 'Open Extractor',
+          button: true,
         }
       ]} />
 

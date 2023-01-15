@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { createStyles, Header, Container, Group, Text, useMantineTheme } from '@mantine/core';
 import { Icon } from '@iconify/react';
+import { Link } from 'react-router-dom';
 
 const HEADER_HEIGHT = 60;
 
@@ -52,27 +53,21 @@ const useStyles = createStyles((theme) => ({
 }));
 
 interface HeaderResponsiveProps {
-  links: { link: string; label: string }[];
+  links: { link: string; label: string; button: boolean; }[];
 }
 
 export function HomeHeader({ links }: HeaderResponsiveProps) {
-  const [active, setActive] = useState(links[0].link);
   const { classes, cx } = useStyles();
   const theme = useMantineTheme()
 
   const items = links.map((link) => (
-    <a
+    <Link
       key={link.label}
-      href={link.link}
-      className={cx(classes.link, { [classes.linkActive]: active === link.link })}
-      onClick={(event) => {
-        event.preventDefault();
-        setActive(link.link);
-        close();
-      }}
+      to={link.link}
+      className={cx(classes.link, { [classes.linkActive]: link.button })}
     >
       {link.label}
-    </a>
+    </Link>
   ));
 
   return (
