@@ -1,0 +1,26 @@
+.markdown {
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  padding: 8px;
+  overflow-y: scroll;
+
+  table {
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    tr {
+      border-top: 1px solid #ddd;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+  }
+
+  .footnotes {
+    .footnote-backref {
+      font-family: monospace;
+    }
+  }
+}

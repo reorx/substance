@@ -15,12 +15,13 @@ import { NotificationsProvider, showNotification } from '@mantine/notifications'
 import { EditorView, ViewPlugin } from '@codemirror/view'
 import {AxiosError} from 'axios'
 import CodeMirror from '@uiw/react-codemirror';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { listenWindowResize } from '@/utils';
 import { githubLight } from './theme-githubLight';
 import { BlockquotePlugin } from './theme'
 import { markdown as cmMarkdown, markdownLanguage } from '@codemirror/lang-markdown'
-
+import {renderMarkdown} from './markdown'
+import './markdown.scss'
 
 const useStyles = createStyles((theme) => ({
   flexItemGrow: {
@@ -28,7 +29,7 @@ const useStyles = createStyles((theme) => ({
   },
   innerLabel: {
     cursor: 'pointer',
-  }
+  },
 }))
 
 const gutter = 8
@@ -76,11 +77,16 @@ function ExtractorPageMain() {
   const extractorOptions: Options = {}
   const queryClient = useQueryClient()
   const [editorHeight, setEditorHeight] = useState(() => getEditorHeight() )
+  const [contentMarkdown, setContentMarkdown] = useState('')
+  const contentRef = useRef<HTMLDivElement>(null)
 
   const { data, isLoading, isError, isLoadingError, isSuccess, error } = useQuery({
     queryKey: ['extract', url],
     queryFn: async () => {
       return await getExtractedData(url, extractorOptions)
+    },
+    onSuccess: (data) => {
+      setContentMarkdown(data.contentMarkdown)
     },
     enabled: !!url,
     retry: false,
@@ -116,7 +122,9 @@ function ExtractorPageMain() {
         height: '100%',
       }}>
 
-        <Box p={gutter}>
+        <Box p={gutter} sx={{
+          borderBottom: '1px solid #ddd'
+        }}>
           <Form method="get" action="/extractor">
           <Flex className={classes.flexItemGrow}>
             <TextInput
@@ -154,7 +162,7 @@ function ExtractorPageMain() {
         <Grid gutter={0} className={classes.flexItemGrow}>
           <Grid.Col span={6} p={gutter} className={classes.flexItemGrow}>
             <CodeMirror
-              value={data?.contentMarkdown}
+              value={contentMarkdown}
               height={`${editorHeight}px`}
               extensions={[
                 EditorView.theme({
@@ -177,14 +185,19 @@ function ExtractorPageMain() {
                 allowMultipleSelections: false,
                 indentOnInput: false,
               }}
+              onChange={(content) => {
+                setContentMarkdown(content)
+              }}
             />
           </Grid.Col>
-          <Grid.Col span={6} p={gutter} className={classes.flexItemGrow}>
-            {data?.contentMarkdown ? (
-              <Code block>{data.contentMarkdown}</Code>
-            ) : (
-              <Text>Nothing to show</Text>
-            )}
+          <Grid.Col span={6} p={gutter} className={classes.flexItemGrow} sx={{
+            position: 'relative',
+          }}>
+            <div
+              ref={contentRef}
+              dangerouslySetInnerHTML={{ __html: renderMarkdown(contentMarkdown) }}
+              className="markdown"
+            ></div>
           </Grid.Col>
         </Grid>
     </Stack>

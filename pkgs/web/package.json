@@ -17,6 +17,16 @@
     "@codemirror/lang-markdown": "^6.0.5",
     "@substance/common": "^1.0.0",
     "@tanstack/react-query": "^4.22.0",
-    "@uiw/react-codemirror": "^4.19.6"
+    "@types/markdown-it": "^12.2.3",
+    "@uiw/react-codemirror": "^4.19.6",
+    "markdown-it": "^13.0.1",
+    "markdown-it-anchor": "^8.6.6",
+    "markdown-it-footnote": "^3.0.3",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0"
+  },
+  "devDependencies": {
+    "css-modules-typescript-loader": "^4.0.1",
+    "marked": "^4.2.12"
   }
 }

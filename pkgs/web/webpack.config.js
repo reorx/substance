@@ -57,6 +57,21 @@ let config = {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.scss$/i,
+        use: [
+          'style-loader',
+          'css-loader',
+          // 'css-modules-typescript-loader',
+          // {
+          //   loader: 'css-loader',
+          //   options: {
+          //     modules: true
+          //   }
+          // },
+          'sass-loader',
+        ],
+      },
     ],
   },
   resolve: {
