@@ -167,13 +167,11 @@ if (!url) {
 const em = new substance.ExtractManager(this.WikipediaExtractor)
 
 // fetch html from url
-const request = require('request');
+const axios = require('axios');
 
-request(url, (error, response, body) => {
-  if (error) {
-    console.log("Error retrieving HTML content: ", error);
-  }
-
-  const {contentMarkdown} = em.extract(body, url)
+axios.get(url).then((res) => {
+  return res.data
+}).then((text) => {
+  const {contentMarkdown} = em.extract(text, url)
   console.log(`markdown:\n${contentMarkdown}`)
 })

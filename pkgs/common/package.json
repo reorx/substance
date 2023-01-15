@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "src/index.ts",
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "cli": "ts-node ./src/cli.ts"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
@@ -11,7 +12,8 @@
   },
   "devDependencies": {
     "@types/turndown": "^5.0.1",
+    "axios": "^1.2.2",
     "domelementtype": "^2.3.0",
-    "request": "^2.88.2"
+    "ts-node": "^10.9.1"
   }
 }
