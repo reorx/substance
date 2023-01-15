@@ -14,8 +14,7 @@
   "author": "Reorx <novoreorx@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "@substance/common": "^1.0.0"
-  },
-  "devDependencies": {
+    "@substance/common": "^1.0.0",
+    "@tanstack/react-query": "^4.22.0"
   }
 }
