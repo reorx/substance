@@ -1,4 +1,4 @@
-import { Box, Global, Flex, Grid, Stack, createStyles, useMantineTheme, TextInput, Button, Switch, Tooltip, Text, Code, Overlay, LoadingOverlay, Notification } from '@mantine/core';
+import { Box, Global, Flex, Grid, Stack, createStyles, useMantineTheme, TextInput, Button, Switch, Tooltip, Text, Code, Overlay, LoadingOverlay } from '@mantine/core';
 import { Icon } from '@iconify/react';
 import { WikipediaExtractor } from '@substance/common/extractors/wikipedia'
 import { Form, useSearchParams } from 'react-router-dom';
@@ -12,7 +12,15 @@ import {
 import { getExtractedData } from './api';
 import { Options } from '@substance/common/extract';
 import { NotificationsProvider, showNotification } from '@mantine/notifications';
+import { EditorView, ViewPlugin } from '@codemirror/view'
 import {AxiosError} from 'axios'
+import CodeMirror from '@uiw/react-codemirror';
+import { useEffect, useState } from 'react';
+import { listenWindowResize } from '@/utils';
+import { githubLight } from './theme-githubLight';
+import { BlockquotePlugin } from './theme'
+import { markdown as cmMarkdown, markdownLanguage } from '@codemirror/lang-markdown'
+
 
 const useStyles = createStyles((theme) => ({
   flexItemGrow: {
@@ -42,13 +50,21 @@ function getErrorMessage(error: any) {
   if (error instanceof AxiosError) {
     const data = error.response?.data
     if (data) {
-      msg = JSON.parse(data).error
+      try {
+        msg = JSON.parse(data).error
+      } catch(e) {
+        msg = data
+      }
     }
   }
   if (!msg) {
     msg = new String(error).toString()
   }
   return msg
+}
+
+function getEditorHeight() {
+  return window.innerHeight - 100
 }
 
 function ExtractorPageMain() {
@@ -59,6 +75,7 @@ function ExtractorPageMain() {
   console.log('param url', url)
   const extractorOptions: Options = {}
   const queryClient = useQueryClient()
+  const [editorHeight, setEditorHeight] = useState(() => getEditorHeight() )
 
   const { data, isLoading, isError, isLoadingError, isSuccess, error } = useQuery({
     queryKey: ['extract', url],
@@ -77,6 +94,12 @@ function ExtractorPageMain() {
       color: 'pink',
     })
   }
+
+  useEffect(() => {
+    listenWindowResize(() => {
+      setEditorHeight(getEditorHeight())
+    })
+  }, [])
 
   return (
     <>
@@ -130,11 +153,31 @@ function ExtractorPageMain() {
         </Box>
         <Grid gutter={0} className={classes.flexItemGrow}>
           <Grid.Col span={6} p={gutter} className={classes.flexItemGrow}>
-            {data?.contentMarkdown ? (
-              <Code block>{data.contentMarkdown}</Code>
-            ) : (
-              <Text>Nothing to show</Text>
-            )}
+            <CodeMirror
+              value={data?.contentMarkdown}
+              height={`${editorHeight}px`}
+              extensions={[
+                EditorView.theme({
+                  '&': {
+                    fontSize: '13px',
+                  },
+                  '.cm-content': {
+                    fontFamily: 'ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace',
+                  }
+                }),
+                EditorView.lineWrapping,
+                // langs.markdown(),
+                cmMarkdown({ base: markdownLanguage }),
+                ViewPlugin.define((view) => new BlockquotePlugin(view), { decorations: (v) => v.decorations }),
+              ]}
+              theme={githubLight}
+              basicSetup={{
+                highlightActiveLine: false,
+                foldGutter: false,
+                allowMultipleSelections: false,
+                indentOnInput: false,
+              }}
+            />
           </Grid.Col>
           <Grid.Col span={6} p={gutter} className={classes.flexItemGrow}>
             {data?.contentMarkdown ? (
