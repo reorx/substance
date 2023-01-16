@@ -1,7 +1,7 @@
 import { Box, Global, Flex, Grid, Stack, createStyles, useMantineTheme, TextInput, Button, Switch, Tooltip, Text, Code, Overlay, LoadingOverlay } from '@mantine/core';
 import { Icon } from '@iconify/react';
 import { WikipediaExtractor } from '@substance/common/extractors/wikipedia'
-import { Form, useSearchParams } from 'react-router-dom';
+import { Form, useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import {
   useQuery,
   useMutation,
@@ -22,6 +22,7 @@ import { BlockquotePlugin } from './theme'
 import { markdown as cmMarkdown, markdownLanguage } from '@codemirror/lang-markdown'
 import {renderMarkdown} from './markdown'
 import './markdown.scss'
+import { useInputState } from '@mantine/hooks';
 
 const useStyles = createStyles((theme) => ({
   flexItemGrow: {
@@ -69,11 +70,14 @@ function getEditorHeight() {
 }
 
 function ExtractorPageMain() {
+  console.info('render ExtractorPageMain')
   const theme = useMantineTheme();
+  // const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams()
   const { classes } = useStyles();
-  const [searchParams, _] = useSearchParams()
   const url = searchParams.get('url') || ''
-  console.log('param url', url)
+  const [inputUrl, setInputUrl] = useInputState(url)
+  // console.log('param url', url, 'input url', inputUrl)
   const extractorOptions: Options = {}
   const queryClient = useQueryClient()
   const [editorHeight, setEditorHeight] = useState(() => getEditorHeight() )
@@ -81,7 +85,17 @@ function ExtractorPageMain() {
   const [title, setTitle] = useState('')
   const contentRef = useRef<HTMLDivElement>(null)
 
-  const { data, isLoading, isError, isLoadingError, isSuccess } = useQuery({
+  const submitUrl = () => {
+    const params = {
+      url: inputUrl
+    }
+    queryClient.invalidateQueries({
+      queryKey: ['extract', params.url],
+    })
+    setSearchParams(params)
+  }
+
+  const { isLoading, isInitialLoading, isError, isLoadingError, isSuccess, isRefetching } = useQuery({
     queryKey: ['extract', url],
     queryFn: async () => {
       return await getExtractedData(url, extractorOptions)
@@ -103,7 +117,7 @@ function ExtractorPageMain() {
     enabled: !!url,
     retry: false,
   })
-  console.log('query', isLoading, isError, isLoadingError, isSuccess)
+  console.log('query', isLoading, isInitialLoading, isError, isLoadingError, isRefetching)
 
   useEffect(() => {
     listenWindowResize(() => {
@@ -120,7 +134,7 @@ function ExtractorPageMain() {
           }
         })}
       />
-      <LoadingOverlay visible={isLoading && !isError} />
+      <LoadingOverlay visible={!!url && (isLoading || isRefetching)} />
 
       <Stack spacing={0} sx={{
         height: '100%',
@@ -129,20 +143,23 @@ function ExtractorPageMain() {
         <Box p={gutter} sx={{
           borderBottom: '1px solid #ddd'
         }}>
-          <Form method="get" action="/extractor">
           <Flex className={classes.flexItemGrow}>
             <TextInput
               name="url"
-              defaultValue={url}
+              value={inputUrl}
+              onChange={setInputUrl}
               icon={<Icon icon="tabler:link" />}
+              placeholder="URL"
               radius="sm"
               size="xs"
               w={600}
               maw="50%"
-              placeholder="URL"
               mr={12}
+              onSubmit={submitUrl}
             />
-            <Button type="submit" color="yellow" size="xs">
+            <Button color="yellow" size="xs"
+              onClick={submitUrl}
+            >
               Extract
             </Button>
           </Flex>
@@ -161,7 +178,6 @@ function ExtractorPageMain() {
               } />
             ))}
           </Flex>
-          </Form>
         </Box>
         <Grid gutter={0} className={classes.flexItemGrow}>
           <Grid.Col span={6} p={gutter} className={classes.flexItemGrow}>

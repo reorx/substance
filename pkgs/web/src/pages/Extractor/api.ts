@@ -8,6 +8,7 @@ export async function getExtractedData(url: string, options: Options) {
       url,
     },
     responseType: 'text',
+    timeout: 10 * 1000,
   })
 
   const em = new ExtractManager(WikipediaExtractor)
