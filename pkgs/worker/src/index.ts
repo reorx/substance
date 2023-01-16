@@ -33,7 +33,7 @@ export default {
 				return jsonResponse({
 					hello: 'world',
 				})
-			case '/wikipedia':
+			case '/api/wikipedia':
 				return await wikipedia(request, searchParams)
 			default:
 				return jsonResponse({

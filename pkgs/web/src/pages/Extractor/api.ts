@@ -2,11 +2,13 @@ import ExtractManager, { Options } from '@substance/common/extract';
 import { WikipediaExtractor } from '@substance/common/extractors/wikipedia';
 import axios, { AxiosError } from 'axios';
 
+import config from '@/config';
+
 
 export const extractManager = new ExtractManager(WikipediaExtractor)
 
 export async function getExtractedData(url: string, options: Options) {
-  const { data } = await axios.get('/api/wikipedia', {
+  const { data } = await axios.get(config.api.baseUrl + '/api/wikipedia', {
     params: {
       url,
     },

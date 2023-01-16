@@ -1,8 +1,9 @@
 import { Config } from './';
 
+
 const config: Config = {
   api: {
-    baseUrl: 'https://prod.example.com/api',
+    baseUrl: 'https://substance-worker.reorx.workers.dev',
   },
 }
 

@@ -6,6 +6,6 @@ export interface Config {
 
 export const APP_ENV = process.env.APP_ENV || 'local'
 
-const config = require(`./${APP_ENV}`).default
+const config: Config = require(`./${APP_ENV}`).default
 console.log(`* use config of ${APP_ENV}`, config)
 export default config
