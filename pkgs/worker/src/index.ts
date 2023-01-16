@@ -75,20 +75,29 @@ async function wikipedia(request: Request, searchParams: URLSearchParams) {
 	const res = await fetch(url, init);
 	const resBody = await res.text()
 	if (!res.ok) {
-		return new Response(resBody, {
+		return newResponse(resBody, {
 			status: 500
 		})
 	}
 
-	return new Response(resBody, {
+	return newResponse(resBody, {
 		headers: {
 			'Content-Type': 'text/html',
 		}
 	})
 }
 
+const defaultHeaders = {
+	'Access-Control-Allow-Origin': '*',
+}
+
+const newResponse = (body: string, init: ResponseInit) => {
+	init.headers = {...defaultHeaders, ...init.headers}
+	return new Response(body, init)
+}
+
 const jsonResponse = (data: any, status: number = 200) => {
-	return new Response(JSON.stringify(data), {
+	return newResponse(JSON.stringify(data), {
 		headers: {
 			'Content-Type': 'application/json',
 		},
