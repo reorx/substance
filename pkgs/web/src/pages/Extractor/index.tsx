@@ -97,6 +97,9 @@ function ExtractorPageMain() {
         color: 'pink',
       })
     },
+    refetchOnMount: false,
+    refetchOnWindowFocus: false,
+    refetchOnReconnect: false,
     enabled: !!url,
     retry: false,
   })
