@@ -1,6 +1,7 @@
-import axios from 'axios'
-import ExtractManager, { Options } from '@substance/common/extract'
-import { WikipediaExtractor } from '@substance/common/extractors/wikipedia'
+import ExtractManager, { Options } from '@substance/common/extract';
+import { WikipediaExtractor } from '@substance/common/extractors/wikipedia';
+import axios, { AxiosError } from 'axios';
+
 
 export const extractManager = new ExtractManager(WikipediaExtractor)
 
@@ -20,4 +21,24 @@ export async function getExtractedData(url: string, options: Options) {
     contentMarkdown: result.contentMarkdown,
     extraData: result.extraData,
   }
+}
+
+export function getErrorMessage(error: any) {
+  let msg = ''
+  if (error instanceof AxiosError) {
+    const data = error.response?.data
+    if (data) {
+      try {
+        msg = JSON.parse(data).error
+      } catch(e) {
+      }
+    }
+    if (!msg) {
+      msg = error.message + (data ? ': ' + data : '')
+    }
+  }
+  if (!msg) {
+    msg = new String(error).toString()
+  }
+  return msg.slice(0, 200)
 }
