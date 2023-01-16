@@ -75,9 +75,9 @@ async function wikipedia(request: Request, searchParams: URLSearchParams) {
 	const res = await fetch(url, init);
 	const resBody = await res.text()
 	if (!res.ok) {
-		return jsonResponse({
-			error: resBody,
-		}, 500)
+		return new Response(resBody, {
+			status: 500
+		})
 	}
 
 	return new Response(resBody, {
