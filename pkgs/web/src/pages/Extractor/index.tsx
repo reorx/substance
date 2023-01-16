@@ -23,6 +23,7 @@ import { markdown as cmMarkdown, markdownLanguage } from '@codemirror/lang-markd
 import {renderMarkdown} from './markdown'
 import './markdown.scss'
 import { useInputState } from '@mantine/hooks';
+import { create } from 'zustand';
 
 const useStyles = createStyles((theme) => ({
   flexItemGrow: {
@@ -55,7 +56,7 @@ function getErrorMessage(error: any) {
       try {
         msg = JSON.parse(data).error
       } catch(e) {
-        msg = data
+        msg = data.slice(0, 200)
       }
     }
   }
@@ -69,23 +70,47 @@ function getEditorHeight() {
   return window.innerHeight - 100
 }
 
+interface State {
+  title: string
+  contentMarkdown: string
+  extraData: any
+  // setTitleAndContent: (title: string, contentMarkdown: string) => void
+}
+
+const useStore = create<State>()((set) => ({
+  title: '',
+  contentMarkdown: '',
+  extraData: null,
+  // options: extractManager.getDefaultOptions(),
+
+  /*
+  setTitleAndContent: (title, contentMarkdown) =>
+    set((state) => ({
+      title,
+      contentMarkdown,
+    }))
+  */
+}))
 
 const options = extractManager.getDefaultOptions()
 
 function ExtractorPageMain() {
   console.info('render ExtractorPageMain')
   const theme = useMantineTheme();
-  // const navigate = useNavigate();
-  const [searchParams, setSearchParams] = useSearchParams()
   const { classes } = useStyles();
-  const url = searchParams.get('url') || ''
-  const [inputUrl, setInputUrl] = useInputState(url)
-  // console.log('param url', url, 'input url', inputUrl)
   const queryClient = useQueryClient()
+
+  /* params */
+  const [searchParams, setSearchParams] = useSearchParams()
+  const url = searchParams.get('url') || ''
+
+  /* states */
+  const [inputUrl, setInputUrl] = useInputState(url)
   const [editorHeight, setEditorHeight] = useState(() => getEditorHeight() )
-  const [contentMarkdown, setContentMarkdown] = useState('')
-  const [title, setTitle] = useState('')
   const contentRef = useRef<HTMLDivElement>(null)
+  const title = useStore((state) => state.title)
+  const contentMarkdown = useStore((state) => state.contentMarkdown)
+  const extraData = useStore((state) => state.extraData)
 
   const submitUrl = () => {
     const params = {
@@ -104,8 +129,11 @@ function ExtractorPageMain() {
       return await getExtractedData(url, options)
     },
     onSuccess: (data) => {
-      setContentMarkdown(data.contentMarkdown)
-      setTitle(data.title)
+      useStore.setState({
+        title: data.title,
+        contentMarkdown: data.contentMarkdown,
+        extraData: data.extraData,
+      })
     },
     onError: (error) => {
       showNotification({
@@ -215,8 +243,8 @@ function ExtractorPageMain() {
                 allowMultipleSelections: false,
                 indentOnInput: false,
               }}
-              onChange={(content) => {
-                setContentMarkdown(content)
+              onChange={(contentMarkdown) => {
+                useStore.setState({ contentMarkdown })
               }}
             />
           </Grid.Col>
@@ -232,7 +260,7 @@ function ExtractorPageMain() {
               zIndex: 1,
             }}>
               <TextInput variant="filled" placeholder="Title" value={title}
-                onChange={(e) => setTitle(e.currentTarget.value)}
+                onChange={(e) => useStore.setState({ title: e.currentTarget.value })}
                 size="xs"
                 sx={{
                   flexGrow: 1,
