@@ -26,6 +26,9 @@ export function Viewer()  {
       tocSelector: '.toc',
       contentSelector: '.markdown'
     })
+    if (tocRef.current?.children.length === 0) {
+      tocRef.current.innerHTML = 'No index'
+    }
   }, [contentMarkdown])
 
   return (
@@ -54,7 +57,7 @@ export function Viewer()  {
 
       <Paper ref={tocRef} shadow="sm" p="sm" withBorder className="toc" sx={{
         visibility: isTocVisible ? 'visible' : 'hidden'
-      }}></Paper>
+      }}>No index</Paper>
 
       <div
         ref={contentRef}
