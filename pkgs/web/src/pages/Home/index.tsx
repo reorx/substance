@@ -1,7 +1,10 @@
+import { useRef } from 'react';
+
 import { Icon } from '@iconify/react';
 import {
   Container, Global, TextInput, Stack, ActionIcon, useMantineTheme,
 } from '@mantine/core';
+import { createSearchParams, useNavigate } from 'react-router-dom';
 
 import { HomeFooter } from './Footer';
 import { HomeHeader } from './Header';
@@ -10,6 +13,22 @@ import { HeroText } from './Hero';
 
 export function HomePage() {
   const theme = useMantineTheme();
+  const navigate = useNavigate()
+  const inputRef = useRef<HTMLInputElement>(null)
+  const getInputValue = () => inputRef.current?.value
+
+  const enterAction = (event: any) => {
+    if (event.key === 'Enter') {
+      const url = getInputValue()
+      if (!url) return
+      navigate({
+        pathname: '/extractor',
+        search: `?${createSearchParams({
+          url,
+        })}`
+      })
+    }
+  }
 
   return (
     <Stack justify="space-between" sx={{
@@ -31,6 +50,7 @@ export function HomePage() {
         <HeroText/>
         <Container size="sm">
           <TextInput
+            ref={inputRef}
             icon={<Icon icon="tabler:link" />}
             radius="md"
             size="md"
@@ -42,6 +62,7 @@ export function HomePage() {
             }
             placeholder="Paste Wikipedia URL here"
             rightSectionWidth={42}
+            onKeyDown={enterAction}
           />
         </Container>
       </Container>

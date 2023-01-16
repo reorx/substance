@@ -88,6 +88,12 @@ function ExtractorPageMain() {
   })
   console.log('query', isLoading, isInitialLoading, isError, isLoadingError, isRefetching)
 
+  const enterAction = (event: any) => {
+    if (event.key === 'Enter') {
+      submitUrl()
+    }
+  }
+
   return (
     <>
       <Global
@@ -121,6 +127,7 @@ function ExtractorPageMain() {
                 maxWidth: '50%',
                 marginRight: 12,
               }}
+              onKeyDown={enterAction}
             />
             <Button color="yellow" size="xs"
               onClick={submitUrl}
