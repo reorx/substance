@@ -12,6 +12,7 @@ import CodeMirror from '@uiw/react-codemirror';
 
 import { listenWindowResize } from '@/utils';
 
+import { downloadContent } from './download';
 import { useStore } from './store';
 import { gutter } from './styles';
 import { BlockquotePlugin } from './theme';
@@ -22,6 +23,7 @@ export function Editor() {
   const contentMarkdown = useStore((state) => state.contentMarkdown)
   const title = useStore((state) => state.title)
   const extraData = useStore((state) => state.extraData)
+  const getFilename = () => `${title}.md`
 
   const getEditorHeight = () => {
     // - header - top-panel - complement
@@ -72,6 +74,9 @@ export function Editor() {
           rightIcon={<Icon icon="fa-brands:markdown" css={{
             fontSize: '18px',
           }} />}
+          onClick={() => {
+            downloadContent(getFilename(), contentMarkdown)
+          }}
         >Download</Button>
       </Flex>
 

@@ -39,14 +39,16 @@
     left: 0; right: 0; bottom: 0;
     top: 46px;
     padding: var(--gutter);
-    overflow-y: scroll;
+    overflow-y: auto;
+
+    --font-sm: .85em;
 
     table {
       border-spacing: 0;
       border-collapse: collapse;
 
       caption {
-        font-size: .85em;
+        font-size: var(--font-sm);
       }
 
       tr {
@@ -58,10 +60,30 @@
         padding: 8px;
       }
 
-      .footnotes {
-        .footnote-backref {
-          font-family: monospace;
-        }
+    }
+
+    blockquote {
+      padding-left: 10px;
+      border-left: 5px solid #eee;
+    }
+
+    figcaption {
+      font-size: var(--font-sm);
+    }
+
+    .footnotes-sep {
+      margin: 2em 0;
+    }
+    .footnotes {
+      font-size: var(--font-sm);
+
+      // due to markdown-it-footnote always wrap a <p> in <li>
+      .footnote-item > p {
+        margin: .25em 0;
+      }
+
+      .footnote-backref {
+        font-family: monospace;
       }
     }
   }
