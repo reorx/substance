@@ -25,7 +25,7 @@ jobs:
       - run: npm install
         working-directory: .
 
-      - run: npm build
+      - run: npm run build
 
       - name: Publish
         uses: cloudflare/pages-action@1
