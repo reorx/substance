@@ -9,7 +9,7 @@ import {
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query'
-import { getExtractedData } from './api';
+import { extractManager, getExtractedData } from './api';
 import { Options } from '@substance/common/extract';
 import { NotificationsProvider, showNotification } from '@mantine/notifications';
 import { EditorView, ViewPlugin } from '@codemirror/view'
@@ -69,6 +69,9 @@ function getEditorHeight() {
   return window.innerHeight - 100
 }
 
+
+const options = extractManager.getDefaultOptions()
+
 function ExtractorPageMain() {
   console.info('render ExtractorPageMain')
   const theme = useMantineTheme();
@@ -78,7 +81,6 @@ function ExtractorPageMain() {
   const url = searchParams.get('url') || ''
   const [inputUrl, setInputUrl] = useInputState(url)
   // console.log('param url', url, 'input url', inputUrl)
-  const extractorOptions: Options = {}
   const queryClient = useQueryClient()
   const [editorHeight, setEditorHeight] = useState(() => getEditorHeight() )
   const [contentMarkdown, setContentMarkdown] = useState('')
@@ -98,7 +100,8 @@ function ExtractorPageMain() {
   const { isLoading, isInitialLoading, isError, isLoadingError, isSuccess, isRefetching } = useQuery({
     queryKey: ['extract', url],
     queryFn: async () => {
-      return await getExtractedData(url, extractorOptions)
+      console.log('use options', options)
+      return await getExtractedData(url, options)
     },
     onSuccess: (data) => {
       setContentMarkdown(data.contentMarkdown)
@@ -166,16 +169,23 @@ function ExtractorPageMain() {
           <Flex mt={8}>
             <Text fz="sm" lh="1.3" mr={16} fw={700}>Options:</Text>
             {Object.keys(WikipediaExtractor.options).map((key) => (
-              <Switch mr={32} name={key} key={key} label={
-                <Tooltip
-                  withArrow
-                  multiline
-                  width={300}
-                  position="bottom"
-                  label={WikipediaExtractor.options[key].help}>
-                  <span className={classes.innerLabel}>{key}</span>
-                </Tooltip>
-              } />
+              <Switch mr={32} name={key} key={key}
+                onChange={(event) => {
+                  // update options (not a state)
+                  console.log('change option', key, event.currentTarget.checked)
+                  options[key] = event.currentTarget.checked
+                }}
+                label={
+                  <Tooltip
+                    withArrow
+                    multiline
+                    width={300}
+                    position="bottom"
+                    label={WikipediaExtractor.options[key].help}>
+                    <span className={classes.innerLabel}>{key}</span>
+                  </Tooltip>
+                }
+              />
             ))}
           </Flex>
         </Box>
