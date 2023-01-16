@@ -1,11 +1,12 @@
-import { Container, Global } from '@mantine/core';
-
-import { HomeHeader } from './Header';
-import { HomeFooter } from './Footer';
-import { HeroText } from './Hero';
 import { Icon } from '@iconify/react';
+import {
+  Container, Global, TextInput, Stack, ActionIcon, useMantineTheme,
+} from '@mantine/core';
 
-import { TextInput, Flex, Stack, ActionIcon, useMantineTheme } from '@mantine/core';
+import { HomeFooter } from './Footer';
+import { HomeHeader } from './Header';
+import { HeroText } from './Hero';
+
 
 export function HomePage() {
   const theme = useMantineTheme();
@@ -21,13 +22,7 @@ export function HomePage() {
           }
         })}
       />
-      <HomeHeader links={[
-        {
-          link: '/extractor',
-          label: 'Open Extractor',
-          button: true,
-        }
-      ]} />
+      <HomeHeader />
 
       <Container sx={{
           flexGrow: 1,

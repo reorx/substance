@@ -98,7 +98,7 @@ function ExtractorPageMain() {
         })}
       />
       <LoadingOverlay visible={!!url && (isLoading || isRefetching)} />
-      <FeedbackModal opened={feedbackOpened} onClose={() => setFeedbackOpened(true)} />
+      <FeedbackModal opened={feedbackOpened} onClose={() => setFeedbackOpened(false)} />
 
       <Stack spacing={0} sx={{
         height: '100%',
