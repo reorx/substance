@@ -1,4 +1,4 @@
-name: Deploy to Cloudflare Pages
+name: "worker: deploy"
 
 on:
   push:
@@ -29,4 +29,5 @@ jobs:
         uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           workingDirectory: pkgs/worker
