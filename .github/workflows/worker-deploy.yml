@@ -5,8 +5,8 @@ on:
     branches:
       - 'master'
     paths:
-      - 'pkgs/web/**'
-      - '.github/workflows/web-*.yml'
+      - 'pkgs/worker/**'
+      - '.github/workflows/worker-*.yml'
   workflow_dispatch: {}
 
 jobs:
@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: pkgs/web
+        working-directory: pkgs/worker
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -25,14 +25,8 @@ jobs:
       - run: npm install
         working-directory: .
 
-      - run: npm install
-      - run: npm run build
-
       - name: Publish
-        uses: cloudflare/pages-action@1
+        uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: substance-web
-          directory: pkgs/web/build
-          branch: master
+          workingDirectory: pkgs/worker
