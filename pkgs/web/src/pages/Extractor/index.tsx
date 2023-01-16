@@ -1,4 +1,6 @@
-import { useRef } from 'react';
+import './index.scss';
+
+import { useRef, useState } from 'react';
 
 import { Icon } from '@iconify/react';
 import {
@@ -7,10 +9,11 @@ import {
 } from '@mantine/core';
 import { NotificationsProvider, showNotification } from '@mantine/notifications';
 import { useQuery, useQueryClient, QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { useSearchParams } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 
 import { extractManager, getExtractedData, getErrorMessage } from './api';
 import { Editor } from './Editor';
+import { FeedbackModal } from './FeedbackModal';
 import { ExtractorOptions } from './Options';
 import { useStore } from './store';
 import { gutter, useStyles } from './styles';
@@ -45,6 +48,7 @@ function ExtractorPageMain() {
   const getInputUrl = () => inputUrlRef.current?.value
 
   /* states */
+  const [feedbackOpened, setFeedbackOpened] = useState(false)
 
   const submitUrl = () => {
     const params = {
@@ -94,6 +98,7 @@ function ExtractorPageMain() {
         })}
       />
       <LoadingOverlay visible={!!url && (isLoading || isRefetching)} />
+      <FeedbackModal opened={feedbackOpened} onClose={() => setFeedbackOpened(true)} />
 
       <Stack spacing={0} sx={{
         height: '100%',
@@ -122,6 +127,12 @@ function ExtractorPageMain() {
             >
               Extract
             </Button>
+            <Box className='header-nav'>
+              <Link to='/'>
+                <Button variant="subtle" color="gray" compact>Home</Button>
+              </Link>
+              <Button variant="subtle" color="gray" compact onClick={() => setFeedbackOpened(true)}>Feedback</Button>
+            </Box>
           </Flex>
           <Flex mt={8}>
             <ExtractorOptions options={options} />
