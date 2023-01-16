@@ -1,31 +1,68 @@
-.markdown {
-  position: absolute;
-  left: 0; right: 0; bottom: 0;
-  top: 46px;
-  padding: 8px;
-  overflow-y: scroll;
+.viewer {
+  --gutter: 8px;
 
-  table {
-    border-spacing: 0;
-    border-collapse: collapse;
+  .top-panel {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    padding: var(--gutter);
+    height: 46px;
+    background: '#ffffff';
+    z-index: 1;
+    border-bottom: 1px solid #ddd;
+  }
 
-    caption {
-      font-size: .85em;
+  .toc {
+    position: absolute;
+    z-index: 1;
+    top: 54px;
+    right: calc(var(--gutter) * 2);
+
+    font-size: 12px;
+    max-width: 40%;
+    max-height: 80%;
+    overflow-y: auto;
+
+    ol.toc-list {
+      padding-left: 20px;
     }
-
-    tr {
-      border-top: 1px solid #ddd;
+    .toc-link {
+      color: #000;
+      text-decoration: none;
     }
-
-    th, td {
-      border: 1px solid #ddd;
-      padding: 8px;
+    .toc-link:hover {
+      text-decoration: underline;
     }
   }
 
-  .footnotes {
-    .footnote-backref {
-      font-family: monospace;
+  .markdown {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    top: 46px;
+    padding: var(--gutter);
+    overflow-y: scroll;
+
+    table {
+      border-spacing: 0;
+      border-collapse: collapse;
+
+      caption {
+        font-size: .85em;
+      }
+
+      tr {
+        border-top: 1px solid #ddd;
+      }
+
+      th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      .footnotes {
+        .footnote-backref {
+          font-family: monospace;
+        }
+      }
     }
   }
 }

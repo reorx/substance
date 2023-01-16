@@ -129,6 +129,7 @@ function ExtractorPageMain() {
         </Box>
         <Grid gutter={0} className={classes.flexItemGrow}>
           <Grid.Col span={6} p={gutter} className={classes.flexItemGrow} sx={{
+            position: 'relative',
           }}>
             <Editor />
           </Grid.Col>
