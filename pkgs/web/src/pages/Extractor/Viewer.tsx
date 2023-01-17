@@ -25,7 +25,7 @@ export function Viewer()  {
   useEffect(() => {
     tocbot.init({
       tocSelector: '.toc',
-      contentSelector: '.markdown'
+      contentSelector: '.viewer-markdown'
     })
     if (tocRef.current?.children.length === 0) {
       tocRef.current.innerHTML = 'No index'
