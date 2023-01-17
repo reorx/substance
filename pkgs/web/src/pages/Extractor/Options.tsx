@@ -1,8 +1,9 @@
-import { Switch, Tooltip, Text } from '@mantine/core';
+import { Icon } from '@iconify/react';
+import { Box, Tooltip, Chip, Flex } from '@mantine/core';
 import { Options } from '@substance/common/extract';
 import { WikipediaExtractor } from '@substance/common/extractors/wikipedia';
 
-import { useStyles } from './styles';
+import { gutter, useStyles } from './styles';
 
 
 interface OptionsProps {
@@ -12,26 +13,30 @@ interface OptionsProps {
 export function ExtractorOptions({options}: OptionsProps) {
   const {classes} = useStyles()
   return (
-    <>
-      <Text fz="sm" lh="1.3" mr={16} fw={700}>Options:</Text>
+    <Flex mt={8} align='center'>
+      <Icon icon="material-symbols:settings-rounded" color="#333" css={{
+        marginLeft: gutter,
+        marginRight: gutter,
+      }}/>
       {Object.keys(WikipediaExtractor.options).map((key) => (
-        <Switch mr={32} name={key} key={key}
-          onChange={(event) => {
-            // update options (not a state)
-            options[key] = event.currentTarget.checked
-          }}
-          label={
-            <Tooltip
-              withArrow
-              multiline
-              width={300}
-              position="bottom"
-              label={WikipediaExtractor.options[key].help}>
-              <span className={classes.innerLabel}>{key}</span>
-            </Tooltip>
-          }
-        />
+        <Tooltip
+          withArrow
+          multiline
+          width={300}
+          position="bottom"
+          key={key}
+          label={WikipediaExtractor.options[key].help}
+        >
+          <Box mr={24}>
+            <Chip size='xs' variant='filled'
+              onChange={(checked) => {
+                // update options (not a state)
+                options[key] = checked
+              }}
+            >{key}</Chip>
+          </Box>
+        </Tooltip>
       ))}
-    </>
+    </Flex>
   )
 }

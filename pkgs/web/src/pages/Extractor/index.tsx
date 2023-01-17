@@ -141,9 +141,7 @@ function ExtractorPageMain() {
               <Button variant="subtle" color="gray" compact onClick={() => setFeedbackOpened(true)}>Feedback</Button>
             </Box>
           </Flex>
-          <Flex mt={8}>
-            <ExtractorOptions options={options} />
-          </Flex>
+          <ExtractorOptions options={options} />
         </Box>
         <Grid gutter={0} className={classes.flexItemGrow}>
           <Grid.Col span={6} p={gutter} className={classes.flexItemGrow} sx={{
