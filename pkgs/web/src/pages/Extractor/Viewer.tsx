@@ -3,7 +3,7 @@ import './Viewer.scss';
 import { useEffect, useRef } from 'react';
 
 import { Icon } from '@iconify/react';
-import { Button, Flex, Paper, Text } from '@mantine/core';
+import { ActionIcon, Flex, Paper, Text } from '@mantine/core';
 import tocbot from 'tocbot';
 
 import useComponentVisible from '@/utils';
@@ -39,20 +39,15 @@ export function Viewer()  {
           flexGrow: 1,
         }}>{title}</Text>
 
-        <Button size="xs" color='gray' variant='outline'
-          ml={gutter}
-          styles={{
-            root: {
-              padding: '0 2px',
-            }
-          }}
+        <ActionIcon variant='light' color='yellow.8'
           ref={tocButtonRef}
+          ml={gutter}
           onClick={(e) => {
             setTocVisible(!isTocVisible)
           }}
         >
-          <Icon icon="mdi:table-of-contents" color='#000' width={25}/>
-        </Button>
+          <Icon icon="mdi:table-of-contents" width={20} />
+        </ActionIcon>
       </Flex>
 
       <Paper ref={tocRef} shadow="sm" p="sm" withBorder className="toc" sx={{

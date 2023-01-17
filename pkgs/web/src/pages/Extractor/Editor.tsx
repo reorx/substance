@@ -6,7 +6,8 @@ import { markdown as cmMarkdown, markdownLanguage } from '@codemirror/lang-markd
 import { EditorView, ViewPlugin } from '@codemirror/view';
 import { Icon } from '@iconify/react';
 import {
-  Box, Button, Code, Flex, Popover, Text, TextInput,
+  ActionIcon, Box, Button, Code, Flex, Popover, Text,
+  TextInput,
 } from '@mantine/core';
 import CodeMirror from '@uiw/react-codemirror';
 
@@ -43,15 +44,9 @@ export function Editor() {
         <Popover width={300} position="bottom-start"
           withArrow shadow='lg'>
           <Popover.Target>
-            <Button size="xs" color='gray' variant='subtle'
-              mr={gutter}
-              styles={{
-                root: {
-                  padding: '0 2px',
-                }
-              }}>
-              <Icon icon="clarity:info-circle-solid" color='#333' width={25}/>
-            </Button>
+            <ActionIcon variant='subtle' color='yellow.6' mr={gutter}>
+              <Icon icon="clarity:info-circle-solid" width={25}/>
+            </ActionIcon>
           </Popover.Target>
           <Popover.Dropdown>
             <Text size='sm' fw='bold'>Extra data:</Text>
@@ -69,7 +64,7 @@ export function Editor() {
         />
 
         <Button size="xs"
-          color="yellow"
+          color="yellow.6"
           variant='subtle'
           rightIcon={<Icon icon="fa-brands:markdown" css={{
             fontSize: '18px',
