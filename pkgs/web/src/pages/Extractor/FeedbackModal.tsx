@@ -19,8 +19,6 @@ export function FeedbackModal(props: ModalProps) {
 
       <p>However, you are welcomed to send me a message via <a href="mailto:hello@reorx.com">hello@reorx.com</a></p>
 
-      <p>P.S. if you find this project useful, consider buy me a coffee
-      </p>
       <p>Also, if you find this project useful, consider supporting it by buying me a coffee through
         {" "}<a href="https://github.com/sponsors/reorx" target="_blank">GitHub Sponsors</a> or
         {" "}<a href="https://ko-fi.com/reorx" target="_blank">Ko-fi</a>
