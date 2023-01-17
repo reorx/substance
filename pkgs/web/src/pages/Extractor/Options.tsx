@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import { Icon } from '@iconify/react';
 import { Box, Tooltip, Chip, Flex, ActionIcon } from '@mantine/core';
 import { Options } from '@substance/common/extract';
@@ -7,10 +9,13 @@ import { gutter } from './styles';
 
 
 interface OptionsProps {
-  options: Options
+  initialOptions: Options
+  updateOption: (key: string, value: any) => void
 }
 
-export function ExtractorOptions({options}: OptionsProps) {
+export function ExtractorOptions({initialOptions, updateOption}: OptionsProps) {
+  const [options, setOptions] = useState({...initialOptions})
+
   return (
     <Flex mt={8} align='center'>
       <ActionIcon variant='transparent' mr={gutter} color='dark'>
@@ -27,9 +32,18 @@ export function ExtractorOptions({options}: OptionsProps) {
         >
           <Box mr={16}>
             <Chip size='xs' variant='filled'
+              checked={options[key]}
               onChange={(checked) => {
-                // update options (not a state)
-                options[key] = checked
+                // update state for render
+                setOptions(options => ({
+                  ...options,
+                  ...{
+                    [key]: checked,
+                  }
+                }))
+
+                // call this function to update persistant data
+                updateOption(key, checked)
               }}
             >{key}</Chip>
           </Box>

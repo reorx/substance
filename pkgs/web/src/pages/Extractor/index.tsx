@@ -13,12 +13,12 @@ import { Link, useSearchParams } from 'react-router-dom';
 
 import { usePageTitle } from '@/utils';
 
-import { extractManager, getExtractedData, getErrorMessage } from './api';
+import { getExtractedData, getErrorMessage } from './api';
 import { Editor } from './Editor';
 import { FeedbackModal } from './FeedbackModal';
 import { HelpModal } from './HelpModal';
 import { ExtractorOptions } from './Options';
-import { useStore } from './store';
+import { OptionsManager, useStore } from './store';
 import { gutter, useStyles } from './styles';
 import { Viewer } from './Viewer';
 
@@ -38,7 +38,7 @@ export function ExtractorPage() {
 const EditorMemo = memo(Editor)
 const ViewerMemo = memo(Viewer)
 
-const options = extractManager.getDefaultOptions()
+const optionsManager = new OptionsManager()
 
 function ExtractorPageMain() {
   console.info('render ExtractorPageMain')
@@ -70,7 +70,7 @@ function ExtractorPageMain() {
     queryKey: ['extract', url],
     queryFn: async () => {
       // console.log('use options', options)
-      return await getExtractedData(url, options)
+      return await getExtractedData(url, optionsManager.options)
     },
     onSuccess: (data) => {
       useStore.setState({
@@ -157,7 +157,7 @@ function ExtractorPageMain() {
               <Button variant="subtle" color="gray" compact onClick={() => setFeedbackOpened(true)}>Feedback</Button>
             </Box>
           </Flex>
-          <ExtractorOptions options={options} />
+          <ExtractorOptions initialOptions={optionsManager.options} updateOption={optionsManager.updateOption.bind(optionsManager)} />
         </Box>
         <Grid gutter={0} className={classes.flexItemGrow}>
           <Grid.Col span={6} p={gutter} className={classes.flexItemGrow} sx={{

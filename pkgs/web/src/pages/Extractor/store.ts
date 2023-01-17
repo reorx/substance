@@ -1,4 +1,7 @@
+import { Options } from '@substance/common/extract';
 import { create } from 'zustand';
+
+import { extractManager } from './api';
 
 
 export interface State {
@@ -24,3 +27,30 @@ export const useStore = create<State>()((set) => ({
     }))
   */
 }))
+
+
+export class OptionsManager {
+  options: Options
+  key = 'substance-extractor-options:wikipedia'
+
+  constructor() {
+    this.options = {...extractManager.getDefaultOptions(), ...this.readLS()}
+  }
+
+  updateOption(key: string, value: any) {
+    this.options[key] = value
+    this.writeLS()
+  }
+
+  readLS() {
+    const raw = localStorage.getItem(this.key)
+    if (raw) {
+      return JSON.parse(raw)
+    }
+    return {}
+  }
+
+  writeLS() {
+    localStorage.setItem(this.key, JSON.stringify(this.options))
+  }
+}
