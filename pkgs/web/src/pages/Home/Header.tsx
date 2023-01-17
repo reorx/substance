@@ -2,19 +2,20 @@ import { useState } from 'react';
 
 import { Icon } from '@iconify/react';
 import {
-  createStyles, Header, Container, Group, Text, useMantineTheme, Button,
+  createStyles, Header, Group, Text, useMantineTheme, Button, Container,
 } from '@mantine/core';
 import { Link } from 'react-router-dom';
 
 import { FeedbackModal } from '../Extractor/FeedbackModal';
 
 
-const HEADER_HEIGHT = 60;
-
 const useStyles = createStyles((theme) => ({
   root: {
     position: 'relative',
     zIndex: 1,
+    [theme.fn.smallerThan('md')]: {
+      minHeight: 90,
+    },
   },
 
   header: {
@@ -22,11 +23,18 @@ const useStyles = createStyles((theme) => ({
     justifyContent: 'space-between',
     alignItems: 'center',
     height: '100%',
+    flexWrap: 'wrap',
+    padding: 8,
   },
 
   links: {
-    [theme.fn.smallerThan('sm')]: {
-      display: 'none',
+    [theme.fn.smallerThan('md')]: {
+      width: '100%',
+      flexGrow: 1,
+      display: 'flex',
+      justifyContent: 'center',
+      marginTop: 8,
+      marginLeft: 0,
     },
   },
 
@@ -43,7 +51,7 @@ export function HomeHeader() {
   return (
     <>
       <FeedbackModal opened={feedbackOpened} onClose={() => setFeedbackOpened(false)} />
-      <Header height={HEADER_HEIGHT} mih={HEADER_HEIGHT} className={classes.root}>
+      <Header height={60} mih={60} className={classes.root}>
         <Container className={classes.header}>
           <Group spacing={5}>
             <Icon icon="eos-icons:content-lifecycle-management" css={{
@@ -52,10 +60,12 @@ export function HomeHeader() {
             }}/>
             <Text size={20} fw={600}>Substance</Text>
           </Group>
-          <Group spacing={5} className={classes.links}>
-            <Link to='/extractor'>
-              <Button size="xs" variant='outline' fw='bolder'>Open Extractor</Button>
-            </Link>
+          <Link to='/extractor' css={{
+            marginLeft: 'auto',
+          }}>
+            <Button size="xs" variant='outline' fw='bolder'>Open Extractor</Button>
+          </Link>
+          <Group ml={5} spacing={5} className={classes.links}>
             <Button size="xs" variant='subtle' color='gray' className={classes.linkButton}
               onClick={() => setFeedbackOpened(true)}
             >Feedback</Button>

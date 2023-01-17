@@ -1,4 +1,5 @@
-import { createStyles, Container, Text, Center, Box } from '@mantine/core';
+import { createStyles, Container, Text, Box } from '@mantine/core';
+
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -30,7 +31,7 @@ export function HomeFooter() {
   const { classes } = useStyles();
 
   return (
-    <Box mt={80} className={classes.footer}>
+    <Box mt={50} className={classes.footer}>
       <Container className={classes.inner}>
         <Text>Made by Reorx.</Text>
       </Container>

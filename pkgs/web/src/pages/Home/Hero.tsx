@@ -1,4 +1,6 @@
-import { createStyles, Title, Text, Container, Box } from '@mantine/core';
+import {
+  createStyles, Title, Text, Container, Box, useMantineTheme,
+} from '@mantine/core';
 
 
 const useStyles = createStyles((theme) => ({
@@ -43,7 +45,6 @@ const useStyles = createStyles((theme) => ({
 
     '@media (max-width: 520px)': {
       fontSize: 28,
-      textAlign: 'left',
     },
   },
 
@@ -63,9 +64,18 @@ const useStyles = createStyles((theme) => ({
 
 export function HeroText() {
   const { classes } = useStyles();
+  const theme = useMantineTheme()
 
   return (
-    <Box mt={80}>
+    <Box sx={(theme) => ({
+      marginTop: 80,
+      [theme.fn.smallerThan('md')]: {
+        marginTop: 50,
+      },
+      [theme.fn.smallerThan('sm')]: {
+        marginTop: 30,
+      }
+    })}>
       <div className={classes.inner}>
         <Title className={classes.title}>
           Fine-tuned {' '}
