@@ -29,7 +29,7 @@ export function Editor() {
 
   const getEditorHeight = () => {
     // - header - top-panel - complement
-    return window.innerHeight - 80 - 46 - 1
+    return window.innerHeight - 80 - 48 - 1
   }
   const [editorHeight, setEditorHeight] = useState(() => getEditorHeight() )
 
