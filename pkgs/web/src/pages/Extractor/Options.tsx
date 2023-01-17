@@ -25,7 +25,7 @@ export function ExtractorOptions({options}: OptionsProps) {
           key={key}
           label={WikipediaExtractor.options[key].help}
         >
-          <Box mr={24}>
+          <Box mr={16}>
             <Chip size='xs' variant='filled'
               onChange={(checked) => {
                 // update options (not a state)

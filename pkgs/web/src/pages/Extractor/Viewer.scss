@@ -4,7 +4,7 @@
   .top-panel {
     position: absolute;
     top: 0; left: 0; right: 0;
-    padding: var(--gutter);
+    padding: var(--gutter) calc(var(--gutter) * 2);
     height: 46px;
     background: '#ffffff';
     z-index: 1;
@@ -38,7 +38,7 @@
     position: absolute;
     left: 0; right: 0; bottom: 0;
     top: 46px;
-    padding: var(--gutter);
+    padding: calc(var(--gutter) * 2);
     overflow-y: auto;
 
     --font-sm: .85em;
