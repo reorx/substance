@@ -6,3 +6,16 @@
     color: #777;
   }
 }
+
+// mantain rewrite
+.mantine-Modal-title {
+  font-weight: bold;
+}
+
+// MarkdownComponent
+.markdown {
+  code {
+    background-color: #eee;
+    padding: 2px;
+  }
+}

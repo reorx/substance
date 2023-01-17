@@ -1,11 +1,11 @@
 import './index.scss';
 
-import { useRef, useState } from 'react';
+import { memo, useRef, useState } from 'react';
 
 import { Icon } from '@iconify/react';
 import {
   Box, Global, Flex, Grid, Stack, useMantineTheme, TextInput,
-  Button, LoadingOverlay,
+  Button, LoadingOverlay, ActionIcon,
 } from '@mantine/core';
 import { NotificationsProvider, showNotification } from '@mantine/notifications';
 import { useQuery, useQueryClient, QueryClient, QueryClientProvider } from '@tanstack/react-query';
@@ -14,6 +14,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 import { extractManager, getExtractedData, getErrorMessage } from './api';
 import { Editor } from './Editor';
 import { FeedbackModal } from './FeedbackModal';
+import { HelpModal } from './HelpModal';
 import { ExtractorOptions } from './Options';
 import { useStore } from './store';
 import { gutter, useStyles } from './styles';
@@ -32,6 +33,8 @@ export function ExtractorPage() {
   )
 }
 
+const EditorMemo = memo(Editor)
+const ViewerMemo = memo(Viewer)
 
 const options = extractManager.getDefaultOptions()
 
@@ -49,6 +52,7 @@ function ExtractorPageMain() {
 
   /* states */
   const [feedbackOpened, setFeedbackOpened] = useState(false)
+  const [helpOpened, setHelpOpened] = useState(false)
 
   const submitUrl = () => {
     const params = {
@@ -105,6 +109,7 @@ function ExtractorPageMain() {
       />
       <LoadingOverlay visible={!!url && (isLoading || isRefetching)} />
       <FeedbackModal opened={feedbackOpened} onClose={() => setFeedbackOpened(false)} />
+      <HelpModal opened={helpOpened} onClose={() => setHelpOpened(false)} />
 
       <Stack spacing={0} sx={{
         height: '100%',
@@ -113,22 +118,29 @@ function ExtractorPageMain() {
         <Box p={gutter} sx={{
           borderBottom: '1px solid #ddd'
         }}>
-          <Flex className={classes.flexItemGrow}>
+          <Flex className={classes.flexItemGrow} align='center'>
+            <ActionIcon variant='transparent' mr={gutter} color='dark'>
+              <Icon icon="tabler:link" />
+            </ActionIcon>
             <TextInput
               name="url"
               defaultValue={url}
               ref={inputUrlRef}
               onSubmit={submitUrl}
-              icon={<Icon icon="tabler:link" />}
               placeholder="URL"
               radius="sm" size="xs"
               sx={{
                 width: 600,
                 maxWidth: '50%',
-                marginRight: 12,
+                marginRight: gutter,
               }}
               onKeyDown={enterAction}
             />
+            <ActionIcon variant='subtle' mr={gutter} color='yellow.6'
+              onClick={() => setHelpOpened(true)}
+            >
+              <Icon icon="mdi:question-mark-circle" width={18} />
+            </ActionIcon>
             <Button color="yellow" size="xs"
               onClick={submitUrl}
             >
@@ -147,14 +159,14 @@ function ExtractorPageMain() {
           <Grid.Col span={6} p={gutter} className={classes.flexItemGrow} sx={{
             position: 'relative',
           }}>
-            <Editor />
+            <EditorMemo />
           </Grid.Col>
 
           <Grid.Col span={6} p={gutter} className={classes.flexItemGrow} sx={{
             position: 'relative',
             borderLeft: '1px solid #ddd',
           }}>
-            <Viewer />
+            <ViewerMemo />
           </Grid.Col>
         </Grid>
     </Stack>

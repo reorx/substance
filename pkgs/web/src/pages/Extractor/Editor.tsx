@@ -21,6 +21,7 @@ import { githubLight } from './theme-githubLight';
 
 
 export function Editor() {
+  console.debug('render Editor')
   const contentMarkdown = useStore((state) => state.contentMarkdown)
   const title = useStore((state) => state.title)
   const extraData = useStore((state) => state.extraData)
@@ -45,7 +46,7 @@ export function Editor() {
           withArrow shadow='lg'>
           <Popover.Target>
             <ActionIcon variant='subtle' color='yellow.6' mr={gutter}>
-              <Icon icon="clarity:info-circle-solid" width={25}/>
+              <Icon icon="clarity:info-circle-solid" width={22}/>
             </ActionIcon>
           </Popover.Target>
           <Popover.Dropdown>

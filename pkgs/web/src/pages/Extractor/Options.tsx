@@ -14,7 +14,7 @@ export function ExtractorOptions({options}: OptionsProps) {
   return (
     <Flex mt={8} align='center'>
       <ActionIcon variant='transparent' mr={gutter} color='dark'>
-        <Icon icon="material-symbols:settings-rounded" />
+        <Icon icon="tabler:settings" />
       </ActionIcon>
       {Object.keys(WikipediaExtractor.options).map((key) => (
         <Tooltip

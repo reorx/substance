@@ -1,10 +1,13 @@
-import { createRoot } from 'react-dom/client';
-import { MantineProvider } from '@mantine/core';
+import React from 'react';
 
+import { MantineProvider } from '@mantine/core';
+import { createRoot } from 'react-dom/client';
 
 import { App } from './App';
 
+
 createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
   <MantineProvider
       withGlobalStyles
       withNormalizeCSS
@@ -32,4 +35,5 @@ createRoot(document.getElementById('root')!).render(
     >
       <App />
     </MantineProvider>
+  </React.StrictMode>
 )

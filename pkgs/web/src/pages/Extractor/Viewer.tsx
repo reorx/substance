@@ -14,6 +14,7 @@ import { gutter } from './styles';
 
 
 export function Viewer()  {
+  console.debug('render Viewer')
   const contentRef = useRef<HTMLDivElement>(null)
   const tocButtonRef = useRef<HTMLButtonElement>(null)
   const { ref: tocRef, isVisible: isTocVisible, setIsVisible: setTocVisible } = useComponentVisible(false, tocButtonRef)
@@ -57,7 +58,7 @@ export function Viewer()  {
       <div
         ref={contentRef}
         dangerouslySetInnerHTML={{ __html: renderMarkdown(contentMarkdown) }}
-        className="markdown"
+        className="viewer-markdown"
       ></div>
 
     </div>
