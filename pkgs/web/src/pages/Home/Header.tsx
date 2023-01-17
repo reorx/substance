@@ -74,6 +74,11 @@ export function HomeHeader() {
                 rightIcon={<Icon icon="tabler:external-link" />}
               >GitHub</Button>
             </a>
+            <a href="https://discord.gg/GKFu7DVZ" target='_blank'>
+              <Button size="xs" variant='subtle' color='gray' className={classes.linkButton}
+                rightIcon={<Icon icon="tabler:external-link" />}
+              >Discord</Button>
+            </a>
           </Group>
         </Container>
       </Header>

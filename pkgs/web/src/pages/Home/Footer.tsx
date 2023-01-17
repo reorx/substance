@@ -33,7 +33,7 @@ export function HomeFooter() {
   return (
     <Box mt={50} className={classes.footer}>
       <Container className={classes.inner}>
-        <Text>Made by Reorx.</Text>
+        <Text>Made by <a href="https://reorx.com" target='_blank'>Reorx</a>.</Text>
       </Container>
     </Box>
   );
