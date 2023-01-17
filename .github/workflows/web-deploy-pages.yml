@@ -34,5 +34,5 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: substance-web
-          directory: pkgs/web/build
+          directory: pkgs/web/dist
           branch: master

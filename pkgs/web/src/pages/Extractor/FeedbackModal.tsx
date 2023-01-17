@@ -13,9 +13,9 @@ It is recommended to create issues on GitHub:
 However, you are welcome to send me a message via [hello@reorx.com](mailto:hello@reorx.com).
 
 Also, if you find this project useful, consider supporting it by buying me a coffee through
-[GitHub Sponsors](https://github.com/sponsors/reorx) or [Ko-fi](https://ko-fi.com/reorx)
+[GitHub Sponsors](https://github.com/sponsors/reorx) or [Ko-fi](https://ko-fi.com/reorx).
 
-Sincerely
+Sincerely<br>
 [Reorx](https://reorx.com)
 `
 

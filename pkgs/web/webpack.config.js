@@ -2,11 +2,14 @@ const path = require('path')
 const webpack = require('webpack')
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
+
 
 const site = require('./site.js')
 const rootDir = __dirname
 const srcDir = path.join(rootDir, 'src')
-const destDir = path.join(rootDir, 'build')
+const destDir = path.join(rootDir, 'dist')
+const publicDir = path.join(rootDir, 'public')
 
 const isDevelopment = process.env.NODE_ENV !== 'production'
 const useAnalyze = !!process.env.WEBPACK_USE_ANALYZE
@@ -85,8 +88,13 @@ let config = {
     }),
     new HtmlWebpackPlugin(Object.assign({
       inject: true,
-      template: path.join(rootDir, 'public/index.html'),
-    }, site))
+      template: path.join(rootDir, 'index.html'),
+    }, site)),
+    new CopyPlugin({
+      patterns: [
+        { from: publicDir, to: destDir },
+      ],
+    }),
   ],
 }
 

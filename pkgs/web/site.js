@@ -3,7 +3,7 @@
 const title = 'Substance'
 const description = 'Extract substance from the web'
 const url = 'https://substance.reorx.com'
-const image_url = '/cover.png'
+const image_url = url + '/cover.png'
 
 module.exports = {
   favicon: './public/favicon.svg',
