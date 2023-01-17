@@ -22,7 +22,7 @@ A clear and concise description of what the bug is.
 - Options:
     - [ ] removeLinks
     - [ ] removeImages
-    - [ ] useFigureForImage
+    - [ ] keepFigureImage
     - [ ] getTagsFromCategories
 
 **To Reproduce**

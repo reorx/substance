@@ -25,8 +25,8 @@ export const WikipediaExtractor: Extractor = {
       help: "Remove all the images as well as its captions",
       default: false,
     },
-    useFigureForImage: {
-      help: "Use <figure> for images, so that the caption can be rendered correctly. Note that images will be represented in <img> rather than markdown syntax, this may not be suitable for all the markdown renderers",
+    keepFigureImage: {
+      help: "Keep <figure> as well as <img> and <figcaption> inside, to have better semantic in HTML. Since images in <figure> will be represented in <img> rather than markdown syntax, this may not be suitable for all the markdown renderers",
       default: false,
     },
     getTagsFromCategories: {
@@ -65,12 +65,12 @@ export const WikipediaExtractor: Extractor = {
 
       // images
       '.thumbinner': ($node, state) => {
-        if (state.options.useFigureForImage) {
+        if (state.options.keepFigureImage) {
           $node.replaceWith(`<figure>${$node.html()}</figure>`)
         }
       },
       '.thumbcaption': ($node, state) => {
-        if (state.options.useFigureForImage) {
+        if (state.options.keepFigureImage) {
           $node.replaceWith(`<figcaption>${$node.html()}</figcaption>`)
         } else {
           $node.replaceWith(`<blockquote>${$node.html()}</blockquote>`)

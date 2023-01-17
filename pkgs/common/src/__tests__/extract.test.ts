@@ -123,10 +123,10 @@ describe('en.wikipedia.org', () => {
       }
     })
 
-    test('useFigureForImage', () => {
-      const variant = 'useFigureForImage'
+    test('keepFigureImage', () => {
+      const variant = 'keepFigureImage'
       const {content, contentMarkdown, title} = em.extract(html, url, {
-        useFigureForImage: true,
+        keepFigureImage: true,
       })
       expect(title).toBe('Feudalism')
 
