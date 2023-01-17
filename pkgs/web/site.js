@@ -42,12 +42,29 @@ module.exports = {
 
     // twitter
     'twitter:card': {
+      name: 'twitter:card',
       property: 'twitter:card',
       content: 'summary_large_image',
     },
     'twitter:image': {
+      name: 'twitter:image',
       property: 'twitter:image',
       content: image_url,
-    }
+    },
+    'twitter:creator': {
+      name: 'twitter:creator',
+      property: 'twitter:creator',
+      content: '@novoreorx',
+    },
+    'twitter:title': {
+      name: 'twitter:title',
+      property: 'twitter:title',
+      content: title,
+    },
+    'twitter:description': {
+      name: 'twitter:description',
+      property: 'twitter:description',
+      content: description,
+    },
   }
 }
