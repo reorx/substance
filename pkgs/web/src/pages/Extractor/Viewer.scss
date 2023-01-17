@@ -87,5 +87,11 @@
         font-family: monospace;
       }
     }
+
+    // highlight the anchor of sup and footnote item
+    .footnote-ref > a:target,
+    .footnote-item:target {
+      background-color: #FFF3BF;
+    }
   }
 }
