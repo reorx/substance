@@ -218,15 +218,12 @@ Richard Abels notes that "Western Civilization and World Civilization textbooks 
 
 ## External links
 
-![](https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png)
-
-Wikimedia Commons has media related to [Feudalism](https://commons.wikimedia.org/wiki/Category:Feudalism).
-
 -   ["Feudalism"](https://www.britannica.com/eb/article-9034150/feudalism), by [Elizabeth A. R. Brown](https://en.wikipedia.org/wiki/Elizabeth_A._R._Brown). _[Encyclopædia Britannica Online](https://en.wikipedia.org/wiki/Encyclop%C3%A6dia_Britannica_Online)_.
 -   ["Feudalism?"](http://www.fordham.edu/halsall/sbook1i.html#Feudalism), by [Paul Halsall](https://en.wikipedia.org/w/index.php?title=Paul_Halsall&action=edit&redlink=1). [Internet Medieval Sourcebook](https://en.wikipedia.org/wiki/Internet_Medieval_Sourcebook).
 -   ["Feudalism: the history of an idea"](https://www.academia.edu/634989/Feudalism_the_history_of_an_idea), by Fredric Cheyette (Amherst), excerpted from _New Dictionary of the History of Ideas_ (2004)
 -   [_Medieval Feudalism_](https://web.archive.org/web/20120209083705/http://www.scribd.com/doc/28860952/Mediavel-Feudalism), by [Carl Stephenson](https://en.wikipedia.org/wiki/Carl_Stephenson_(historian)). Cornell University Press, 1942. Classic introduction to Feudalism.
 -   ["The Problem of Feudalism: An Historiographical Essay"](https://web.archive.org/web/20090226131755/http://www.wku.edu/~rob.harbison/projects/Gfeudal.html) at the [Wayback Machine](https://en.wikipedia.org/wiki/Wayback_Machine) (archived February 26, 2009), by Robert Harbison, 1996, [Western Kentucky University](https://en.wikipedia.org/wiki/Western_Kentucky_University).
+
 
 [^1]: _feodum_ – see [_The Cyclopedic Dictionary of Law_](https://books.google.com/books?id=KfgUAAAAYAAJ&pg=PA365), by Walter A. Shumaker, George Foster Longsdorf, pg. 365, 1901.
 

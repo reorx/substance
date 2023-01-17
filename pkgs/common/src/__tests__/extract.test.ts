@@ -1,7 +1,11 @@
-import _ from "lodash"
-import ExtractManager, { matchExtractor } from "../extract"
-import { WikipediaExtractor } from "../extractors/wikipedia"
-import { DataManager } from "./utils"
+import _ from 'lodash';
+
+import ExtractManager, { matchExtractor } from '../extract';
+import { WikipediaExtractor } from '../extractors/wikipedia';
+import { DataManager } from './utils';
+
+const saveOnly = false
+// const saveOnly = true
 
 describe('zh.wikipedia.org', () => {
 
@@ -38,8 +42,11 @@ describe('zh.wikipedia.org', () => {
       const {content, contentMarkdown, title} = em.extract(html, url)
       expect(title).toBe('封建')
 
-      // dm.saveResult(null, 'md', contentMarkdown)
-      expect(contentMarkdown).toBe(dm.getResult(null, 'md'))
+      if (saveOnly) {
+        dm.saveResult(null, 'md', contentMarkdown)
+      } else {
+        expect(contentMarkdown).toBe(dm.getResult(null, 'md'))
+      }
     })
 
     test('removeLinks', () => {
@@ -48,8 +55,11 @@ describe('zh.wikipedia.org', () => {
         removeLinks: true
       })
 
-      // dm.saveResult(variant, 'md', contentMarkdown)
-      expect(contentMarkdown).toBe(dm.getResult(variant, 'md'))
+      if (saveOnly) {
+        dm.saveResult(variant, 'md', contentMarkdown)
+      } else {
+        expect(contentMarkdown).toBe(dm.getResult(variant, 'md'))
+      }
     })
 
     test('getTagsFromCategories', () => {
@@ -71,8 +81,11 @@ describe('zh.wikipedia.org', () => {
       const {content, contentMarkdown, title} = em.extract(html, url)
       expect(title).toBe('阿诗玛')
 
-      dm.saveResult(null, 'md', contentMarkdown)
-      // expect(contentMarkdown).toBe(dm.getResult(null, 'md'))
+      if (saveOnly) {
+        dm.saveResult(null, 'md', contentMarkdown)
+      } else {
+        expect(contentMarkdown).toBe(dm.getResult(null, 'md'))
+      }
     })
   })
 
@@ -88,8 +101,11 @@ describe('en.wikipedia.org', () => {
       const {content, contentMarkdown, title} = em.extract(html, url)
       expect(title).toBe('Feudalism')
 
-      // dm.saveResult(null, 'md', contentMarkdown)
-      expect(contentMarkdown).toBe(dm.getResult(null, 'md'))
+      if (saveOnly) {
+        dm.saveResult(null, 'md', contentMarkdown)
+      } else {
+        expect(contentMarkdown).toBe(dm.getResult(null, 'md'))
+      }
     })
 
     test('removeImages', () => {
@@ -99,8 +115,11 @@ describe('en.wikipedia.org', () => {
       })
       expect(title).toBe('Feudalism')
 
-      // dm.saveResult(variant, 'md', contentMarkdown)
-      expect(contentMarkdown).toBe(dm.getResult(variant, 'md'))
+      if (saveOnly) {
+        dm.saveResult(variant, 'md', contentMarkdown)
+      } else {
+        expect(contentMarkdown).toBe(dm.getResult(variant, 'md'))
+      }
     })
 
     test('useFigureForImage', () => {
@@ -110,8 +129,30 @@ describe('en.wikipedia.org', () => {
       })
       expect(title).toBe('Feudalism')
 
-      // dm.saveResult(variant, 'md', contentMarkdown)
-      expect(contentMarkdown).toBe(dm.getResult(variant, 'md'))
+      if (saveOnly) {
+        dm.saveResult(variant, 'md', contentMarkdown)
+      } else {
+        expect(contentMarkdown).toBe(dm.getResult(variant, 'md'))
+      }
+    })
+  })
+})
+
+describe('en.m.wikipedia.org', () => {
+  describe('feudalism', () => {
+    const dm = new DataManager('en.m.wikipedia.org/feudalism')
+    const {html, url} = dm.getSource()
+    const em = new ExtractManager(WikipediaExtractor)
+
+    test('default', () => {
+      const {content, contentMarkdown, title} = em.extract(html, url)
+      expect(title).toBe('Feudalism')
+
+      if (saveOnly) {
+        dm.saveResult(null, 'md', contentMarkdown)
+      } else {
+        expect(contentMarkdown).toBe(dm.getResult(null, 'md'))
+      }
     })
   })
 })

@@ -1,6 +1,9 @@
-import { Cheerio, Element } from "cheerio";
-import TurndownService from "turndown";
-import { Extractor } from "../extract";
+import {
+  Cheerio,
+  Element,
+} from 'cheerio';
+
+import { Extractor } from '../extract';
 
 const formatHeading = ($node: Cheerio<Element>) => {
   const tag = `<${$node[0].name}>${$node.text()}</${$node[0].name}>`
@@ -171,7 +174,7 @@ export const WikipediaExtractor: Extractor = {
       const markdown = turndownService.turndown($content.html() || '')
 
       const footnotesMarkdown = turndownService.turndown(state.sharedData.$footnotes.html() || '')
-      return markdown + '\n\n' + footnotesMarkdown
+      return markdown + '\n\n\n' + footnotesMarkdown
     },
   },
 

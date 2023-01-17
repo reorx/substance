@@ -232,6 +232,7 @@
 
 -   [《阿诗玛论析》](http://book.ucdrs.superlib.net/views/specific/2929/bookDetail.jsp?dxNumber=000005065450&d=EBA4CFECA07EE7F386F5415ED19379E0&fenlei=09030309) （[页面存档备份](https://web.archive.org/web/20210524022109/http://book.ucdrs.superlib.net/views/specific/2929/bookDetail.jsp?dxNumber=000005065450&d=EBA4CFECA07EE7F386F5415ED19379E0&fenlei=09030309)，存于[互联网档案馆](https://zh.wikipedia.org/wiki/%E4%BA%92%E8%81%94%E7%BD%91%E6%A1%A3%E6%A1%88%E9%A6%86)）
 
+
 [^21]: 包括1953年[黄铁](https://zh.wikipedia.org/wiki/%E9%BB%84%E9%93%81_(1919%E5%B9%B4))一行从撒尼民间搜集到的20个版本、1953年至1980年间云南省民族民间文学[红河](https://zh.wikipedia.org/wiki/%E7%BA%A2%E6%B2%B3%E5%93%88%E5%B0%BC%E6%97%8F%E5%BD%9D%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E)调查队搜集到的9个版本。《阿诗玛原始资料集》共收入42份资料，其余13份资料是相关音乐、创作及传说。
 
 [^33]: 即《阿诗玛原始资料集》原书中使用的原始文本编号和排列顺序。《资料集》第一部分的20份资料有编号，第二部分未编序号，为便于表述将第二部分按排列顺序编上序号，为21至29号文本。
