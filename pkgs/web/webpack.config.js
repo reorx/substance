@@ -1,8 +1,9 @@
+const path = require('path')
 const webpack = require('webpack')
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const path = require('path')
+const site = require('./site.js')
 const rootDir = __dirname
 const srcDir = path.join(rootDir, 'src')
 const destDir = path.join(rootDir, 'build')
@@ -82,10 +83,10 @@ let config = {
     new webpack.DefinePlugin({
       'process.env.APP_ENV': JSON.stringify(process.env.APP_ENV),
     }),
-    new HtmlWebpackPlugin({
+    new HtmlWebpackPlugin(Object.assign({
       inject: true,
       template: path.join(rootDir, 'public/index.html'),
-    })
+    }, site))
   ],
 }
 
