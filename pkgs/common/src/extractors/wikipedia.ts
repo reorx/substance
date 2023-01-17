@@ -13,7 +13,7 @@ const formatHeading = ($node: Cheerio<Element>) => {
 
 export const WikipediaExtractor: Extractor = {
   match: {
-    url: /https:\/\/\w{2}\.wikipedia\.org\/wiki\/.+/,
+    url: /https:\/\/.+\.wikipedia\.org\/.+/,
     selectors: ['#mw-content-text'],
   },
   options: {
@@ -76,6 +76,15 @@ export const WikipediaExtractor: Extractor = {
           $node.replaceWith(`<blockquote>${$node.html()}</blockquote>`)
         }
       },
+
+      // lazy loading images, this only appears in *.m.wikipedia.org pages
+      '.lazy-image-placeholder': ($node, state) => {
+        const dataSrc = $node.attr('data-src')
+        const style = $node.attr('style')
+        if (dataSrc) {
+          $node.replaceWith(`<img src="${dataSrc}" ${style ? 'style="' + style + '"' : ''}>`)
+        }
+      }
     },
 
     processElement: ($, $content, state) => {

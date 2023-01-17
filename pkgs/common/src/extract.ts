@@ -1,8 +1,16 @@
-import {load, CheerioAPI, Cheerio, AnyNode, Element } from 'cheerio';
+import {
+  Cheerio,
+  CheerioAPI,
+  Element,
+  load,
+} from 'cheerio';
+import { ElementType } from 'domelementtype';
 import TurndownService from 'turndown';
-import { getAbsUrl, getBaseUrl } from './utils';
-import { ElementType } from 'domelementtype'
 
+import {
+  getAbsUrl,
+  getBaseUrl,
+} from './utils';
 
 export interface OptionsDef {
   [key: string]: {
@@ -55,8 +63,9 @@ export interface Extractor {
     transforms: {
       [selector: string]: ($el: CheerioElement, state: State) => void
     }
-    processElement?: ($: CheerioAPI, $el: CheerioElement, state: State) => void
+    preprocess?: ($: CheerioAPI, $el: CheerioElement, state: State) => void
     process?: ($: CheerioAPI, $el: CheerioElement, state: State) => string
+    processElement?: ($: CheerioAPI, $el: CheerioElement, state: State) => void
     turndown?: {
       options: TurndownService.Options
       customize?: ($: CheerioAPI, turndownService: TurndownService, state: State) => void
@@ -120,7 +129,7 @@ export class ExtractManager {
     const sharedData = {}
 
     // process $content
-    const { selectors, clean, transforms, process, processElement, markdown, turndown } = extractor.content
+    const { selectors, clean, transforms, preprocess, process, processElement, markdown, turndown } = extractor.content
     if (!process && !processElement) {
       throw 'Either process or processElement should be defined'
     }
@@ -145,6 +154,19 @@ export class ExtractManager {
       clean.forEach(selector => {
         $content.find(selector).remove()
       })
+    }
+
+    // transform $content
+    if (transforms) {
+      Object.keys(transforms).forEach(selector => {
+        $content.find(selector).each((i, el) => {
+          transforms[selector]($(el) as CheerioElement, state)
+        })
+      })
+    }
+
+    if (preprocess) {
+      preprocess($, $content, state)
     }
 
     // Common processings
@@ -198,15 +220,6 @@ export class ExtractManager {
         $(el).removeAttr('class')
       })
     })
-
-    // transform $content
-    if (transforms) {
-      Object.keys(transforms).forEach(selector => {
-        $content.find(selector).each((i, el) => {
-          transforms[selector]($(el) as CheerioElement, state)
-        })
-      })
-    }
 
     // process content
     if (process) {

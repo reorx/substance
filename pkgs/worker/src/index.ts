@@ -19,7 +19,7 @@ export interface Env {
 	// MY_BUCKET: R2Bucket;
 }
 
-const wikipediaUrlRegex = /https:\/\/\w{2}\.wikipedia\.org\/wiki\/.+/;
+const wikipediaUrlRegex = /https:\/\/.+\.wikipedia\.org\/.+/;
 
 export default {
 	async fetch(

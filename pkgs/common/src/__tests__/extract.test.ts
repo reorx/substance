@@ -17,7 +17,8 @@ describe('zh.wikipedia.org', () => {
     test('match', () => {
       // test url match
       expect(matchExtractor(WikipediaExtractor, html, url)).toBeTruthy()
-      expect(matchExtractor(WikipediaExtractor, html, 'https://zh.wikipedia.org/foo')).toBeFalsy()
+      expect(matchExtractor(WikipediaExtractor, html, 'https://zh.m.wikipedia.org/foo')).toBeTruthy()
+      expect(matchExtractor(WikipediaExtractor, html, 'https://zh.m.wikimedia.org/foo')).toBeFalsy()
 
       // test domain match
       const modifiedExtractor0 = _.assign({}, WikipediaExtractor, {

@@ -1,0 +1,52 @@
+Noticed a strange behavior that images cannot be extracted on `m.wikipedia.org`.
+
+After investigation, I found that the code of `.thumb` elements of the two URLs are different
+
+https://en.wikipedia.org/wiki/Feudalism
+
+```
+<div class="thumb tright">
+  <div class="thumbinner" style="width:222px;">
+    <a href="/wiki/File:Codex_Manesse_Reinmar_von_Zweter.jpg" class="image">
+      <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Codex_Manesse_Reinmar_von_Zweter.jpg/220px-Codex_Manesse_Reinmar_von_Zweter.jpg" decoding="async" width="220" height="330" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Codex_Manesse_Reinmar_von_Zweter.jpg/330px-Codex_Manesse_Reinmar_von_Zweter.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Codex_Manesse_Reinmar_von_Zweter.jpg/440px-Codex_Manesse_Reinmar_von_Zweter.jpg 2x" data-file-width="984" data-file-height="1474" />
+    </a>
+    <div class="thumbcaption">
+      <div class="magnify">
+        <a href="/wiki/File:Codex_Manesse_Reinmar_von_Zweter.jpg" class="internal" title="Enlarge"></a>
+      </div>Herr <a href="/wiki/Reinmar_von_Zweter" title="Reinmar von Zweter">Reinmar von Zweter</a>, a 13th-century <a href="/wiki/Minnesang" title="Minnesang">Minnesinger</a>, was depicted with his noble arms in <a href="/wiki/Codex_Manesse" title="Codex Manesse">Codex Manesse</a>.
+    </div>
+  </div>
+</div>
+```
+
+https://en.m.wikipedia.org/wiki/Feudalism
+
+```
+<div class="thumb tright">
+  <div class="thumbinner" style="width:222px;">
+    <a href="/wiki/File:Codex_Manesse_Reinmar_von_Zweter.jpg" class="image">
+      <noscript>
+        <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Codex_Manesse_Reinmar_von_Zweter.jpg/220px-Codex_Manesse_Reinmar_von_Zweter.jpg" decoding="async" width="220" height="330" class="thumbimage" data-file-width="984" data-file-height="1474">
+      </noscript>
+      <span class="lazy-image-placeholder" style="width: 220px;height: 330px;" data-src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Codex_Manesse_Reinmar_von_Zweter.jpg/220px-Codex_Manesse_Reinmar_von_Zweter.jpg" data-alt="" data-width="220" data-height="330" data-class="thumbimage"></span>
+    </a>
+    <div class="thumbcaption">
+      <div class="magnify">
+        <a href="/wiki/File:Codex_Manesse_Reinmar_von_Zweter.jpg" class="internal" title="Enlarge"></a>
+      </div>Herr <a href="/wiki/Reinmar_von_Zweter" title="Reinmar von Zweter">Reinmar von Zweter</a>, a 13th-century <a href="/wiki/Minnesang" title="Minnesang">Minnesinger</a>, was depicted with his noble arms in <a href="/wiki/Codex_Manesse" title="Codex Manesse">Codex Manesse</a>.
+    </div>
+  </div>
+</div>
+```
+
+In `m.wikipedia.org`, `img` is wrapped in `noscript`, which will be dropped in the extracting process. This is the cause of the missing of some images.
+
+But since Substance is designed to work in the browser, the HTML source is captured from the current page,
+so this wouldn't be a problem in the future because Wikipedia's JavaScript will convert the `<span data-src>`
+into `<img>`.
+
+~~For now, the best solution is to update the worker script to rewrite `*.m.wikipedia.org` to `*.wikipedia.org`.~~
+
+I added a transform function to convert `.lazy-image-placeholder` elements into `img`, it won't break the current behavior,
+and it's quicker and easier to implement. Moreover, it makes the extractor working properly against source HTML that is not changed by JavaScript,
+which is definitely a bonus for people who want to use this library on the server side

@@ -28,6 +28,8 @@ The applicability of the term feudalism has also been questioned in the context 
 
 ## Etymology
 
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Codex_Manesse_Reinmar_von_Zweter.jpg/220px-Codex_Manesse_Reinmar_von_Zweter.jpg)
+
 > Herr [Reinmar von Zweter](https://en.wikipedia.org/wiki/Reinmar_von_Zweter), a 13th-century [Minnesinger](https://en.wikipedia.org/wiki/Minnesang), was depicted with his noble arms in [Codex Manesse](https://en.wikipedia.org/wiki/Codex_Manesse).
 
 The root of the term "feudal" originates in the [Proto-Indo-European](https://en.wikipedia.org/wiki/Proto-Indo-European_language) word [_\*péḱu_](https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/p%C3%A9%E1%B8%B1u), meaning "cattle", and possesses cognates in many other Indo-European languages: Sanskrit _pacu_, "cattle"; Latin _pecus_ (cf. _pecunia_) "cattle", "money"; Old High German _fehu, fihu_, "cattle", "property", "money"; Old Frisian _fia_; Old Saxon _fehu_; Old English _feoh, fioh, feo, fee_. The term "féodal" was first used in 17th-century French legal treatises (1614)[^20][^21] and translated into English legal treatises as an adjective, such as "feodal government".
@@ -56,11 +58,15 @@ The classic [François Louis Ganshof](https://en.wikipedia.org/wiki/Fran%C3%A7oi
 
 ### Vassalage
 
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Hommage_du_comt%C3%A9_de_Clermont-en-Beauvaisis.png/220px-Hommage_du_comt%C3%A9_de_Clermont-en-Beauvaisis.png)
+
 > [Homage](https://en.wikipedia.org/wiki/Homage_(feudal)) of [Clermont-en-Beauvaisis](https://en.wikipedia.org/wiki/Clermont,_Oise)
 
 Before a lord could grant land (a [fief](https://en.wikipedia.org/wiki/Fief)) to someone, he had to make that person a vassal. This was done at a formal and symbolic ceremony called a [commendation ceremony](https://en.wikipedia.org/wiki/Commendation_ceremony), which was composed of the two-part act of [homage](https://en.wikipedia.org/wiki/Homage_(feudal)) and oath of [fealty](https://en.wikipedia.org/wiki/Fealty). During homage, the lord and vassal entered into a contract in which the vassal promised to fight for the lord at his command, whilst the lord agreed to protect the vassal from external forces. _Fealty_ comes from the Latin _fidelitas_ and denotes the [fidelity](https://en.wikipedia.org/wiki/Fidelity) owed by a vassal to his feudal lord. "Fealty" also refers to an oath that more explicitly reinforces the commitments of the vassal made during homage. Such an oath follows homage.[^stephenson-35]
 
 Once the commendation ceremony was complete, the lord and vassal were in a feudal relationship with agreed obligations to one another. The vassal's principal obligation to the lord was to "aid", or military service. Using whatever equipment the vassal could obtain by virtue of the revenues from the fief, the vassal was responsible to answer calls to military service on behalf of the lord. This security of military help was the primary reason the lord entered into the feudal relationship. In addition, the vassal could have other obligations to his lord, such as attendance at his court, whether [manorial](https://en.wikipedia.org/wiki/Manorial_court), baronial, both termed [court baron](https://en.wikipedia.org/wiki/Manorial_court#Court_baron), or at the king's court.[^36]
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Map_France_1477-en.svg/220px-Map_France_1477-en.svg.png)
 
 > France in the late 15th century: a mosaic of feudal territories
 
@@ -91,6 +97,8 @@ More recently in Scotland, on November 28, 2004, the [Abolition of Feudal Tenure
 ## Feudal society
 
 > Main article: [Manorialism](https://en.wikipedia.org/wiki/Manorialism)
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Reeve_and_Serfs.jpg/220px-Reeve_and_Serfs.jpg)
 
 > Depiction of [socage](https://en.wikipedia.org/wiki/Socage) on the royal [demesne](https://en.wikipedia.org/wiki/Demesne) in feudal England, c. 1310
 
