@@ -22,7 +22,11 @@ export const WikipediaExtractor: Extractor = {
       default: false,
     },
     removeImages: {
-      help: "Remove all the images as well as its captions",
+      help: "Remove all the images as well as their captions",
+      default: false,
+    },
+    removeTables: {
+      help: "Remove all the tables",
       default: false,
     },
     keepFigureImage: {
@@ -92,6 +96,11 @@ export const WikipediaExtractor: Extractor = {
       if (state.options.removeImages) {
         $content.find('.thumb').remove()
         $content.find('img').remove()
+      }
+
+      // remove tables
+      if (state.options.removeTables) {
+        $content.find('table').remove()
       }
 
       // get references

@@ -4,6 +4,7 @@
   "main": "src/index.ts",
   "scripts": {
     "build": "webpack --mode production",
+    "test": "jest",
     "cli": "ts-node ./src/cli.ts"
   },
   "dependencies": {

@@ -1,0 +1,340 @@
+> This article is about the classic, medieval, Western European form of feudalism. For feudalism in other societies, as well as that of the Europeans, see [Examples of feudalism](https://en.wikipedia.org/wiki/Examples_of_feudalism).
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/BNF_Fr_4274_8v_knight_detail.jpg/220px-BNF_Fr_4274_8v_knight_detail.jpg)
+
+> [Investiture](https://en.wikipedia.org/wiki/Investiture) of a knight (miniature from the statutes of the [Order of the Knot](https://en.wikipedia.org/wiki/Order_of_the_Holy_Spirit#Order_of_the_Knot), founded in 1352 by [Louis I of Naples](https://en.wikipedia.org/wiki/Louis_I_of_Naples)).
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Slovakia_Oravsky_Podzamok.jpg/230px-Slovakia_Oravsky_Podzamok.jpg)
+
+> [Orava Castle](https://en.wikipedia.org/wiki/Orava_Castle) in Slovakia. A medieval castle is a traditional symbol of a feudal society.
+
+**Feudalism**, also known as the **feudal system**, was the combination of the legal, economic, military, cultural and political customs that flourished in [medieval Europe](https://en.wikipedia.org/wiki/Middle_Ages) between the 9th and 15th centuries. Broadly defined, it was a way of structuring society around relationships that were derived from the holding of land in exchange for service or labour. Although it is derived from the Latin word _feodum_ or _feudum_ (fief),[^1] which was used during the Medieval period, the term _feudalism_ and the system which it describes were not conceived of as a formal [political system](https://en.wikipedia.org/wiki/Political_system) by the people who lived during the Middle Ages.[^2] The classic definition, by [François Louis Ganshof](https://en.wikipedia.org/wiki/Fran%C3%A7ois_Louis_Ganshof) (1944),[^ganshof-3] describes a set of reciprocal legal and [military obligations](https://en.wikipedia.org/wiki/Medieval_warfare) which existed among the warrior [nobility](https://en.wikipedia.org/wiki/Nobility) and revolved around the three key concepts of [lords](https://en.wikipedia.org/wiki/Lord), [vassals](https://en.wikipedia.org/wiki/Vassal), and [fiefs](https://en.wikipedia.org/wiki/Fief).[^ganshof-3]
+
+A broader definition of feudalism, as described by [Marc Bloch](https://en.wikipedia.org/wiki/Marc_Bloch) (1939), includes not only the obligations of the warrior nobility but the obligations of all three [estates of the realm](https://en.wikipedia.org/wiki/Estates_of_the_realm): the nobility, the [clergy](https://en.wikipedia.org/wiki/Clergy), and the [peasantry](https://en.wikipedia.org/wiki/Peasant), all of whom were bound by a system of [manorialism](https://en.wikipedia.org/wiki/Manorialism); this is sometimes referred to as a "feudal society". Since the publication of [Elizabeth A. R. Brown](https://en.wikipedia.org/wiki/Elizabeth_A._R._Brown)'s "The Tyranny of a Construct" (1974) and [Susan Reynolds](https://en.wikipedia.org/wiki/Susan_Reynolds)'s _Fiefs and Vassals_ (1994), there has been ongoing inconclusive discussion among medieval historians as to whether feudalism is a useful construct for understanding medieval society.[^10]
+
+## Definition
+
+There is no commonly accepted modern definition of feudalism, at least among scholars.[^ebo-4][^halsall-7] The adjective _feudal_ was in use by at least 1405, and the noun _feudalism_, now often employed in a political and propagandist context, was coined by 1771,[^ebo-4] paralleling the French _féodalité_.
+
+According to a classic definition by [François Louis Ganshof](https://en.wikipedia.org/wiki/Fran%C3%A7ois_Louis_Ganshof) (1944),[^ganshof-3] feudalism describes a set of reciprocal legal and [military obligations](https://en.wikipedia.org/wiki/Medieval_warfare) which existed among the warrior nobility and revolved around the three key concepts of [lords](https://en.wikipedia.org/wiki/Lord), [vassals](https://en.wikipedia.org/wiki/Vassal) and [fiefs](https://en.wikipedia.org/wiki/Fief),[^ganshof-3] though Ganshof himself noted that his treatment was only related to the "narrow, technical, legal sense of the word".
+
+A broader definition, as described in [Marc Bloch](https://en.wikipedia.org/wiki/Marc_Bloch)'s _Feudal Society_ (1939),[^bloch-11] includes not only the obligations of the warrior nobility but the obligations of all three [estates of the realm](https://en.wikipedia.org/wiki/Estates_of_the_realm): the nobility, the [clergy](https://en.wikipedia.org/wiki/Clergy), and those who lived off their labour, most directly the [peasantry](https://en.wikipedia.org/wiki/Peasant) which was bound by a system of [manorialism](https://en.wikipedia.org/wiki/Manorialism); this order is often referred to as a "feudal society", echoing Bloch's usage.
+
+Outside its European context,[^ebo-4] the concept of feudalism is often used by [analogy](https://en.wikipedia.org/wiki/Analogy), most often in discussions of [feudal Japan](https://en.wikipedia.org/wiki/History_of_Japan#Feudal_Japan) under the _[shoguns](https://en.wikipedia.org/wiki/Shogun)_, and sometimes in discussions of the [Zagwe dynasty](https://en.wikipedia.org/wiki/Zagwe_dynasty) in [medieval Ethiopia](https://en.wikipedia.org/wiki/Ethiopia_in_the_Middle_Ages),[^jessee1996-12] which had some feudal characteristics (sometimes called "semifeudal").[^13][^14] Some have taken the feudalism analogy further, seeing feudalism (or traces of it) in places as diverse as China during the [Spring and Autumn period](https://en.wikipedia.org/wiki/Spring_and_Autumn_period) (771-476 BCE), [ancient Egypt](https://en.wikipedia.org/wiki/Ancient_Egypt), the [Parthian Empire](https://en.wikipedia.org/wiki/Parthian_Empire), [feudalism in the Indian subcontinent](https://en.wikipedia.org/wiki/Indian_feudalism) and the [Antebellum South](https://en.wikipedia.org/wiki/Antebellum_South) and [Jim Crow laws](https://en.wikipedia.org/wiki/Jim_Crow_laws) in the [American South](https://en.wikipedia.org/wiki/Southern_United_States).[^jessee1996-12]
+
+The term _feudalism_ has also been applied—often pejoratively—to non-Western societies where institutions and attitudes which are similar to those which existed in [medieval](https://en.wikipedia.org/wiki/Middle_Ages) Europe are perceived to prevail.[^15] Some historians and political theorists believe that the term _feudalism_ has been deprived of specific meaning by the many ways it has been used, leading them to reject it as a useful concept for understanding society.[^ebo-4][^ebrown-5]
+
+The applicability of the term feudalism has also been questioned in the context of some [Central and Eastern European](https://en.wikipedia.org/wiki/Central_and_Eastern_Europe) countries, such as Poland and Lithuania, with scholars observing that the medieval political and economic structure of those countries bears some, but not all, resemblances to the Western European societies commonly described as feudal.[^16][^17][^18][^19]
+
+## Etymology
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Codex_Manesse_Reinmar_von_Zweter.jpg/220px-Codex_Manesse_Reinmar_von_Zweter.jpg)
+
+> Herr [Reinmar von Zweter](https://en.wikipedia.org/wiki/Reinmar_von_Zweter), a 13th-century [Minnesinger](https://en.wikipedia.org/wiki/Minnesang), was depicted with his noble arms in [Codex Manesse](https://en.wikipedia.org/wiki/Codex_Manesse).
+
+The root of the term "feudal" originates in the [Proto-Indo-European](https://en.wikipedia.org/wiki/Proto-Indo-European_language) word [_\*péḱu_](https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/p%C3%A9%E1%B8%B1u), meaning "cattle", and possesses cognates in many other Indo-European languages: Sanskrit _pacu_, "cattle"; Latin _pecus_ (cf. _pecunia_) "cattle", "money"; Old High German _fehu, fihu_, "cattle", "property", "money"; Old Frisian _fia_; Old Saxon _fehu_; Old English _feoh, fioh, feo, fee_. The term "féodal" was first used in 17th-century French legal treatises (1614)[^20][^21] and translated into English legal treatises as an adjective, such as "feodal government".
+
+In the 18th century, [Adam Smith](https://en.wikipedia.org/wiki/Adam_Smith), seeking to describe economic systems, effectively coined the forms "feudal government" and "feudal system" in his book _[The Wealth of Nations](https://en.wikipedia.org/wiki/The_Wealth_of_Nations)_ (1776).[^cheyette-22] The phrase "feudal system" appeared in 1736, in _Baronia Anglica_, published nine years after the death of its author [Thomas Madox](https://en.wikipedia.org/wiki/Thomas_Madox), in 1727. In 1771, in his book _The History of Manchester_, [John Whitaker](https://en.wikipedia.org/wiki/John_Whitaker_(historian)) first introduced the word "feudalism" and the notion of the feudal pyramid.[^earbrown160-23][^24]
+
+The term "feudal" or "feodal" is derived from the [medieval Latin](https://en.wikipedia.org/wiki/Medieval_Latin) word _feodum_. The etymology of _feodum_ is complex with multiple theories, some suggesting a Germanic origin (the most widely held view) and others suggesting an [Arabic](https://en.wikipedia.org/wiki/Arabic) origin. Initially in medieval Latin European documents, a land grant in exchange for service was called a _beneficium_ (Latin).[^lubetski-25] Later, the term _feudum_, or _feodum_, began to replace _beneficium_ in the documents.[^lubetski-25] The first attested instance of this is from 984, although more primitive forms were seen up to one-hundred years earlier.[^lubetski-25] The origin of the _feudum_ and why it replaced _beneficium_ has not been well established, but there are multiple theories, described below.[^lubetski-25]
+
+The most widely held theory was proposed by [Johan Hendrik Caspar Kern](https://en.wikipedia.org/wiki/Johan_Hendrik_Caspar_Kern) in 1870,[^26][^27] being supported by, amongst others, [William Stubbs](https://en.wikipedia.org/wiki/William_Stubbs)[^lubetski-25][^28] and [Marc Bloch](https://en.wikipedia.org/wiki/Marc_Bloch).[^lubetski-25][^bloch-ety1-29][^bloch-ety2-30] Kern derived the word from a putative [Frankish](https://en.wikipedia.org/wiki/Franks) term _\*fehu-ôd_, in which _\*fehu_ means "cattle" and _\-ôd_ means "goods", implying "a movable object of value".[^bloch-ety1-29][^bloch-ety2-30] Bloch explains that by the beginning of the 10th century it was common to value land in monetary terms but to pay for it with objects of equivalent value, such as arms, clothing, horses or food. This was known as _feos_, a term that took on the general meaning of paying for something in lieu of money. This meaning was then applied to land itself, in which land was used to pay for fealty, such as to a vassal. Thus the old word _feos_ meaning movable property changed little by little to _feus_ meaning the exact opposite: landed property.[^bloch-ety1-29][^bloch-ety2-30] It has also been suggested that word comes from the [Gothic](https://en.wikipedia.org/wiki/Goths) _faihu_, meaning "property", specifically, "cattle".[^31]
+
+Another theory was put forward by [Archibald Ross Lewis](https://en.wikipedia.org/wiki/Archibald_Ross_Lewis).[^lubetski-25] Lewis said the origin of 'fief' is not _feudum_ (or _feodum_), but rather _foderum_, the earliest attested use being in _[Vita Hludovici](https://en.wikipedia.org/wiki/Vita_Hludovici)_ (840) by Astronomus.[^arlewis-32] In that text is a passage about [Louis the Pious](https://en.wikipedia.org/wiki/Louis_the_Pious) that says _annona militaris quas vulgo foderum vocant_, which can be translated as "Louis forbade that military [provender](https://en.wiktionary.org/wiki/provender) (which they popularly call "fodder") be furnished."[^lubetski-25]
+
+Another theory by [Alauddin Samarrai](https://en.wikipedia.org/w/index.php?title=Alauddin_Samarrai&action=edit&redlink=1) suggests an Arabic origin, from _fuyū_ (the plural of _fay_, which literally means "the returned", and was used especially for 'land that has been conquered from enemies that did not fight').[^lubetski-25][^samarrai-33] Samarrai's theory is that early forms of 'fief' include _feo_, _feu_, _feuz_, _feuum_ and others, the plurality of forms strongly suggesting origins from a [loanword](https://en.wikipedia.org/wiki/Loanword). The first use of these terms is in [Languedoc](https://en.wikipedia.org/wiki/Languedoc), one of the least Germanic areas of Europe and bordering [Al-Andalus](https://en.wikipedia.org/wiki/Al-Andalus) (Muslim Spain). Further, the earliest use of _feuum_ (as a replacement for _beneficium_) can be dated to 899, the same year a Muslim base at [Fraxinetum](https://en.wikipedia.org/wiki/Fraxinetum) ([La Garde-Freinet](https://en.wikipedia.org/wiki/La_Garde-Freinet)) in [Provence](https://en.wikipedia.org/wiki/Provence) was established. It is possible, Samarrai says, that French scribes, writing in Latin, attempted to [transliterate](https://en.wikipedia.org/wiki/Transliteration) the Arabic word _fuyū_ (the plural of _fay_), which was being used by the Muslim invaders and occupiers at the time, resulting in a plurality of forms – _feo, feu, feuz, feuum_ and others – from which eventually _feudum_ derived. Samarrai, however, also advises to handle this theory with care, as [Medieval and Early Modern Muslim](https://en.wikipedia.org/wiki/Islamic_Golden_Age) scribes often used etymologically "fanciful roots" in order to claim the most outlandish things to be of Arabian or Muslim origin.[^samarrai-33]
+
+## History
+
+Feudalism, in its various forms, usually emerged as a result of the [decentralization](https://en.wikipedia.org/wiki/Decentralization) of an empire: especially in the [Carolingian Empire](https://en.wikipedia.org/wiki/Carolingian_Empire) in 9th century AD, which lacked the bureaucratic infrastructure[\[_[clarification needed](https://en.wikipedia.org/wiki/Wikipedia:Please_clarify)_\]] necessary to support [cavalry](https://en.wikipedia.org/wiki/Cavalry) without allocating land to these mounted troops. Mounted soldiers began to secure a system of hereditary rule over their allocated land and their power over the territory came to encompass the social, political, judicial, and economic spheres.[^Gat,\_Azar\_2006.\_pp.\_332-34]
+
+These acquired powers significantly [diminished unitary power](https://en.wikipedia.org/wiki/Federation) in these empires. However, once the infrastructure to maintain unitary power was re-established—as with the European monarchies—feudalism began to yield to this new power structure and eventually disappeared.[^Gat,\_Azar\_2006.\_pp.\_332-34]
+
+### Classic feudalism
+
+> See also: [Feudalism in England](https://en.wikipedia.org/wiki/Feudalism_in_England), [Feudalism in the Holy Roman Empire](https://en.wikipedia.org/wiki/Feudalism_in_the_Holy_Roman_Empire), and [Examples of feudalism](https://en.wikipedia.org/wiki/Examples_of_feudalism)
+
+The classic [François Louis Ganshof](https://en.wikipedia.org/wiki/Fran%C3%A7ois_Louis_Ganshof) version of feudalism[^ebo-4][^ganshof-3] describes a set of reciprocal legal and military obligations which existed among the warrior nobility, revolving around the three key concepts of lords, vassals and fiefs. In broad terms a lord was a noble who held land, a vassal was a person who was granted possession of the land by the lord, and the land was known as a fief. In exchange for the use of the fief and protection by the lord, the vassal would provide some sort of service to the lord. There were many varieties of [feudal land tenure](https://en.wikipedia.org/wiki/Feudal_land_tenure_in_England), consisting of military and non-military service. The obligations and corresponding rights between lord and vassal concerning the fief form the basis of the feudal relationship.[^ganshof-3]
+
+### Vassalage
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Hommage_du_comt%C3%A9_de_Clermont-en-Beauvaisis.png/220px-Hommage_du_comt%C3%A9_de_Clermont-en-Beauvaisis.png)
+
+> [Homage](https://en.wikipedia.org/wiki/Homage_(feudal)) of [Clermont-en-Beauvaisis](https://en.wikipedia.org/wiki/Clermont,_Oise)
+
+Before a lord could grant land (a [fief](https://en.wikipedia.org/wiki/Fief)) to someone, he had to make that person a vassal. This was done at a formal and symbolic ceremony called a [commendation ceremony](https://en.wikipedia.org/wiki/Commendation_ceremony), which was composed of the two-part act of [homage](https://en.wikipedia.org/wiki/Homage_(feudal)) and oath of [fealty](https://en.wikipedia.org/wiki/Fealty). During homage, the lord and vassal entered into a contract in which the vassal promised to fight for the lord at his command, whilst the lord agreed to protect the vassal from external forces. _Fealty_ comes from the Latin _fidelitas_ and denotes the [fidelity](https://en.wikipedia.org/wiki/Fidelity) owed by a vassal to his feudal lord. "Fealty" also refers to an oath that more explicitly reinforces the commitments of the vassal made during homage. Such an oath follows homage.[^stephenson-35]
+
+Once the commendation ceremony was complete, the lord and vassal were in a feudal relationship with agreed obligations to one another. The vassal's principal obligation to the lord was to "aid", or military service. Using whatever equipment the vassal could obtain by virtue of the revenues from the fief, the vassal was responsible to answer calls to military service on behalf of the lord. This security of military help was the primary reason the lord entered into the feudal relationship. In addition, the vassal could have other obligations to his lord, such as attendance at his court, whether [manorial](https://en.wikipedia.org/wiki/Manorial_court), baronial, both termed [court baron](https://en.wikipedia.org/wiki/Manorial_court#Court_baron), or at the king's court.[^36]
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Map_France_1477-en.svg/220px-Map_France_1477-en.svg.png)
+
+> France in the late 15th century: a mosaic of feudal territories
+
+It could also involve the vassal providing "counsel", so that if the lord faced a major decision he would summon all his vassals and hold a council. At the level of the [manor](https://en.wikipedia.org/wiki/Manorialism) this might be a fairly mundane matter of agricultural policy, but also included sentencing by the lord for criminal offences, including capital punishment in some cases. Concerning the king's feudal court, such deliberation could include the question of declaring war. These are [examples of feudalism](https://en.wikipedia.org/wiki/Examples_of_feudalism); depending on the period of time and location in Europe, feudal customs and practices varied.
+
+### The feudal revolution in France
+
+In its origin, the feudal grant of land had been seen in terms of a personal bond between lord and vassal, but with time and the transformation of fiefs into hereditary holdings, the nature of the system came to be seen as a form of "politics of land" (an expression used by the historian [Marc Bloch](https://en.wikipedia.org/wiki/Marc_Bloch)). The 11th century in France saw what has been called by historians a "[feudal revolution](https://en.wikipedia.org/wiki/France_in_the_Middle_Ages#Vassalage_and_feudal_land)" or "mutation" and a "fragmentation of powers" (Bloch) that was unlike the development of [feudalism in England](https://en.wikipedia.org/wiki/Feudalism_in_England) or Italy or [in Germany](https://en.wikipedia.org/wiki/Feudalism_in_the_Holy_Roman_Empire) in the same period or later:[^37] Counties and duchies began to break down into smaller holdings as [castellans](https://en.wikipedia.org/wiki/Castellan) and lesser _[seigneurs](https://en.wikipedia.org/wiki/Seigneur)_ took control of local lands, and (as [comital](https://en.wikipedia.org/wiki/Count) families had done before them) lesser lords usurped/privatized a wide range of prerogatives and rights of the state, including travel dues, market dues, fees for using woodlands, obligations, use the lord's mill and, most importantly, the highly profitable rights of justice, etc.[^auto1-38] (what [Georges Duby](https://en.wikipedia.org/wiki/Georges_Duby) called collectively the "_seigneurie banale_"[^auto1-38]). Power in this period became more personal.[^39]
+
+This "fragmentation of powers" was not, however, systematic throughout France, and in certain counties (such as [Flanders](https://en.wikipedia.org/wiki/County_of_Flanders), [Normandy](https://en.wikipedia.org/wiki/Duchy_of_Normandy), [Anjou](https://en.wikipedia.org/wiki/County_of_Anjou), [Toulouse](https://en.wikipedia.org/wiki/County_of_Toulouse)), counts were able to maintain control of their lands into the 12th century or later.[^40] Thus, in some regions (like [Normandy](https://en.wikipedia.org/wiki/Normandy) and [Flanders](https://en.wikipedia.org/wiki/Flanders)), the vassal/feudal system was an effective tool for [ducal](https://en.wikipedia.org/wiki/Duke) and comital control, linking vassals to their lords; but in other regions, the system led to significant confusion, all the more so as vassals could and frequently did pledge themselves to two or more lords. In response to this, the idea of a "liege lord" was developed (where the obligations to one lord are regarded as superior) in the 12th century.[^41]
+
+### End of European feudalism (1500–1850s)
+
+> Further information: [Abolition of feudalism in France](https://en.wikipedia.org/wiki/Abolition_of_feudalism_in_France)
+
+Most of the military aspects of feudalism effectively ended by about 1500.[^42] This was partly since the military shifted from armies consisting of the nobility to professional fighters thus reducing the nobility's claim on power, but also because the [Black Death](https://en.wikipedia.org/wiki/Black_Death) reduced the nobility's hold over the lower classes. Vestiges of the feudal system hung on in France until the [French Revolution](https://en.wikipedia.org/wiki/French_Revolution) of the 1790s. Even when the original feudal relationships had disappeared, there were many institutional remnants of feudalism left in place. Historian [Georges Lefebvre](https://en.wikipedia.org/wiki/Georges_Lefebvre) explains how at an early stage of the French Revolution, on just one night of August 4, 1789, France abolished the long-lasting remnants of the feudal order. It announced, "The [National Assembly](https://en.wikipedia.org/wiki/National_Assembly_(French_Revolution)) abolishes the feudal system entirely." Lefebvre explains:
+
+> Without debate the Assembly enthusiastically adopted equality of taxation and redemption of all manorial rights except for those involving personal servitude—which were to be abolished without indemnification. Other proposals followed with the same success: the equality of legal punishment, admission of all to public office, abolition of venality in office, conversion of the tithe into payments subject to redemption, freedom of worship, prohibition of plural holding of benefices ... Privileges of provinces and towns were offered as a last sacrifice.[^43]
+
+Originally the peasants were supposed to pay for the release of seigneurial dues; these dues affected more than a quarter of the farmland in France and provided most of the income of the large landowners.[^44] The majority refused to pay and in 1793 the obligation was cancelled. Thus the peasants got their land free, and also no longer paid the [tithe](https://en.wikipedia.org/wiki/Tithe) to the church.[^45]
+
+In the [Kingdom of France](https://en.wikipedia.org/wiki/Kingdom_of_France), following the French Revolution, [feudalism was abolished](https://en.wikipedia.org/wiki/Abolition_of_feudalism_in_France) with a decree of August 11, 1789 by the [Constituent Assembly](https://en.wikipedia.org/wiki/National_Constituent_Assembly_(France)), a provision that was later extended to various parts of [Italian kingdom](https://en.wikipedia.org/wiki/Kingdom_of_Italy_(Napoleonic)) following the invasion by French troops. In the [Kingdom of Naples](https://en.wikipedia.org/wiki/Kingdom_of_Naples_(Napoleonic)), [Joachim Murat](https://en.wikipedia.org/wiki/Joachim_Murat) abolished feudalism with the law of August 2, 1806, then implemented with a law of September 1, 1806 and a royal decree of December 3, 1808. In the [Kingdom of Sicily](https://en.wikipedia.org/wiki/Kingdom_of_Sicily) the abolishing law was issued by the [Sicilian Parliament](https://en.wikipedia.org/wiki/Sicilian_Parliament) on August 10, 1812. In [Piedmont](https://en.wikipedia.org/wiki/Piedmont) feudalism ceased by virtue of the edicts of March 7, and July 19, 1797 issued by [Charles Emmanuel IV](https://en.wikipedia.org/wiki/Charles_Emmanuel_IV_of_Sardinia), although in the [Kingdom of Sardinia](https://en.wikipedia.org/wiki/Kingdom_of_Sardinia), specifically on the island of [Sardinia](https://en.wikipedia.org/wiki/Sardinia), feudalism was abolished only with an edict of August 5, 1848.
+
+In the [Kingdom of Lombardy–Venetia](https://en.wikipedia.org/wiki/Kingdom_of_Lombardy%E2%80%93Venetia), feudalism was abolished with the law of December 5, 1861 n.º 342 were all feudal bonds abolished. The system lingered on in parts of Central and Eastern Europe as late as the 1850s. [Slavery in Romania](https://en.wikipedia.org/wiki/Slavery_in_Romania) was abolished in 1856. [Russia finally abolished serfdom](https://en.wikipedia.org/wiki/Serfdom_in_Russia#Abolition) in 1861.[^46][^47]
+
+More recently in Scotland, on November 28, 2004, the [Abolition of Feudal Tenure etc. (Scotland) Act 2000](https://en.wikipedia.org/wiki/Abolition_of_Feudal_Tenure_etc._(Scotland)_Act_2000) entered into full force putting an end to what was left of the Scottish feudal system. The last feudal regime, that of the island of [Sark](https://en.wikipedia.org/wiki/Sark), was abolished in December 2008, when the [first democratic elections](https://en.wikipedia.org/wiki/2008_Sark_general_election) were held for the election of a local parliament and the appointment of a government. The "revolution" is a consequence of the juridical intervention of the [European Parliament](https://en.wikipedia.org/wiki/European_Parliament), which declared the local constitutional system as contrary to [human rights](https://en.wikipedia.org/wiki/Human_rights), and, following a series of legal battles, imposed [parliamentary democracy](https://en.wikipedia.org/wiki/Parliamentary_system).
+
+## Feudal society
+
+> Main article: [Manorialism](https://en.wikipedia.org/wiki/Manorialism)
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Reeve_and_Serfs.jpg/220px-Reeve_and_Serfs.jpg)
+
+> Depiction of [socage](https://en.wikipedia.org/wiki/Socage) on the royal [demesne](https://en.wikipedia.org/wiki/Demesne) in feudal England, c. 1310
+
+The phrase "feudal society" as defined by [Marc Bloch](https://en.wikipedia.org/wiki/Marc_Bloch)[^bloch-11] offers a wider definition than Ganshof's and includes within the feudal structure not only the warrior aristocracy bound by vassalage, but also the [peasantry](https://en.wikipedia.org/wiki/Peasant) bound by manorialism, and the estates of the Church. Thus the feudal order embraces society from top to bottom, though the "powerful and well-differentiated social group of the urban classes" came to occupy a distinct position to some extent outside the classic feudal hierarchy.
+
+## Historiography
+
+The idea of _feudalism_ was unknown and the system it describes was not conceived of as a formal political system by the people living in the medieval period. This section describes the history of the idea of feudalism, how the concept originated among scholars and thinkers, how it changed over time, and modern debates about its use.
+
+### Evolution of the concept
+
+The concept of a feudal state or period, in the sense of either a regime or a period dominated by lords who possess financial or social power and prestige, became widely held in the middle of the 18th century, as a result of works such as [Montesquieu](https://en.wikipedia.org/wiki/Montesquieu)'s _De L'Esprit des Lois_ (1748; published in English as _[The Spirit of Law](https://en.wikipedia.org/wiki/The_Spirit_of_Law)_), and [Henri de Boulainvilliers](https://en.wikipedia.org/wiki/Henri_de_Boulainvilliers)'s _Histoire des anciens Parlements de France_ (1737; published in English as _An Historical Account of the Ancient Parliaments of France or States-General of the Kingdom_, 1739).[^cheyette-22] In the 18th century, writers of the Enlightenment wrote about feudalism to denigrate the antiquated system of the _[Ancien Régime](https://en.wikipedia.org/wiki/Ancien_R%C3%A9gime)_, or French monarchy. This was the [Age of Enlightenment](https://en.wikipedia.org/wiki/Age_of_Enlightenment), when writers valued reason and the Middle Ages were viewed as the "[Dark Ages](https://en.wikipedia.org/wiki/Dark_Ages_(historiography))". Enlightenment authors generally mocked and ridiculed anything from the "Dark Ages" including feudalism, projecting its negative characteristics on the current French monarchy as a means of political gain.[^bartlett-48] For them "feudalism" meant [seigneurial](https://en.wikipedia.org/wiki/Fief) privileges and prerogatives. When the [French Constituent Assembly](https://en.wikipedia.org/wiki/National_Constituent_Assembly_(France)) abolished the "feudal regime" in August 1789, this is what was meant.
+
+[Adam Smith](https://en.wikipedia.org/wiki/Adam_Smith) used the term "feudal system" to describe a social and economic system defined by inherited social ranks, each of which possessed inherent social and economic privileges and obligations. In such a system, wealth derived from agriculture, which was arranged not according to market forces but on the basis of customary labour services owed by [serfs](https://en.wikipedia.org/wiki/Serf) to landowning nobles.[^49]
+
+### Karl Marx
+
+[Karl Marx](https://en.wikipedia.org/wiki/Karl_Marx) also used the term in the 19th century in his analysis of society's economic and political development, describing feudalism (or more usually feudal society or the feudal [mode of production](https://en.wikipedia.org/wiki/Mode_of_production)) as the order coming before [capitalism](https://en.wikipedia.org/wiki/Capitalism). For Marx, what defined feudalism was the power of the ruling class (the [aristocracy](https://en.wikipedia.org/wiki/Aristocracy)) in their control of arable land, leading to a [class society](https://en.wikipedia.org/wiki/Social_class#Class_society) based upon the exploitation of the peasants who farm these lands, typically under [serfdom](https://en.wikipedia.org/wiki/Serfdom) and principally by means of labour, produce and money rents.[^daileader-50] Marx thus defined feudalism primarily by its economic characteristics.
+
+He also took it as a paradigm for understanding the power-relationships between capitalists and wage-labourers in his own time: "in pre-capitalist systems it was obvious that most people did not control their own destiny—under feudalism, for instance, serfs had to work for their lords. Capitalism seems different because people are in theory free to work for themselves or for others as they choose. Yet most workers have as little control over their lives as feudal serfs."[^51] Some later Marxist theorists (e.g. [Eric Wolf](https://en.wikipedia.org/wiki/Eric_Wolf)) have applied this label to include non-European societies, grouping feudalism together with [imperial China](https://en.wikipedia.org/wiki/History_of_China#Imperial_China) and the [Inca Empire](https://en.wikipedia.org/wiki/Inca_Empire), in the [pre-Columbian era](https://en.wikipedia.org/wiki/Pre-Columbian_era), as 'tributary' societies .[^52]
+
+### Later studies
+
+In the late 19th and early 20th centuries, [J. Horace Round](https://en.wikipedia.org/wiki/J._Horace_Round) and [Frederic William Maitland](https://en.wikipedia.org/wiki/Frederic_William_Maitland), both historians of medieval Britain, arrived at different conclusions as to the character of [Anglo-Saxon English society](https://en.wikipedia.org/wiki/History_of_Anglo-Saxon_England) before the [Norman Conquest](https://en.wikipedia.org/wiki/Norman_Conquest) in 1066. Round argued that the Normans had brought feudalism with them to England, while Maitland contended that its fundamentals were already in place in Britain before 1066. The debate continues today, but a consensus viewpoint is that England before the Conquest had commendation (which embodied some of the personal elements in feudalism) while [William the Conqueror](https://en.wikipedia.org/wiki/William_the_Conqueror) introduced a modified and stricter northern French feudalism to England incorporating (1086) oaths of loyalty to the king by all who held by feudal tenure, even the vassals of his principal vassals (holding by feudal tenure meant that vassals must provide the quota of [knights](https://en.wikipedia.org/wiki/Knight) required by the king or a money payment in substitution).
+
+In the 20th century, two outstanding historians offered still more widely differing perspectives. The French historian [Marc Bloch](https://en.wikipedia.org/wiki/Marc_Bloch), arguably the most influential 20th-century medieval historian,[^daileader-50] approached feudalism not so much from a legal and military point of view but from a sociological one, presenting in _Feudal Society_ (1939; English 1961) a feudal order not limited solely to the nobility. It is his radical notion that peasants were part of the feudal relationship that sets Bloch apart from his peers: while the vassal performed military service in exchange for the fief, the peasant performed physical labour in return for protection – both are a form of feudal relationship. According to Bloch, other elements of society can be seen in feudal terms; all the aspects of life were centred on "lordship", and so we can speak usefully of a feudal church structure, a feudal courtly (and anti-courtly) literature, and a feudal economy.[^daileader-50]
+
+In contradistinction to Bloch, the Belgian historian [François Louis Ganshof](https://en.wikipedia.org/wiki/Fran%C3%A7ois_Louis_Ganshof) defined feudalism from a narrow legal and military perspective, arguing that feudal relationships existed only within the medieval nobility itself. Ganshof articulated this concept in _Qu'est-ce que la féodalité?_ ("What is feudalism?", 1944; translated in English as _Feudalism_). His classic definition of feudalism is widely accepted today among medieval scholars,[^daileader-50] though questioned both by those who view the concept in wider terms and by those who find insufficient uniformity in noble exchanges to support such a model.
+
+Although he was never formally a student in the circle of scholars around Marc Bloch and [Lucien Febvre](https://en.wikipedia.org/wiki/Lucien_Febvre) that came to be known as the [Annales school](https://en.wikipedia.org/wiki/Annales_school), [Georges Duby](https://en.wikipedia.org/wiki/Georges_Duby) was an exponent of the _Annaliste_ tradition. In a published version of his 1952 doctoral thesis entitled _La société aux XIe et XIIe siècles dans la région mâconnaise_ (_Society in the 11th and 12th centuries in the [Mâconnais](https://en.wikipedia.org/wiki/M%C3%A2connais) region_), and working from the extensive documentary sources surviving from the Burgundian [monastery of Cluny](https://en.wikipedia.org/wiki/Cluny_Abbey), as well as the dioceses of [Mâcon](https://en.wikipedia.org/wiki/Ancient_Diocese_of_M%C3%A2con) and [Dijon](https://en.wikipedia.org/wiki/Roman_Catholic_Archdiocese_of_Dijon), Duby excavated the complex social and economic relationships among the individuals and institutions of the Mâconnais region and charted a profound shift in the social structures of medieval society around the year 1000. He argued that in early 11th century, governing institutions—particularly comital courts established under the [Carolingian](https://en.wikipedia.org/wiki/Carolingian_dynasty) monarchy—that had represented public justice and order in [Burgundy](https://en.wikipedia.org/wiki/History_of_Burgundy) during the 9th and 10th centuries receded and gave way to a new feudal order wherein independent aristocratic knights wielded power over peasant communities through strong-arm tactics and threats of violence.
+
+In 1939, the Austrian historian [Theodor Mayer](https://en.wikipedia.org/w/index.php?title=Theodor_Mayer_(historian)&action=edit&redlink=1) \[[de](https://de.wikipedia.org/wiki/Theodor_Mayer_(Historiker))\] subordinated the feudal state as secondary to his concept of a _[Personenverbandsstaat](https://en.wikipedia.org/wiki/Territorial_state#Personenverbandsstaat)_ (personal interdependency state), understanding it in contrast to the [territorial state](https://en.wikipedia.org/wiki/Territorial_state).[^53] This form of statehood, identified with the [Holy Roman Empire](https://en.wikipedia.org/wiki/Feudalism_in_the_Holy_Roman_Empire), is described as the most complete form of medieval rule, completing conventional feudal structure of lordship and vassalage with the personal association between the nobility.[^54] But the applicability of this concept to cases outside of the Holy Roman Empire has been questioned, as by Susan Reynolds.[^55] The concept has also been questioned and superseded in German [historiography](https://en.wikipedia.org/wiki/Historiography) because of its bias and reductionism towards legitimating the [Führerprinzip](https://en.wikipedia.org/wiki/F%C3%BChrerprinzip).
+
+### Challenges to the feudal model
+
+In 1974, the American historian [Elizabeth A. R. Brown](https://en.wikipedia.org/wiki/Elizabeth_A._R._Brown)[^ebrown-5] rejected the label _feudalism_ as an anachronism that imparts a false sense of uniformity to the concept. Having noted the current use of many, often contradictory, definitions of _feudalism_, she argued that the word is only a construct with no basis in medieval reality, an invention of modern historians read back "tyrannically" into the historical record. Supporters of Brown have suggested that the term should be expunged from history textbooks and lectures on medieval history entirely.[^daileader-50] In _Fiefs and Vassals: The Medieval Evidence Reinterpreted_ (1994),[^reynolds-6] [Susan Reynolds](https://en.wikipedia.org/wiki/Susan_Reynolds) expanded upon Brown's original thesis. Although some contemporaries questioned Reynolds's methodology, other historians have supported it and her argument.[^daileader-50] Reynolds argues:
+
+> Too many models of feudalism used for comparisons, even by Marxists, are still either constructed on the 16th-century basis or incorporate what, in a Marxist view, must surely be superficial or irrelevant features from it. Even when one restricts oneself to Europe and to feudalism in its narrow sense it is extremely doubtful whether feudo-vassalic institutions formed a coherent bundle of institutions or concepts that were structurally separate from other institutions and concepts of the time.[^56]
+
+The term _feudal_ has also been applied to non-Western societies, in which institutions and attitudes similar to those of medieval Europe are perceived to have prevailed (see: [examples of feudalism](https://en.wikipedia.org/wiki/Examples_of_feudalism)). Japan has been extensively studied in this regard.[^57] [Karl Friday](https://en.wikipedia.org/wiki/Karl_Friday) notes that in the 21st century historians of Japan rarely invoke feudalism; instead of looking at similarities, specialists attempting comparative analysis concentrate on fundamental differences.[^58] Ultimately, critics say, the many ways the term _feudalism_ has been used have deprived it of specific meaning, leading some historians and political theorists to reject it as a useful concept for understanding society.[^daileader-50]
+
+Richard Abels notes that "Western Civilization and World Civilization textbooks now shy away from the term 'feudalism'."[^59]
+
+## See also
+
+### General
+
+-   [Barons in Scotland](https://en.wikipedia.org/wiki/Barons_in_Scotland)
+-   [Bastard feudalism](https://en.wikipedia.org/wiki/Bastard_feudalism)
+-   [Cestui que](https://en.wikipedia.org/wiki/Cestui_que)
+-   [English feudal barony](https://en.wikipedia.org/wiki/English_feudal_barony)
+-   [Feudal baron](https://en.wikipedia.org/wiki/Feudal_baron)
+-   [Feudal duties](https://en.wikipedia.org/wiki/Feudal_duties)
+-   [List of feudal wars 12th–14th century](https://en.wikipedia.org/wiki/List_of_feudal_wars_12th%E2%80%9314th_century)
+-   [Investiture](https://en.wikipedia.org/wiki/Investiture)
+-   [Lehnsmann](https://en.wikipedia.org/wiki/Lehnsmann)
+-   [Majorat](https://en.wikipedia.org/wiki/Majorat)
+-   [Neo-feudalism](https://en.wikipedia.org/wiki/Neo-feudalism)
+-   _[Nulle terre sans seigneur](https://en.wikipedia.org/wiki/Nulle_terre_sans_seigneur)_
+-   [Protofeudalism](https://en.wikipedia.org/wiki/Protofeudalism)
+-   [Quia Emptores](https://en.wikipedia.org/wiki/Quia_Emptores)
+-   [Statutes of Mortmain](https://en.wikipedia.org/wiki/Statutes_of_Mortmain)
+-   [Suzerainty](https://en.wikipedia.org/wiki/Suzerainty)
+-   [Vassal state](https://en.wikipedia.org/wiki/Vassal_state)
+
+### Non-European
+
+-   [Fengjian](https://en.wikipedia.org/wiki/Fengjian) (Chinese)
+-   [Hacienda](https://en.wikipedia.org/wiki/Hacienda)
+-   [Feudalism in Pakistan](https://en.wikipedia.org/wiki/Feudalism_in_Pakistan)
+-   [Mandala (political model)](https://en.wikipedia.org/wiki/Mandala_(political_model))
+-   [Samanta](https://en.wikipedia.org/wiki/Samanta) Indian Feudal System
+-   [Small castes](https://en.wikipedia.org/wiki/Small_castes)
+-   [Ziamet](https://en.wikipedia.org/wiki/Ziamet)
+-   [Zemene Mesafint](https://en.wikipedia.org/wiki/Zemene_Mesafint)
+
+-   [Sakdina](https://en.wikipedia.org/wiki/Sakdina) Thai feudal system
+
+## Further reading
+
+-   Bloch, Marc, _Feudal Society._ Tr. L.A. Manyon. Two volumes. Chicago: University of Chicago Press, 1961 [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [0-226-05979-0](https://en.wikipedia.org/wiki/Special:BookSources/0-226-05979-0)
+-   Ganshof, François Louis (1952). [_Feudalism_](https://archive.org/details/feudalism00gans). London; New York: Longmans, Green. [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [978-0-8020-7158-3](https://en.wikipedia.org/wiki/Special:BookSources/978-0-8020-7158-3).
+-   Guerreau, Alain, _L'avenir d'un passé incertain._ Paris: Le Seuil, 2001. (Complete history of the meaning of the term.)
+-   Poly, Jean-Pierre and Bournazel, Eric, _The Feudal Transformation, 900–1200._, Tr. Caroline Higgitt. New York and London: Holmes and Meier, 1991.
+-   Reynolds, Susan, _Fiefs and Vassals: The Medieval Evidence Reinterpreted._ Oxford: Oxford University Press, 1994 [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [0-19-820648-8](https://en.wikipedia.org/wiki/Special:BookSources/0-19-820648-8)
+
+### Historiographical works
+
+-   Abels, Richard (2009). "The Historiography of a Construct: "Feudalism" and the Medieval Historian". _History Compass_. **7** (3): 1008–1031. [doi](https://en.wikipedia.org/wiki/Doi_(identifier)):[10.1111/j.1478-0542.2009.00610.x](https://doi.org/10.1111%2Fj.1478-0542.2009.00610.x).
+-   Brown, Elizabeth, 'The Tyranny of a Construct: Feudalism and Historians of Medieval Europe', _American Historical Review_, 79 (1974), pp. 1063–8.
+-   [Cantor, Norman F.](https://en.wikipedia.org/wiki/Norman_Cantor), _Inventing the Middle Ages: The Lives, Works, and Ideas of the Great Medievalists of the Twentieth century._ Quill, 1991.
+-   Friday, Karl (2010). "The Futile Paradigm: In Quest of Feudalism in Early Medieval Japan". _History Compass_. **8** (2): 179–196. [doi](https://en.wikipedia.org/wiki/Doi_(identifier)):[10.1111/j.1478-0542.2009.00664.x](https://doi.org/10.1111%2Fj.1478-0542.2009.00664.x).
+-   Harbison, Robert. "The Problem of Feudalism: An Historiographical Essay", 1996, Western Kentucky University. [online](https://web.archive.org/web/20080229034347/http://www.wku.edu/~rob.harbison/projects/Gfeudal.html)
+
+### End of feudalism
+
+-   Bean, J.M.W. _Decline of English Feudalism, 1215–1540_ (1968)
+-   Davitt, Michael. _The fall of feudalism in Ireland: Or, The story of the land league revolution_ (1904)
+-   Hall, John Whitney (1962). "Feudalism in Japan-A Reassessment". _Comparative Studies in Society and History_. **5** (1): 15–51. [doi](https://en.wikipedia.org/wiki/Doi_(identifier)):[10.1017/S001041750000150X](https://doi.org/10.1017%2FS001041750000150X). [JSTOR](https://en.wikipedia.org/wiki/JSTOR_(identifier)) [177767](https://www.jstor.org/stable/177767). [S2CID](https://en.wikipedia.org/wiki/S2CID_(identifier)) [145750386](https://api.semanticscholar.org/CorpusID:145750386).; compares Europe and Japan
+-   Nell, Edward J. "Economic Relationships in the Decline of Feudalism: An Examination of Economic Interdependence and Social Change." _History and Theory_ (1967): 313–350. in JSTOR
+-   Okey, Robin. _Eastern Europe 1740–1985: feudalism to communism_ (Routledge, 1986)
+
+#### France
+
+-   Herbert, Sydney. _The Fall of Feudalism in France_ (1921) [full text online free](https://archive.org/details/falloffeudalismi00herbrich)
+-   Mackrell, John Quentin Colborne. [_The Attack on Feudalism in Eighteenth-century France_](https://www.google.com/books/edition/The_Attack_on_Feudalism_in_Eighteenth_Ce/Kb7WAQAAQBAJ?gbpv=1) (Routledge, 2013)
+-   Markoff, John. _Abolition of Feudalism: Peasants, Lords, and Legislators in the French Revolution_ (Penn State Press, 2010)
+-   Sutherland, D. M. G. (2002). "Peasants, Lords, and Leviathan: Winners and Losers from the Abolition of French Feudalism, 1780-1820". _The Journal of Economic History_. **62** (1): 1–24. [JSTOR](https://en.wikipedia.org/wiki/JSTOR_(identifier)) [2697970](https://www.jstor.org/stable/2697970).
+
+**Global Health**
+
+-   Keshri VR, Bhaumik S (2022) . The feudal structure of global health and its implications for decolonisation . BMJ Global Health Available online [https://gh.bmj.com/content/7/9/e010603](https://gh.bmj.com/content/7/9/e010603)
+
+## External links
+
+-   ["Feudalism"](https://www.britannica.com/eb/article-9034150/feudalism), by [Elizabeth A. R. Brown](https://en.wikipedia.org/wiki/Elizabeth_A._R._Brown). _[Encyclopædia Britannica Online](https://en.wikipedia.org/wiki/Encyclop%C3%A6dia_Britannica_Online)_.
+-   ["Feudalism?"](http://www.fordham.edu/halsall/sbook1i.html#Feudalism), by [Paul Halsall](https://en.wikipedia.org/w/index.php?title=Paul_Halsall&action=edit&redlink=1). [Internet Medieval Sourcebook](https://en.wikipedia.org/wiki/Internet_Medieval_Sourcebook).
+-   ["Feudalism: the history of an idea"](https://www.academia.edu/634989/Feudalism_the_history_of_an_idea), by Fredric Cheyette (Amherst), excerpted from _New Dictionary of the History of Ideas_ (2004)
+-   [_Medieval Feudalism_](https://web.archive.org/web/20120209083705/http://www.scribd.com/doc/28860952/Mediavel-Feudalism), by [Carl Stephenson](https://en.wikipedia.org/wiki/Carl_Stephenson_(historian)). Cornell University Press, 1942. Classic introduction to Feudalism.
+-   ["The Problem of Feudalism: An Historiographical Essay"](https://web.archive.org/web/20090226131755/http://www.wku.edu/~rob.harbison/projects/Gfeudal.html) at the [Wayback Machine](https://en.wikipedia.org/wiki/Wayback_Machine) (archived February 26, 2009), by Robert Harbison, 1996, [Western Kentucky University](https://en.wikipedia.org/wiki/Western_Kentucky_University).
+
+
+[^1]: _feodum_ – see [_The Cyclopedic Dictionary of Law_](https://books.google.com/books?id=KfgUAAAAYAAJ&pg=PA365), by Walter A. Shumaker, George Foster Longsdorf, pg. 365, 1901.
+
+[^2]: Noble, Thomas (2002). [_The Foundations of Western Civilization_](https://archive.org/details/foundationsofwes04nobl). Chantilly, VA: [The Teaching Company](https://en.wikipedia.org/wiki/The_Teaching_Company). [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [978-1565856370](https://en.wikipedia.org/wiki/Special:BookSources/978-1565856370).
+
+[^ganshof-3]: [François Louis Ganshof](https://en.wikipedia.org/wiki/Fran%C3%A7ois_Louis_Ganshof) (1944). _Qu'est-ce que la féodalité_. Translated into English by [Philip Grierson](https://en.wikipedia.org/wiki/Philip_Grierson) as _Feudalism_, with a foreword by [F. M. Stenton](https://en.wikipedia.org/wiki/F._M._Stenton), 1st ed.: New York and London, 1952; 2nd ed: 1961; 3rd ed.: 1976.
+
+[^ebo-4]: ["Feudalism"](https://www.britannica.com/eb/article-9034150/feudalism), by [Elizabeth A. R. Brown](https://en.wikipedia.org/wiki/Elizabeth_A._R._Brown). _[Encyclopædia Britannica Online](https://en.wikipedia.org/wiki/Encyclop%C3%A6dia_Britannica_Online)_.
+
+[^ebrown-5]: Brown, Elizabeth A. R. (October 1974). "The Tyranny of a Construct: Feudalism and Historians of Medieval Europe". _The American Historical Review_. **79** (4): 1063–1088. [doi](https://en.wikipedia.org/wiki/Doi_(identifier)):[10.2307/1869563](https://doi.org/10.2307%2F1869563). [JSTOR](https://en.wikipedia.org/wiki/JSTOR_(identifier)) [1869563](https://www.jstor.org/stable/1869563).
+
+[^reynolds-6]: Reynolds, Susan, _Fiefs and Vassals: The Medieval Evidence Reinterpreted._ Oxford: Oxford University Press, 1994 [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [0-19-820648-8](https://en.wikipedia.org/wiki/Special:BookSources/0-19-820648-8)
+
+[^halsall-7]: ["Feudalism?"](http://www.fordham.edu/halsall/sbook1i.html#Feudalism), by [Paul Halsall](https://en.wikipedia.org/w/index.php?title=Paul_Halsall&action=edit&redlink=1). [Internet Medieval Sourcebook](https://en.wikipedia.org/wiki/Internet_Medieval_Sourcebook).
+
+[^auto-8]: ["The Problem of Feudalism: An Historiographical Essay"](https://web.archive.org/web/20080229034347/http://www.wku.edu/~rob.harbison/projects/Gfeudal.html), by Robert Harbison, 1996, [Western Kentucky University](https://en.wikipedia.org/wiki/Western_Kentucky_University).
+
+[^9]: Charles West, _[Reframing the Feudal Revolution: Political and Social Transformation Between Marne and Moselle, c. 800–c. 1100](https://en.wikipedia.org/wiki/Reframing_the_Feudal_Revolution:_Political_and_Social_Transformation_Between_Marne_and_Moselle,_c._800%E2%80%93c._1100)_ (Cambridge: Cambridge University Press, 2013).
+
+[^10]: [^ebo-4][^ebrown-5][^reynolds-6][^halsall-7][^auto-8][^9]
+
+[^bloch-11]: Bloch, Marc, _Feudal Society._ Tr. L.A. Manyon. Two volume. Chicago: University of Chicago Press, 1961 [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [0-226-05979-0](https://en.wikipedia.org/wiki/Special:BookSources/0-226-05979-0)
+
+[^jessee1996-12]: Jessee, W. Scott (1996). Cowley, Robert; Parker, Geoffrey (eds.). ["Feudalism"](https://web.archive.org/web/20041112062036/http://college.hmco.com/history/readerscomp/mil/html/mh_017900_feudalism.htm). _Reader's Companion to Military History_. New York: Houghton Mifflin Company. Archived from [the original](http://college.hmco.com/history/readerscomp/mil/html/mh_017900_feudalism.htm) on November 12, 2004.
+
+[^13]: ["Semifedual"](https://www.merriam-webster.com/dictionary/semifeudal). _Webster's Dictionary_. Retrieved October 8, 2019. having some characteristics of feudalism
+
+[^14]: L. SHelton Woods (2002). [_Vietnam: A Global Studies Handbook_](https://books.google.com/books?id=3mWv1Xgn9poC&q=semifeudal+japan&pg=PT71). _ABC-CLIO_. [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [9781576074169](https://en.wikipedia.org/wiki/Special:BookSources/9781576074169). Retrieved October 9, 2019.
+
+[^15]: Cf. for example: McDonald, Hamish (October 17, 2007). ["Feudal Government Alive and Well in Tonga"](http://www.smh.com.au/news/world/feudal-government-alive-and-well-in-tonga/2007/10/16/1192300767418.html). _Sydney Morning Herald_. [ISSN](https://en.wikipedia.org/wiki/ISSN_(identifier)) [0312-6315](https://www.worldcat.org/issn/0312-6315). Retrieved September 7, 2008.
+
+[^16]: Dygo, Marian (2013). ["Czy istniał feudalizm w Europie Środkowo-Wschodniej w średniowieczu?"](http://yadda.icm.edu.pl/yadda/element/bwmeta1.element.ojs-doi-10_12775_KH_2013_120_4_01). _Kwartalnik Historyczny_ (in Polish). **120** (4): 667. [doi](https://en.wikipedia.org/wiki/Doi_(identifier)):[10.12775/KH.2013.120.4.01](https://doi.org/10.12775%2FKH.2013.120.4.01). [ISSN](https://en.wikipedia.org/wiki/ISSN_(identifier)) [0023-5903](https://www.worldcat.org/issn/0023-5903).
+
+[^17]: Skwarczyński, P. (1956). ["The Problem of Feudalism in Poland up to the Beginning of the 16th Century"](https://www.jstor.org/stable/4204744). _The Slavonic and East European Review_. **34** (83): 292–310. [ISSN](https://en.wikipedia.org/wiki/ISSN_(identifier)) [0037-6795](https://www.worldcat.org/issn/0037-6795). [JSTOR](https://en.wikipedia.org/wiki/JSTOR_(identifier)) [4204744](https://www.jstor.org/stable/4204744).
+
+[^18]: Backus, Oswald P. (1962). ["The Problem of Feudalism in Lithuania, 1506-1548"](https://www.jstor.org/stable/3000579). _Slavic Review_. **21** (4): 639–659. [doi](https://en.wikipedia.org/wiki/Doi_(identifier)):[10.2307/3000579](https://doi.org/10.2307%2F3000579). [ISSN](https://en.wikipedia.org/wiki/ISSN_(identifier)) [0037-6779](https://www.worldcat.org/issn/0037-6779). [JSTOR](https://en.wikipedia.org/wiki/JSTOR_(identifier)) [3000579](https://www.jstor.org/stable/3000579). [S2CID](https://en.wikipedia.org/wiki/S2CID_(identifier)) [163444810](https://api.semanticscholar.org/CorpusID:163444810).
+
+[^19]: Davies, Norman (2005). [_God's Playground A History of Poland: Volume 1: The Origins to 1795_](https://books.google.com/books?id=b912JnKpYTkC&q=Poland+feudalism+davies&pg=PA420). OUP Oxford. pp. 165–166. [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [978-0-19-925339-5](https://en.wikipedia.org/wiki/Special:BookSources/978-0-19-925339-5).
+
+[^20]: ["Feudal (n.d.)"](http://dictionary.reference.com/browse/feudal). _[Online Etymology Dictionary](https://en.wikipedia.org/wiki/Online_Etymology_Dictionary)_. Retrieved September 16, 2007.
+
+[^21]: [Cantor, Norman F.](https://en.wikipedia.org/wiki/Norman_F._Cantor) (1994). [_The Civilization of the Middle Ages_](https://archive.org/details/civilizationofmi00cant). [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [9780060170332](https://en.wikipedia.org/wiki/Special:BookSources/9780060170332).
+
+[^cheyette-22]: Fredric L. Cheyette. "FEUDALISM, EUROPEAN." in _New Dictionary of the History Of Ideas_, Vol. 2, ed. Maryanne Cline Horowitz, Thomas Gale 2005, [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [0-684-31379-0](https://en.wikipedia.org/wiki/Special:BookSources/0-684-31379-0). pp. 828–831
+
+[^earbrown160-23]: Elizabeth A. R. Brown, ["Reflections on Feudalism: Thomas Madox and the Origins of the Feudal System in England,"](https://www.taylorfrancis.com/chapters/edit/10.4324/9781315582252-15/reflections-feudalism-thomas-madox-origins-feudal-system-england) in _Feud, Violence and Practice: Essays in Medieval Studies in Honor of Stephen D. White_, ed. Belle S. Tuten and Tracey L. Billado (Farnham, Surrey: Ashgate, 2010), 135-155 at 145-149.
+
+[^24]: [John Whitaker](https://en.wikipedia.org/wiki/John_Whitaker_(historian)) (1773). [_The History of Manchester: In Four Books_](https://archive.org/details/historymanchest02whitgoog/page/n378/mode/2up?q=feudalifm). J. Murray. p. 359.
+
+[^lubetski-25]: Meir Lubetski (ed.). _Boundaries of the ancient Near Eastern world: a tribute to Cyrus H. Gordon_. "Notices on Pe'ah, Fay' and Feudum" by Alauddin Samarrai. [Pg. 248–250](https://books.google.com/books?id=dO4rbfA_WVIC&pg=PA248), Continuum International Publishing Group, 1998.
+
+[^26]: "fee, n.2." OED Online. Oxford University Press, June 2017. Web. August 18, 2017.
+
+[^27]: H. Kern, '[Feodum](http://www.dbnl.org/tekst/_taa005187001_01/_taa005187001_01_0032.php)', _De taal- en letterbode_, 1( 1870), pp. 189-201.
+
+[^28]: [William Stubbs](https://en.wikipedia.org/wiki/William_Stubbs). _The Constitutional History of England_ (3 volumes), 2nd edition 1875–78, Vol. 1, pg. 251, n. 1
+
+[^bloch-ety1-29]: Marc Bloch. _Feudal Society_, Vol. 1, 1964. pp.165–66.
+
+[^bloch-ety2-30]: Marc Bloch. _Feudalism_, 1961, pg. 106.
+
+[^31]: Encyclopædia Britannica, 9th.ed. vol. 9, p.119.
+
+[^arlewis-32]: [Archibald R. Lewis](https://en.wikipedia.org/wiki/Archibald_R._Lewis). _The Development of Southern French and Catalan Society 718–1050_, 1965, pp. 76–77.
+
+[^samarrai-33]: [Alauddin Samarrai](https://en.wikipedia.org/w/index.php?title=Alauddin_Samarrai&action=edit&redlink=1). "The term 'fief': A possible Arabic origin", _Studies in Medieval Culture_, 4.1 (1973), pp. 78–82.
+
+[^Gat,\_Azar\_2006.\_pp.\_332-34]: Gat, Azar. _War in Human Civilization_, New York: Oxford University Press, 2006. pp. 332–343
+
+[^stephenson-35]: [_Medieval Feudalism_](https://www.scribd.com/doc/28860952/Mediavel-Feudalism) [Archived](https://web.archive.org/web/20120209083705/http://www.scribd.com/doc/28860952/Mediavel-Feudalism) 2012-02-09 at the [Wayback Machine](https://en.wikipedia.org/wiki/Wayback_Machine), by [Carl Stephenson](https://en.wikipedia.org/wiki/Carl_Stephenson_(historian)). Cornell University Press, 1942. Classic introduction to Feudalism.
+
+[^36]: Encyc. Brit. op.cit. It was a standard part of the feudal contract (fief \[land\], fealty \[oath of allegiance\], faith \[belief in God\]) that every tenant was under an obligation to attend his overlord's court to advise and support him; [Sir Harris Nicolas](https://en.wikipedia.org/wiki/Sir_Harris_Nicolas), in _Historic Peerage of England_, ed. [Courthope](https://en.wikipedia.org/wiki/William_Courthope_(officer_of_arms)), p.18, quoted by Encyc. Brit, op.cit., p. 388: "It was the principle of the feudal system that every tenant should attend the court of his immediate superior".
+
+[^37]: Chris Wickham, _The Inheritance of Rome_, p. 522-3.
+
+[^auto1-38]: Wickham, _The Inheritance of Rome_, p. 518.
+
+[^39]: Wickham, _The Inheritance of Rome_, p.522.
+
+[^40]: Wickham, p.523.
+
+[^41]: Elizabeth M. Hallam. _Capetian France 987–1328_, p.17.
+
+[^42]: "The End of Feudalism" in J.H.M. Salmon, _Society in Crisis: France in the Sixteenth Century_ (1979) pp 19–26
+
+[^43]: [Lefebvre, Georges](https://en.wikipedia.org/wiki/Georges_Lefebvre) (1962). [_The French Revolution: Vol. 1, from Its Origins To 1793_](https://books.google.com/books?id=bd-JDOw8v5QC&pg=PA130). Columbia U.P. p. 130. [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [9780231085984](https://en.wikipedia.org/wiki/Special:BookSources/9780231085984).
+
+[^44]: Forster, Robert (1967). "The Survival of the Nobility during the French Revolution". _Past & Present_. **37** (37): 71–86. [doi](https://en.wikipedia.org/wiki/Doi_(identifier)):[10.1093/past/37.1.71](https://doi.org/10.1093%2Fpast%2F37.1.71). [JSTOR](https://en.wikipedia.org/wiki/JSTOR_(identifier)) [650023](https://www.jstor.org/stable/650023).
+
+[^45]: Paul R. Hanson, _The A to Z of the French Revolution_ (2013) pp 293–94
+
+[^46]: John Merriman, _A History of Modern Europe: From the Renaissance to the Age of Napoleon_ (1996) pp 12–13
+
+[^47]: Jerzy Topolski, Continuity and discontinuity in the development of the feudal system in Eastern Europe (Xth to XVIIth centuries)" _Journal of European Economic History_ (1981) 10#2 pp: 373–400.
+
+[^bartlett-48]: [Robert Bartlett](https://en.wikipedia.org/wiki/Robert_Bartlett_(historian)). "Perspectives on the Medieval World" in _Medieval Panorama_, 2001, [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [0-89236-642-7](https://en.wikipedia.org/wiki/Special:BookSources/0-89236-642-7)
+
+[^49]: Richard Abels. ["Feudalism"](https://web.archive.org/web/20170705064653/https://www.usna.edu/Users/history/abels/hh315/Feudal.htm). usna.edu. Archived from [the original](http://www.usna.edu/Users/history/abels/hh315/Feudal.htm) on July 5, 2017. Retrieved August 30, 2010.
+
+[^daileader-50]: [Philip Daileader](https://en.wikipedia.org/wiki/Philip_Daileader), "Feudalism", _The High Middle Ages_, Course No. 869, [The Teaching Company](https://en.wikipedia.org/wiki/The_Teaching_Company), [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [1-56585-827-1](https://en.wikipedia.org/wiki/Special:BookSources/1-56585-827-1)
+
+[^51]: Peter Singer, _Marx: A Very Short Introduction_ (Oxford: Oxford University Press, 2000) \[first published 1980\], p. 91.
+
+[^52]: Wolf, Eric Robert (2010). [_Europe and the people without history_](http://worldcat.org/oclc/905625305). University of California Press. [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [978-0-520-26818-0](https://en.wikipedia.org/wiki/Special:BookSources/978-0-520-26818-0). [OCLC](https://en.wikipedia.org/wiki/OCLC_(identifier)) [905625305](https://www.worldcat.org/oclc/905625305).
+
+[^53]: Bentley, Michael (2006). [_Companion to Historiography_](https://books.google.com/books?id=JWqIAgAAQBAJ&q=personenverbandsstaat&pg=PA126). Routledge. p. 126. [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [9781134970247](https://en.wikipedia.org/wiki/Special:BookSources/9781134970247). Retrieved November 17, 2019.
+
+[^54]: Elazar, Daniel Judah (1996). [_Covenant and commonwealth : from Christian separation through the Protestant Reformation_](https://books.google.com/books?id=yKOIqPsf7acC&q=personenverbandsstaat&pg=PA381). Vol. 2. Transaction Publishers. p. 76. [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [9781412820523](https://en.wikipedia.org/wiki/Special:BookSources/9781412820523). Retrieved November 17, 2019.
+
+[^55]: Raynolds, Susan (1996). [_Fiefs and Vassals: The Medieval Evidence Reinterpreted_](https://books.google.com/books?id=vkQ8z7S2cIIC&q=personenverbandsstaat&pg=PA397). Oxford University Press. p. 397. [ISBN](https://en.wikipedia.org/wiki/ISBN_(identifier)) [9780198206484](https://en.wikipedia.org/wiki/Special:BookSources/9780198206484). Retrieved November 17, 2019.
+
+[^56]: Reynolds, p 11
+
+[^57]: Hall, John Whitney (1962). "Feudalism in Japan-A Reassessment". _Comparative Studies in Society and History_. **5** (1): 15–51. [doi](https://en.wikipedia.org/wiki/Doi_(identifier)):[10.1017/S001041750000150X](https://doi.org/10.1017%2FS001041750000150X). [JSTOR](https://en.wikipedia.org/wiki/JSTOR_(identifier)) [177767](https://www.jstor.org/stable/177767). [S2CID](https://en.wikipedia.org/wiki/S2CID_(identifier)) [145750386](https://api.semanticscholar.org/CorpusID:145750386).
+
+[^58]: [Karl Friday](https://en.wikipedia.org/wiki/Karl_Friday), ["The Futile Paradigm: In Quest of Feudalism in Early Medieval Japan,"](https://www.academia.edu/download/71051487/j.1478-0542.2009.00664.x20211002-26720-9g3rf8.pdf)[\[_[dead link](https://en.wikipedia.org/wiki/Wikipedia:Link_rot)_\]] _History Compass_ 8.2 (2010): 179–196.
+
+[^59]: Richard Abels, "The Historiography of a Construct: 'Feudalism' and the Medieval Historian." _History Compass_ (2009) 7#3 pp: 1008–1031.

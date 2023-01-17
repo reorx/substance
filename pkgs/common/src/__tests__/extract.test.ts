@@ -123,6 +123,19 @@ describe('en.wikipedia.org', () => {
       }
     })
 
+    test('removeTables', () => {
+      const variant = 'removeTables'
+      const { contentMarkdown } = em.extract(html, url, {
+        removeTables: true,
+      })
+
+      if (saveOnly) {
+        dm.saveResult(variant, 'md', contentMarkdown)
+      } else {
+        expect(contentMarkdown).toBe(dm.getResult(variant, 'md'))
+      }
+    })
+
     test('keepFigureImage', () => {
       const variant = 'keepFigureImage'
       const {content, contentMarkdown, title} = em.extract(html, url, {
