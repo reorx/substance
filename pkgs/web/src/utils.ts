@@ -15,7 +15,7 @@ export const listenWindowResize = (onResizeFinished: () => void) => {
 }
 
 
-export default function useComponentVisible(initialValue: boolean, togglerRef?: RefObject<HTMLElement>) {
+export function useComponentVisible(initialValue: boolean, togglerRef?: RefObject<HTMLElement>) {
     const [isVisible, setIsVisible] = useState(initialValue);
     const ref = useRef<HTMLDivElement>(null);
 
@@ -38,3 +38,9 @@ export default function useComponentVisible(initialValue: boolean, togglerRef?: 
 
     return { ref, isVisible, setIsVisible };
 }
+
+export function usePageTitle(title: string) {
+  useEffect(() => {
+    document.title = title;
+  }, []);
+};

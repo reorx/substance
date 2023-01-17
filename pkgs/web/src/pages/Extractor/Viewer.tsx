@@ -6,7 +6,7 @@ import { Icon } from '@iconify/react';
 import { ActionIcon, Flex, Paper, Text } from '@mantine/core';
 import tocbot from 'tocbot';
 
-import useComponentVisible from '@/utils';
+import { useComponentVisible } from '@/utils';
 
 import { renderMarkdown } from './markdown';
 import { useStore } from './store';

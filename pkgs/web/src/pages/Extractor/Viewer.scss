@@ -18,6 +18,7 @@
     right: calc(var(--gutter) * 2);
 
     font-size: 12px;
+    min-width: 180px;
     max-width: 40%;
     max-height: 80%;
     overflow-y: auto;

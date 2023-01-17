@@ -11,6 +11,8 @@ import { NotificationsProvider, showNotification } from '@mantine/notifications'
 import { useQuery, useQueryClient, QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Link, useSearchParams } from 'react-router-dom';
 
+import { usePageTitle } from '@/utils';
+
 import { extractManager, getExtractedData, getErrorMessage } from './api';
 import { Editor } from './Editor';
 import { FeedbackModal } from './FeedbackModal';
@@ -97,6 +99,8 @@ function ExtractorPageMain() {
       submitUrl()
     }
   }
+
+  usePageTitle('Substance Web')
 
   return (
     <>

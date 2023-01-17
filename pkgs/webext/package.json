@@ -1,7 +1,7 @@
 {
   "name": "@substance/webext",
   "version": "1.0.0",
-  "description": "substance web extension",
+  "description": "substance extension",
   "scripts": {
     "dev": "webpack --config webpack/webpack.dev.js --watch",
     "build": "webpack --config webpack/webpack.prod.js",
