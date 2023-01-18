@@ -1,9 +1,27 @@
+@import '~/src/variables';
+
 .header-nav {
   margin-left: auto;
 
   .mantine-Button-label {
     font-size: 12px;
     color: #777;
+  }
+
+  @media screen and (max-width: $breakpoint-sm) {
+    display: none;
+    /*
+    display: flex;
+    flex-direction: column;
+    margin-left: $gutter;
+
+    .mantine-Button-root {
+      height: 22px;
+    }
+    .mantine-Button-label {
+      font-size: 11px;
+    }
+    */
   }
 }
 

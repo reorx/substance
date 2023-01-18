@@ -119,9 +119,12 @@ function ExtractorPageMain() {
         height: '100%',
       }}>
 
-        <Box p={gutter} sx={{
-          borderBottom: '1px solid #ddd'
+        {/* Top */}
+        <Box sx={{
+          borderBottom: '1px solid #ddd',
+          padding: `${gutter}px ${gutter}px 0`,
         }}>
+          {/* Input and actions */}
           <Flex className={classes.flexItemGrow} align='center'>
             <ActionIcon variant='transparent' mr={gutter} color='dark'>
               <Icon icon="tabler:link" />
@@ -137,6 +140,10 @@ function ExtractorPageMain() {
                 width: 600,
                 maxWidth: '50%',
                 marginRight: gutter,
+                [theme.fn.smallerThan('sm')]: {
+                  maxWidth: '100%',
+                  flexGrow: 1,
+                }
               }}
               onKeyDown={enterAction}
             />
@@ -157,8 +164,11 @@ function ExtractorPageMain() {
               <Button variant="subtle" color="gray" compact onClick={() => setFeedbackOpened(true)}>Feedback</Button>
             </Box>
           </Flex>
+
           <ExtractorOptions initialOptions={optionsManager.options} updateOption={optionsManager.updateOption.bind(optionsManager)} />
         </Box>
+
+        {/* Main */}
         <Grid gutter={0} className={classes.flexItemGrow}>
           <Grid.Col span={6} p={gutter} className={classes.flexItemGrow} sx={{
             position: 'relative',

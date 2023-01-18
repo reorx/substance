@@ -17,7 +17,10 @@ export function ExtractorOptions({initialOptions, updateOption}: OptionsProps) {
   const [options, setOptions] = useState({...initialOptions})
 
   return (
-    <Flex mt={8} align='center'>
+    <Flex mt={8} align='center' sx={{
+      overflowY: 'auto',
+      paddingBottom: gutter,
+    }}>
       <ActionIcon variant='transparent' mr={gutter} color='dark'>
         <Icon icon="tabler:settings" />
       </ActionIcon>
