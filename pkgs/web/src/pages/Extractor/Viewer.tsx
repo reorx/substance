@@ -25,10 +25,17 @@ export function Viewer()  {
   useEffect(() => {
     tocbot.init({
       tocSelector: '.toc',
-      contentSelector: '.viewer-markdown'
+      contentSelector: '.viewer-markdown',
+      scrollContainer: '.viewer-markdown-container',
+      headingsOffset: 130,
+      hasInnerContainers: true,
     })
     if (tocRef.current?.children.length === 0) {
       tocRef.current.innerHTML = 'No index'
+    }
+
+    return () => {
+      tocbot.destroy()
     }
   }, [contentMarkdown])
 
@@ -55,11 +62,13 @@ export function Viewer()  {
         visibility: isTocVisible ? 'visible' : 'hidden'
       }}>No index</Paper>
 
-      <div
-        ref={contentRef}
-        dangerouslySetInnerHTML={{ __html: renderMarkdown(contentMarkdown) }}
-        className="viewer-markdown"
-      ></div>
+      <div className="viewer-markdown-container">
+        <div
+          ref={contentRef}
+          dangerouslySetInnerHTML={{ __html: renderMarkdown(contentMarkdown) }}
+          className="viewer-markdown"
+        ></div>
+      </div>
 
     </div>
   )

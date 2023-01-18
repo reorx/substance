@@ -26,6 +26,9 @@
     ol.toc-list {
       padding-left: 20px;
     }
+    .is-active-li {
+      font-weight: bold;
+    }
     .toc-link {
       color: #000;
       text-decoration: none;
@@ -35,13 +38,15 @@
     }
   }
 
-  .viewer-markdown {
+  .viewer-markdown-container {
     position: absolute;
     left: 0; right: 0; bottom: 0;
     top: 46px;
     padding: calc(var(--gutter) * 2);
     overflow-y: auto;
+  }
 
+  .viewer-markdown {
     --font-sm: .85em;
 
     table {
