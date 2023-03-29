@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    // "baseUrl": ".",
+    "paths": {
+      "@substance/*": ["pkgs/*/src"]
+    }
+  },
+  "references": [
+      { "path": "./common" },
+      { "path": "./web" },
+      { "path": "./webext" }
+  ]
+}

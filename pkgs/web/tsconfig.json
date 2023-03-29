@@ -1,19 +1,16 @@
 {
-  "extends": "../tsconfig.settings.json",
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "rootDir": "src",
     "baseUrl": ".",
+    "outDir": "lib",
+    "declaration": true,
+    "declarationDir": "lib",
+    "composite": true,
     "paths": {
       "@/*": ["src/*"],
       "@substance/common/*": ["../common/src/*"]
     },
-    "declarationDir": "dist/types",
-    "allowJs": true,
-    "sourceMap": false,
-    // "noEmit": true,
-    // "noEmitOnError": true,
-    "experimentalDecorators": true,
-    "useDefineForClassFields": true,
   },
   "references": [
     { "path": "../common" }

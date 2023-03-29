@@ -1,8 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, {
+  useEffect,
+  useState,
+} from 'react';
+
 import { createRoot } from 'react-dom/client';
 
-import { colors, getLogger } from './utils/log';
+import { getBaseUrl } from '@substance/common/utils';
 
+import {
+  colors,
+  getLogger,
+} from './utils/log';
 
 const lg = getLogger('popup', colors.bgYellowBright)
 
@@ -43,6 +51,9 @@ const Popup = () => {
     <>
       <ul style={{ minWidth: "700px" }}>
         <li>Current URL: {currentURL}</li>
+        {currentURL && (
+          <li>Base URL: {getBaseUrl(currentURL)}</li>
+        )}
         <li>Current Time: {new Date().toLocaleTimeString()}</li>
       </ul>
       <button

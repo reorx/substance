@@ -2,6 +2,7 @@
   "name": "@substance/common",
   "version": "1.0.0",
   "main": "src/index.ts",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "webpack --mode production",
     "test": "jest",

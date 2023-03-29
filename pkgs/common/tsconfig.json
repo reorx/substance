@@ -1,18 +1,15 @@
 {
-  "extends": "../tsconfig.settings.json",
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "rootDir": "src",
-    // "outDir": "lib",
-    "declarationDir": "dist/types",
-    // "sourceMap": false,
-    "sourceMap": true,
-    // "noEmit": true,
-    // "noEmitOnError": true,
+    "baseUrl": ".",
+    "outDir": "lib",
+    "declaration": true,
+    "declarationDir": "lib",
     "composite": true,
-    // "typeRoots": ["../node_modules/@types"]
+    "tsBuildInfoFile": "lib/.tsbuildinfo",
   },
   "include": [
     "./src"
-    // "./src/**/*.ts"
   ],
 }

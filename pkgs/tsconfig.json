@@ -1,6 +1,0 @@
-{
-  "references": [
-      { "path": "common" },
-      { "path": "webext" }
-  ]
-}

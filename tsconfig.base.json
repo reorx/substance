@@ -1,0 +1,52 @@
+{
+  // "exclude": [
+  //   "node_modules",
+  //   "jest-config.js",
+  // ],
+  "compilerOptions": {
+    // "target": "es6",
+    // "module": "commonjs",
+    // "declaration": true,
+    // "declarationMap": true,
+    // "strict": true,
+    // "composite": true,
+    // "esModuleInterop": true,
+    // "jsx": "react-jsx",
+    // "jsxImportSource": "@emotion/react",
+
+    "strict": true,
+    "target": "es6",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    // "rootDir": "src",
+    "baseUrl": ".",
+    "allowJs": true,
+    // "declaration": false,
+    "declaration": true,
+    // "declarationMap": true,
+    "sourceMap": false,
+    "skipLibCheck": true,
+    "noEmitOnError": true,
+    // "experimentalDecorators": true,
+    // "useDefineForClassFields": true,
+    "jsx": "react",
+  },
+  "include": [
+    "./src"
+  ],
+  // "exclude": [
+	//   "lib",
+	//   "**/__tests__",
+  // ]
+  "exclude": [
+    "node_modules",
+    "lib",
+    "esm",
+    "cjs",
+    "jest-config.js",
+    "configuration/storybook/main.js",
+    "lib/**/*",
+    "esm/**/*",
+    "cjs/**/*"
+  ],
+}
