@@ -1,5 +1,13 @@
-import React, { useEffect, useState } from "react";
-import ReactDOM from "react-dom";
+import React, { useEffect, useState } from 'react';
+import { createRoot } from 'react-dom/client';
+
+import { colors, getLogger } from './utils/log';
+
+
+const lg = getLogger('options', colors.bgYellowBright)
+
+lg.info('options.ts')
+
 
 const Options = () => {
   const [color, setColor] = useState<string>("");
@@ -68,9 +76,10 @@ const Options = () => {
   );
 };
 
-ReactDOM.render(
+const root = createRoot(document.getElementById("root")!);
+
+root.render(
   <React.StrictMode>
     <Options />
-  </React.StrictMode>,
-  document.getElementById("root")
+  </React.StrictMode>
 );

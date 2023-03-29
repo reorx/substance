@@ -1,5 +1,12 @@
-import React, { useEffect, useState } from "react";
-import ReactDOM from "react-dom";
+import React, { useEffect, useState } from 'react';
+import { createRoot } from 'react-dom/client';
+
+import { colors, getLogger } from './utils/log';
+
+
+const lg = getLogger('popup', colors.bgYellowBright)
+
+lg.info('popup.ts')
 
 const Popup = () => {
   const [count, setCount] = useState(0);
@@ -49,9 +56,10 @@ const Popup = () => {
   );
 };
 
-ReactDOM.render(
+const root = createRoot(document.getElementById("root")!);
+
+root.render(
   <React.StrictMode>
     <Popup />
-  </React.StrictMode>,
-  document.getElementById("root")
+  </React.StrictMode>
 );

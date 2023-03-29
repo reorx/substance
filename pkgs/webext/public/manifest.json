@@ -1,35 +1,40 @@
 {
   "manifest_version": 3,
-
-  "name": "Chrome Extension TypeScript Starter",
-  "description": "Chrome Extension, TypeScript, Visual Studio Code",
+  "name": "Substance",
+  "description": "A boilerplate for building Chrome extensions with Webpack and Vanilla JS",
   "version": "1.0",
-
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
   "options_ui": {
     "page": "options.html"
   },
-
-  "action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  },
-
-  "content_scripts": [
-      {
-          "matches": ["<all_urls>"],
-          "js": ["js/vendor.js", "js/content_script.js"]
-      }
-  ],
-
   "background": {
     "service_worker": "js/background.js"
   },
-
-  "permissions": [
-    "storage"
+  "content_scripts": [
+    {
+      "matches": ["https://reorx.com/*"],
+      "css": ["css/content_style.css"],
+      "js": ["js/content_script.js"]
+    }
   ],
-
-  "host_permissions": [
-    "<all_urls>"
+  "web_accessible_resources": [
+    {
+      "matches": ["https://news.ycombinator.com/*"],
+      "resources": ["/js/inject.js"]
+    }
+  ],
+  "permissions": [
+    "storage",
+    "tabs",
+    "scripting",
+    "contextMenus",
+    "activeTab"
   ]
 }

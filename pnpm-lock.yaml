@@ -228,8 +228,8 @@ importers:
         version: 13.2.0(sass@1.57.1)(webpack@5.75.0)
     devDependencies:
       '@reorx/webpack-ext-reloader':
-        specifier: ^1.1.10
-        version: 1.1.10(webpack-cli@5.0.1)(webpack@5.75.0)
+        specifier: ^1.2.0
+        version: 1.2.0(webpack-cli@5.0.1)(webpack@5.75.0)
       '@types/chrome':
         specifier: ^0.0.207
         version: 0.0.207
@@ -2382,13 +2382,12 @@ packages:
     engines: {node: '>=14'}
     dev: false
 
-  /@reorx/webpack-ext-reloader@1.1.10(webpack-cli@5.0.1)(webpack@5.75.0):
-    resolution: {integrity: sha512-fjK2Rt1PU5Dk15ASRSml3Je6yngRcBOa9DRnquer+BUW0dd51qEdizGbEwS7ybIl22Ow775wUiMy3kfrHd7vDw==}
+  /@reorx/webpack-ext-reloader@1.2.0(webpack-cli@5.0.1)(webpack@5.75.0):
+    resolution: {integrity: sha512-htclDTqmzPf3deBhbLJpTUxFzXD5Q1tHaLbshATeLWWbr2d8uur3iBKfPx1b6OGC5Wj5Xlsak7DW7K67qjpa9g==}
     hasBin: true
     peerDependencies:
       webpack: ^5.61.0
     dependencies:
-      '@types/webextension-polyfill': 0.8.3
       '@types/webpack': 5.28.1(webpack-cli@5.0.1)
       '@types/webpack-sources': 3.2.0
       clean-webpack-plugin: 4.0.0(webpack@5.75.0)
@@ -2397,7 +2396,6 @@ packages:
       lodash: 4.17.21
       minimist: 1.2.8
       useragent: /@kingyue/useragent@2.4.0
-      webextension-polyfill: 0.8.0
       webpack: 5.75.0(webpack-cli@5.0.1)
       webpack-sources: 3.2.3
       ws: 8.13.0
@@ -2701,10 +2699,6 @@ packages:
 
   /@types/turndown@5.0.1:
     resolution: {integrity: sha512-N8Ad4e3oJxh9n9BiZx9cbe/0M3kqDpOTm2wzj13wdDUxDPjfjloWIJaquZzWE1cYTAHpjOH3rcTnXQdpEfS/SQ==}
-    dev: true
-
-  /@types/webextension-polyfill@0.8.3:
-    resolution: {integrity: sha512-GN+Hjzy9mXjWoXKmaicTegv3FJ0WFZ3aYz77Wk8TMp1IY3vEzvzj1vnsa0ggV7vMI1i+PUxe4qqnIJKCzf9aTg==}
     dev: true
 
   /@types/webpack-sources@3.2.0:
@@ -6743,10 +6737,6 @@ packages:
     resolution: {integrity: sha512-O84QOnr0icsbFGLS0O3bI5FswxzRr8/gHwWkDlQFskhSPryQXvrTMxjxGP4+iWYoauLoBvfDpkrOauZ+0iZpDA==}
     dependencies:
       minimalistic-assert: 1.0.1
-
-  /webextension-polyfill@0.8.0:
-    resolution: {integrity: sha512-a19+DzlT6Kp9/UI+mF9XQopeZ+n2ussjhxHJ4/pmIGge9ijCDz7Gn93mNnjpZAk95T4Tae8iHZ6sSf869txqiQ==}
-    dev: true
 
   /webpack-bundle-analyzer@4.7.0:
     resolution: {integrity: sha512-j9b8ynpJS4K+zfO5GGwsAcQX4ZHpWV+yRiHDiL+bE0XHJ8NiPYLTNVQdlFYWxtpg9lfAQNlwJg16J9AJtFSXRg==}
