@@ -22,7 +22,7 @@ const common = {
     // react pages:
     popup: path.join(srcDir, 'popup.tsx'),
     options: path.join(srcDir, 'options.tsx'),
-    custom_page: path.join(srcDir, 'custom_page.tsx'),
+    extractor: path.join(srcDir, 'extractor.tsx'),
   },
   output: {
     path: destDir,
@@ -33,7 +33,14 @@ const common = {
     splitChunks: {
         name: "vendor",
         chunks(chunk) {
-          return chunk.name !== 'background';
+          switch (chunk.name) {
+            case 'background':
+              return false;
+            case 'content_script':
+              return false;
+            default:
+              return true;
+          }
         }
     },
   },
@@ -96,13 +103,15 @@ function developmentConfig() {
     devtool: 'cheap-module-source-map',
     mode: 'development',
     plugins: [
+      /*
       new ExtReloader({
         entries: {
           background: 'background',
-          contentScript: ['content_script', 'content_style'],
-          extensionPage: ['custom_page'],
+          // contentScript: ['content_script', 'content_style'],
+          extensionPage: ['extractor'],
         },
       }),
+      */
       new webpack.DefinePlugin({
         'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
       }),

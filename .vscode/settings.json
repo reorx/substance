@@ -4,6 +4,8 @@
   },
   "search.exclude": {
     "**/node_modules": true,
+    "**/dist": true,
+    "**/lib": true,
     "**/pnpm-lock.yaml": true
   }
 }

@@ -1,3 +1,4 @@
+import { MsgType } from 'src/consts';
 
 
 export const getCurrentTab = async (): Promise<chrome.tabs.Tab | null> => {
@@ -10,18 +11,11 @@ export const getCurrentTab = async (): Promise<chrome.tabs.Tab | null> => {
   return tabs[0]
 }
 
-const injectedKey = '__my_extension_injected__'
 
 function isInjected(name: string): boolean {
-  return ((window as any)[injectedKey] || {})[name] === true
-}
-
-export const markInjected = (name: string): void => {
-  if (!(window as any)[injectedKey]) {
-    (window as any)[injectedKey] = {}
-  }
-  (window as any)[injectedKey][name] = true
-  console.log(`${name} injected`)
+  const rv = ((window as any)._substanceInjectedScripts || {})[name] === true
+  console.log('detecting injected script', name, rv)
+  return rv
 }
 
 // https://developer.chrome.com/docs/extensions/mv3/content_scripts/#programmatic
@@ -32,13 +26,22 @@ export const injectScript = async (file: string, tabId: number): Promise<void> =
     args: [file],
   })
   if (results.length > 0 && results[0].result === true) {
-    console.debug(`${file} already injected, skip`)
+    console.info(`${file} already injected, skip`)
     return
   }
+
+  console.log('injecting', tabId, file)
+  // NOTE if the injected script has dependency problems, like being handled by splitChunks and the dependency is missing,
+  // executeScript would success, and the page would have no log and error message, makes it such a difficulty to debug
   await chrome.scripting.executeScript({
     target: { tabId },
     files: [file],
   })
+  console.log('injecting done', file)
+}
+
+export const injectScriptInTab = async (scriptPath: string, tab: chrome.tabs.Tab) => {
+  await injectScript(scriptPath, tab.id as number)
 }
 
 export const openOrCreatePage = async (page: string, nextToCurrent: boolean = true): Promise<chrome.tabs.Tab> => {
@@ -63,4 +66,26 @@ export const openOrCreatePage = async (page: string, nextToCurrent: boolean = tr
     url,
     ...(index !== undefined ? { index } : {}),
   })
+}
+
+export const ensurePageReady = async (page: string): Promise<chrome.tabs.Tab> => {
+  const tab = await openOrCreatePage(page)
+  // console.debug(`ensurePageReady: try to pin with ${page} ${tab.id}`)
+
+  try {
+    console.log('ensurePageReady: try send ping')
+    const res = await chrome.tabs.sendMessage(tab.id as number, {
+      type: MsgType.Ping,
+    })
+    if (!res.pong) {
+      throw new Error('ensurePageReady: did not receive pong')
+    }
+    console.log('ensurePageReady: received pong')
+    return tab
+  } catch (err) {
+    console.warn('ensurePageReady: catch error, will retry', err)
+    // wait 100ms and ping again
+    await new Promise((resolve) => setTimeout(resolve, 100))
+    return ensurePageReady(page)
+  }
 }

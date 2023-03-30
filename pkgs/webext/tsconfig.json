@@ -8,9 +8,7 @@
     "declarationDir": "lib",
     "composite": true,
     "paths": {
-      // "@/*": ["src/*"],
       "@substance/common/*": ["../common/src/*"],
-      // "@substance/common": ["../common/src"]
     },
   },
   "references": [

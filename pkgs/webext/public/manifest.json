@@ -17,19 +17,21 @@
   "background": {
     "service_worker": "js/background.js"
   },
-  "content_scripts": [
-    {
-      "matches": ["https://reorx.com/*"],
-      "css": ["css/content_style.css"],
-      "js": ["js/content_script.js"]
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+I",
+        "mac": "Command+MacCtrl+I"
+      }
+    },
+    "extractCurrentPage": {
+      "suggested_key": {
+        "default": "Alt+E",
+        "mac": "Command+MacCtrl+E"
+      },
+      "description": "Extract current page by selection or whole HTML"
     }
-  ],
-  "web_accessible_resources": [
-    {
-      "matches": ["https://news.ycombinator.com/*"],
-      "resources": ["/js/inject.js"]
-    }
-  ],
+  },
   "permissions": [
     "storage",
     "tabs",
