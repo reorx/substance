@@ -23,6 +23,10 @@ chrome.commands.onCommand.addListener(async (command) => {
   }
 })
 
+/* action handler */
+chrome.action.onClicked.addListener(async () => {
+  await extractCurrentPageCommand()
+})
 
 /* message handler */
 

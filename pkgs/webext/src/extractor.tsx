@@ -2,6 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 
 import { MsgType } from './consts';
+import { useExtractorStore } from './store';
 import { colors, getLogger } from './utils/log';
 
 
@@ -19,6 +20,13 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
     const { url, html, meta } = msg
     lg.log('page', url, html, meta)
     sendResponse({ yes: 1 })
+    useExtractorStore.setState({
+      page: {
+        url,
+        html,
+        meta,
+      }
+    })
     break
   }
   // return true
@@ -26,9 +34,14 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
 
 
 export default function CustomPage() {
+  const page = useExtractorStore((state) => state.page)
+  if (!page) return (
+    <div>loading</div>
+  )
   return (
     <div>
       <h1>Welcome to my app</h1>
+      <div>{page.html}</div>
     </div>
   );
 }

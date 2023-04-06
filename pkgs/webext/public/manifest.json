@@ -9,7 +9,7 @@
     "128": "icon.png"
   },
   "action": {
-    "default_popup": "popup.html"
+    "default_title": "Extract current page"
   },
   "options_ui": {
     "page": "options.html"
@@ -18,12 +18,6 @@
     "service_worker": "js/background.js"
   },
   "commands": {
-    "_execute_action": {
-      "suggested_key": {
-        "default": "Alt+I",
-        "mac": "Command+MacCtrl+I"
-      }
-    },
     "extractCurrentPage": {
       "suggested_key": {
         "default": "Alt+E",

@@ -20,7 +20,7 @@ const common = {
     inject: path.join(srcDir, 'inject.ts'),
 
     // react pages:
-    popup: path.join(srcDir, 'popup.tsx'),
+    // popup: path.join(srcDir, 'popup.tsx'),
     options: path.join(srcDir, 'options.tsx'),
     extractor: path.join(srcDir, 'extractor.tsx'),
   },
