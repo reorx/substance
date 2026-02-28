@@ -86,6 +86,9 @@ const common = {
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
+    fallback: {
+      punycode: require.resolve('punycode/'),
+    },
     plugins: [new TsconfigPathsPlugin()],
   },
   plugins: [

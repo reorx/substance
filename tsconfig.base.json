@@ -29,7 +29,7 @@
     "noEmitOnError": true,
     // "experimentalDecorators": true,
     // "useDefineForClassFields": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
   },
   "include": [
     "./src"

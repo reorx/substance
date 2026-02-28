@@ -1,0 +1,24 @@
+.editor {
+  --gutter: 8px;
+
+  .top-panel {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    padding: var(--gutter);
+    height: 46px;
+    background: '#ffffff';
+    z-index: 1;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .extradata {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .main {
+    position: absolute;
+    top: 46px;
+    left: 0; right: 0;
+  }
+}

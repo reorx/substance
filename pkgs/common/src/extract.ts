@@ -1,16 +1,9 @@
-import {
-  Cheerio,
-  CheerioAPI,
-  Element,
-  load,
-} from 'cheerio';
+import { Cheerio, CheerioAPI, load } from 'cheerio';
 import { ElementType } from 'domelementtype';
 import TurndownService from 'turndown';
 
-import {
-  getAbsUrl,
-  getBaseUrl,
-} from './utils';
+import { getAbsUrl, getBaseUrl } from './utils/string';
+
 
 export interface OptionsDef {
   [key: string]: {
@@ -23,7 +16,7 @@ export interface Options {
 }
 
 // alias to cheerio types
-type CheerioElement = Cheerio<Element>
+type CheerioElement = Cheerio<any>
 
 export interface State {
   html: string
@@ -246,6 +239,8 @@ export class ExtractManager {
     } else {
       contentMarkdown = turndownService.turndown(content)
     }
+    // Keep historical markdown output stable across turndown versions.
+    contentMarkdown = contentMarkdown.replace(/\\\(/g, '(').replace(/\\\)/g, ')')
 
     // get title
     extractor.title.selectors.forEach(selector => {

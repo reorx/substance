@@ -1,0 +1,74 @@
+import './index.scss';
+
+import { useEffect, useRef } from 'react';
+
+import { Icon } from '@iconify/react';
+import { ActionIcon, Flex, Paper, Text } from '@mantine/core';
+import tocbot from 'tocbot';
+
+import { renderMarkdown } from '../../markdown';
+import { useComponentVisible } from '../../utils/hooks';
+import { useMarkdownStore } from '../stores';
+import { gutter } from '../styles';
+
+
+export function Viewer()  {
+  console.debug('render Viewer')
+  const contentRef = useRef<HTMLDivElement>(null)
+  const tocButtonRef = useRef<HTMLButtonElement>(null)
+  const { ref: tocRef, isVisible: isTocVisible, setIsVisible: setTocVisible } = useComponentVisible(false, tocButtonRef)
+
+  const title = useMarkdownStore((state) => state.title)
+  const contentMarkdown = useMarkdownStore((state) => state.contentMarkdown)
+
+  useEffect(() => {
+    tocbot.init({
+      tocSelector: '.toc',
+      contentSelector: '.viewer-markdown',
+      scrollContainer: '.viewer-markdown-container',
+      headingsOffset: 130,
+      hasInnerContainers: true,
+    })
+    if (tocRef.current?.children.length === 0) {
+      tocRef.current.innerHTML = 'No index'
+    }
+
+    return () => {
+      tocbot.destroy()
+    }
+  }, [contentMarkdown])
+
+  return (
+    <div className="viewer">
+
+      <Flex className="top-panel">
+        <Text size='lg' fw='bold' sx={{
+          flexGrow: 1,
+        }}>{title}</Text>
+
+        <ActionIcon variant='light' color='yellow.8'
+          ref={tocButtonRef}
+          ml={gutter}
+          onClick={(e) => {
+            setTocVisible(!isTocVisible)
+          }}
+        >
+          <Icon icon="mdi:table-of-contents" width={20} />
+        </ActionIcon>
+      </Flex>
+
+      <Paper ref={tocRef} shadow="sm" p="sm" withBorder className="toc" sx={{
+        visibility: isTocVisible ? 'visible' : 'hidden'
+      }}>No index</Paper>
+
+      <div className="viewer-markdown-container">
+        <div
+          ref={contentRef}
+          dangerouslySetInnerHTML={{ __html: renderMarkdown(contentMarkdown) }}
+          className="viewer-markdown"
+        ></div>
+      </div>
+
+    </div>
+  )
+}

@@ -10,17 +10,18 @@ import {
 import { NotificationsProvider, showNotification } from '@mantine/notifications';
 import { useQuery, useQueryClient, QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Link, useSearchParams } from 'react-router-dom';
+import { MarkdownEditor } from '@substance/common/components/MarkdownEditor';
+import { Viewer as MarkdownViewer } from '@substance/common/components/MarkdownViewer';
+import { useMarkdownStore } from '@substance/common/components/stores';
 
 import { usePageTitle } from '@/utils';
 
 import { getExtractedData, getErrorMessage } from './api';
-import { Editor } from './Editor';
 import { FeedbackModal } from './FeedbackModal';
 import { HelpModal } from './HelpModal';
 import { ExtractorOptions } from './Options';
-import { OptionsManager, useStore } from './store';
+import { OptionsManager } from './store';
 import { gutter, useStyles } from './styles';
-import { Viewer } from './Viewer';
 
 
 const queryClient = new QueryClient()
@@ -35,8 +36,8 @@ export function ExtractorPage() {
   )
 }
 
-const EditorMemo = memo(Editor)
-const ViewerMemo = memo(Viewer)
+const EditorMemo = memo(MarkdownEditor)
+const ViewerMemo = memo(MarkdownViewer)
 
 const optionsManager = new OptionsManager()
 
@@ -73,7 +74,8 @@ function ExtractorPageMain() {
       return await getExtractedData(url, optionsManager.options)
     },
     onSuccess: (data) => {
-      useStore.setState({
+      useMarkdownStore.setState({
+        url,
         title: data.title,
         contentMarkdown: data.contentMarkdown,
         extraData: data.extraData,

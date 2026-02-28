@@ -1,11 +1,10 @@
 import {
   Cheerio,
-  Element,
 } from 'cheerio';
 
 import { Extractor } from '../extract';
 
-const formatHeading = ($node: Cheerio<Element>) => {
+const formatHeading = ($node: Cheerio<any>) => {
   const tag = `<${$node[0].name}>${$node.text()}</${$node[0].name}>`
   // console.log('replaceWith', tag)
   $node.replaceWith(tag)
@@ -152,7 +151,7 @@ export const WikipediaExtractor: Extractor = {
 
       if (state.options.removeLinks) {
         // remove links
-        const processLink = (a: Cheerio<Element>) => {
+        const processLink = (a: Cheerio<any>) => {
           a.replaceWith(a.text())
         }
         $content.find('a').each((i, el) => processLink($(el)))

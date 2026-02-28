@@ -1,16 +1,10 @@
-import React, {
-  useEffect,
-  useState,
-} from 'react';
-
+import React, { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 
-import { getBaseUrl } from '@substance/common/utils';
+import { getBaseUrl } from '@substance/common/utils/string';
 
-import {
-  colors,
-  getLogger,
-} from './utils/log';
+import { colors, getLogger } from './utils/log';
+
 
 const lg = getLogger('popup', colors.bgYellowBright)
 
