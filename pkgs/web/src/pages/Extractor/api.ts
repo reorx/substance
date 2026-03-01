@@ -1,5 +1,5 @@
-import ExtractManager, { Options } from '@substance/common/extract';
-import { WikipediaExtractor } from '@substance/common/extractors/wikipedia';
+import ExtractManager, { Options } from '@substancejs/common/extract';
+import { WikipediaExtractor } from '@substancejs/common/extractors/wikipedia';
 import axios, { AxiosError } from 'axios';
 
 import config from '@/config';

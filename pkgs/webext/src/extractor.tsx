@@ -1,13 +1,13 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Box, Global, Grid } from '@mantine/core';
-import ExtractManager from '@substance/common/extract';
-import { WikipediaExtractor } from '@substance/common/extractors/wikipedia';
+import ExtractManager from '@substancejs/common/extract';
+import { WikipediaExtractor } from '@substancejs/common/extractors/wikipedia';
 
-import { MarkdownEditor } from '@substance/common/components/MarkdownEditor';
-import { Viewer as MarkdownViewer } from '@substance/common/components/MarkdownViewer';
-import { gutter } from '@substance/common/components/styles';
-import { useMarkdownStore } from '@substance/common/components/stores';
+import { MarkdownEditor } from '@substancejs/common/components/MarkdownEditor';
+import { Viewer as MarkdownViewer } from '@substancejs/common/components/MarkdownViewer';
+import { gutter } from '@substancejs/common/components/styles';
+import { useMarkdownStore } from '@substancejs/common/components/stores';
 
 import { MsgType } from './consts';
 import { colors, getLogger } from './utils/log';

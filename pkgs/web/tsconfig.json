@@ -9,7 +9,7 @@
     "composite": true,
     "paths": {
       "@/*": ["src/*"],
-      "@substance/common/*": ["../common/src/*"]
+      "@substancejs/common/*": ["../common/src/*"]
     },
   },
   "references": [

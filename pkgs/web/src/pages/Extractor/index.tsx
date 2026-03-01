@@ -10,9 +10,9 @@ import {
 import { NotificationsProvider, showNotification } from '@mantine/notifications';
 import { useQuery, useQueryClient, QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Link, useSearchParams } from 'react-router-dom';
-import { MarkdownEditor } from '@substance/common/components/MarkdownEditor';
-import { Viewer as MarkdownViewer } from '@substance/common/components/MarkdownViewer';
-import { useMarkdownStore } from '@substance/common/components/stores';
+import { MarkdownEditor } from '@substancejs/common/components/MarkdownEditor';
+import { Viewer as MarkdownViewer } from '@substancejs/common/components/MarkdownViewer';
+import { useMarkdownStore } from '@substancejs/common/components/stores';
 
 import { usePageTitle } from '@/utils';
 

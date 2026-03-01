@@ -1,5 +1,5 @@
 {
-  "name": "@substance/common",
+  "name": "@substancejs/common",
   "version": "1.0.0",
   "main": "src/index.ts",
   "types": "lib/index.d.ts",
@@ -7,6 +7,9 @@
     "build": "webpack --mode production",
     "test": "jest",
     "cli": "ts-node ./src/cli.ts"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "dependencies": {
     "@codemirror/autocomplete": "^6.4.2",

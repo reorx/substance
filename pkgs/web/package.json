@@ -1,5 +1,5 @@
 {
-  "name": "@substance/web",
+  "name": "@substancejs/web",
   "version": "0.1.0",
   "description": "",
   "scripts": {
@@ -9,10 +9,13 @@
     "serve-build": "python3 -m http.server --directory build 3001",
     "clean": "rm -rf dist build"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Reorx <novoreorx@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "@substance/common": "^1.0.0",
+    "@substancejs/common": "^1.0.0",
     "@tanstack/react-query": "^4.22.0",
     "@types/markdown-it": "^12.2.3",
     "markdown-it": "^13.0.1",

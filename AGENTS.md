@@ -9,10 +9,10 @@ Substance 是一个“可定制的 HTML -> Markdown 抽取框架”，当前以 
 
 当前包含 4 个主要包：
 
-- `@substance/common`：抽取核心（`ExtractManager`）+ Wikipedia 规则 + 通用 Markdown 编辑/预览组件
-- `@substance/web`：网页端 UI（输入 URL -> 调 Worker 拉原始 HTML -> 本地抽取为 Markdown）
-- `@substance/webext`：浏览器扩展（对当前标签页选区/整页抽取）
-- `@substance/worker`：Cloudflare Worker，提供 `/api/wikipedia` 代理接口
+- `@substancejs/common`：抽取核心（`ExtractManager`）+ Wikipedia 规则 + 通用 Markdown 编辑/预览组件
+- `@substancejs/web`：网页端 UI（输入 URL -> 调 Worker 拉原始 HTML -> 本地抽取为 Markdown）
+- `@substancejs/webext`：浏览器扩展（对当前标签页选区/整页抽取）
+- `@substancejs/worker`：Cloudflare Worker，提供 `/api/wikipedia` 代理接口
 
 ## 2. 技术栈与依赖
 
@@ -51,24 +51,24 @@ pnpm install --link-workspace-packages=true
 
 ```bash
 pnpm -r build
-pnpm --filter @substance/common test
+pnpm --filter @substancejs/common test
 ```
 
 ## 4.2 分包开发/构建
 
 ```bash
 # common
-pnpm --filter @substance/common build
-pnpm --filter @substance/common test
-pnpm --filter @substance/common cli -- https://en.wikipedia.org/wiki/Feudalism
+pnpm --filter @substancejs/common build
+pnpm --filter @substancejs/common test
+pnpm --filter @substancejs/common cli -- https://en.wikipedia.org/wiki/Feudalism
 
 # web
-pnpm --filter @substance/web start
-pnpm --filter @substance/web build
+pnpm --filter @substancejs/web start
+pnpm --filter @substancejs/web build
 
 # webext
-pnpm --filter @substance/webext start
-pnpm --filter @substance/webext build
+pnpm --filter @substancejs/webext start
+pnpm --filter @substancejs/webext build
 
 # worker（本包未内置 script，直接用 wrangler）
 cd pkgs/worker
@@ -104,7 +104,7 @@ wrangler dev src/index.ts
 
 ## 6. 主要接口说明
 
-## 6.1 `@substance/common` 抽取核心
+## 6.1 `@substancejs/common` 抽取核心
 
 文件：`pkgs/common/src/extract.ts`
 
@@ -220,8 +220,8 @@ interface MarkdownState {
 
 ```ts
 import axios from 'axios'
-import ExtractManager from '@substance/common/extract'
-import { WikipediaExtractor } from '@substance/common/extractors/wikipedia'
+import ExtractManager from '@substancejs/common/extract'
+import { WikipediaExtractor } from '@substancejs/common/extractors/wikipedia'
 
 const em = new ExtractManager(WikipediaExtractor)
 const url = 'https://en.wikipedia.org/wiki/Feudalism'
@@ -254,7 +254,7 @@ console.log(result.contentMarkdown.slice(0, 300))
 
 - 优先修改 `pkgs/common` 共享能力，再让 `web`/`webext` 接入，避免重复逻辑。
 - 对抽取逻辑变更后，请务必运行：
-  - `pnpm --filter @substance/common test`
+  - `pnpm --filter @substancejs/common test`
 - 对打包链路或依赖变更后，请务必运行：
   - `pnpm -r build`
 - 当前构建可能出现非阻断 warning（Sass deprecation、bundle size），不影响主流程。

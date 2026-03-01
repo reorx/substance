@@ -1,4 +1,4 @@
-import { Options } from '@substance/common/extract';
+import { Options } from '@substancejs/common/extract';
 import { create } from 'zustand';
 
 import { extractManager } from './api';

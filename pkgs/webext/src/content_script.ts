@@ -1,6 +1,6 @@
-import { getMeta } from '@substance/common/metadata';
+import { getMeta } from '@substancejs/common/metadata';
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { getSelectionHTML } from '@substance/common/utils/dom';
+import { getSelectionHTML } from '@substancejs/common/utils/dom';
 
 import { MsgType } from './consts';
 import { colors, getLogger } from './utils/log';

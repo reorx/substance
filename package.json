@@ -4,7 +4,12 @@
     "pkgs/*"
   ],
   "scripts": {
-    "clean-node-modules": "rm -rf node_modules && rm -rf pkgs/*/node_modules"
+    "clean-node-modules": "rm -rf node_modules && rm -rf pkgs/*/node_modules",
+    "release:check": "pnpm -r --if-present build && pnpm --filter @substancejs/common test",
+    "release:dry-run": "pnpm -r --filter @substancejs/common --filter @substancejs/web --filter @substancejs/webext --filter @substancejs/worker publish --dry-run --access public --no-git-checks",
+    "release:publish": "pnpm -r --filter @substancejs/common --filter @substancejs/web --filter @substancejs/webext --filter @substancejs/worker publish --access public",
+    "release:dry-run:common": "pnpm --filter @substancejs/common publish --dry-run --access public --no-git-checks",
+    "release:publish:common": "pnpm --filter @substancejs/common publish --access public"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",

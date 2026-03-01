@@ -3,7 +3,7 @@
   "compilerOptions": {
     // "baseUrl": ".",
     "paths": {
-      "@substance/*": ["pkgs/*/src"]
+      "@substancejs/*": ["pkgs/*/src"]
     }
   },
   "references": [

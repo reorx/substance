@@ -8,7 +8,7 @@
     "declarationDir": "lib",
     "composite": true,
     "paths": {
-      "@substance/common/*": ["../common/src/*"],
+      "@substancejs/common/*": ["../common/src/*"],
     },
   },
   "references": [

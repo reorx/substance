@@ -2,8 +2,8 @@ import { useState } from 'react';
 
 import { Icon } from '@iconify/react';
 import { Box, Tooltip, Chip, Flex, ActionIcon } from '@mantine/core';
-import { Options } from '@substance/common/extract';
-import { WikipediaExtractor } from '@substance/common/extractors/wikipedia';
+import { Options } from '@substancejs/common/extract';
+import { WikipediaExtractor } from '@substancejs/common/extractors/wikipedia';
 
 import { gutter } from './styles';
 

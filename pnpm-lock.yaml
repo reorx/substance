@@ -217,7 +217,7 @@ importers:
 
   pkgs/web:
     dependencies:
-      '@substance/common':
+      '@substancejs/common':
         specifier: ^1.0.0
         version: link:../common
       '@tanstack/react-query':
@@ -257,7 +257,7 @@ importers:
 
   pkgs/webext:
     dependencies:
-      '@substance/common':
+      '@substancejs/common':
         specifier: ^1.0.0
         version: link:../common
       chalk:

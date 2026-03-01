@@ -10,7 +10,7 @@ Background and inferred original goal
 What was completed in this session
 
 1) Completed migration usage in web extractor page
-- Switched `pkgs/web/src/pages/Extractor/index.tsx` to consume shared components/state from `@substance/common`:
+- Switched `pkgs/web/src/pages/Extractor/index.tsx` to consume shared components/state from `@substancejs/common`:
   - `MarkdownEditor`
   - `MarkdownViewer`
   - `useMarkdownStore`
@@ -55,7 +55,7 @@ What was completed in this session
   - package dependency adjustments in root/common/web
 
 Validation executed
-- `pnpm --filter @substance/common test` => PASS (10/10)
+- `pnpm --filter @substancejs/common test` => PASS (10/10)
 - `pnpm -r build` => PASS for workspace packages (`common`, `web`, `webext`)
 - Remaining output contains non-blocking warnings only:
   - sass legacy JS API deprecation warnings

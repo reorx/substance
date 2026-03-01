@@ -1,4 +1,4 @@
-import { MetaData } from '@substance/common/metadata';
+import { MetaData } from '@substancejs/common/metadata';
 import { create } from 'zustand';
 
 
